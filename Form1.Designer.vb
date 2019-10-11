@@ -23,17 +23,19 @@ Partial Class FrmHome
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GunaPanel1 = New Guna.UI.WinForms.GunaPanel()
-        Me.GunaPanel2 = New Guna.UI.WinForms.GunaPanel()
-        Me.GunaPanel3 = New Guna.UI.WinForms.GunaPanel()
-        Me.GunaVSeparator1 = New Guna.UI.WinForms.GunaVSeparator()
+        Me.GunaVSeparator2 = New Guna.UI.WinForms.GunaVSeparator()
+        Me.GunaLabel1 = New Guna.UI.WinForms.GunaLabel()
         Me.GunaPictureBox1 = New Guna.UI.WinForms.GunaPictureBox()
+        Me.GunaVSeparator1 = New Guna.UI.WinForms.GunaVSeparator()
         Me.GunaImageButton3 = New Guna.UI.WinForms.GunaImageButton()
         Me.GunaImageButton2 = New Guna.UI.WinForms.GunaImageButton()
         Me.GunaImageButton1 = New Guna.UI.WinForms.GunaImageButton()
-        Me.GunaLabel1 = New Guna.UI.WinForms.GunaLabel()
-        Me.GunaVSeparator2 = New Guna.UI.WinForms.GunaVSeparator()
+        Me.GunaPanel2 = New Guna.UI.WinForms.GunaPanel()
+        Me.GunaPanel3 = New Guna.UI.WinForms.GunaPanel()
+        Me.GunaAdvenceButton1 = New Guna.UI.WinForms.GunaAdvenceButton()
         Me.GunaPanel1.SuspendLayout()
         CType(Me.GunaPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GunaPanel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'GunaPanel1
@@ -51,31 +53,24 @@ Partial Class FrmHome
         Me.GunaPanel1.Size = New System.Drawing.Size(800, 50)
         Me.GunaPanel1.TabIndex = 0
         '
-        'GunaPanel2
+        'GunaVSeparator2
         '
-        Me.GunaPanel2.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.GunaPanel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.GunaPanel2.Location = New System.Drawing.Point(0, 50)
-        Me.GunaPanel2.Name = "GunaPanel2"
-        Me.GunaPanel2.Size = New System.Drawing.Size(800, 50)
-        Me.GunaPanel2.TabIndex = 1
+        Me.GunaVSeparator2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.GunaVSeparator2.LineColor = System.Drawing.Color.WhiteSmoke
+        Me.GunaVSeparator2.Location = New System.Drawing.Point(561, 12)
+        Me.GunaVSeparator2.Name = "GunaVSeparator2"
+        Me.GunaVSeparator2.Size = New System.Drawing.Size(10, 25)
+        Me.GunaVSeparator2.TabIndex = 6
         '
-        'GunaPanel3
+        'GunaLabel1
         '
-        Me.GunaPanel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GunaPanel3.Location = New System.Drawing.Point(0, 100)
-        Me.GunaPanel3.Name = "GunaPanel3"
-        Me.GunaPanel3.Size = New System.Drawing.Size(800, 500)
-        Me.GunaPanel3.TabIndex = 2
-        '
-        'GunaVSeparator1
-        '
-        Me.GunaVSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.GunaVSeparator1.LineColor = System.Drawing.Color.WhiteSmoke
-        Me.GunaVSeparator1.Location = New System.Drawing.Point(707, 12)
-        Me.GunaVSeparator1.Name = "GunaVSeparator1"
-        Me.GunaVSeparator1.Size = New System.Drawing.Size(10, 25)
-        Me.GunaVSeparator1.TabIndex = 3
+        Me.GunaLabel1.AutoSize = True
+        Me.GunaLabel1.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GunaLabel1.Location = New System.Drawing.Point(628, 15)
+        Me.GunaLabel1.Name = "GunaLabel1"
+        Me.GunaLabel1.Size = New System.Drawing.Size(65, 20)
+        Me.GunaLabel1.TabIndex = 5
+        Me.GunaLabel1.Text = "Manuel"
         '
         'GunaPictureBox1
         '
@@ -87,6 +82,15 @@ Partial Class FrmHome
         Me.GunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.GunaPictureBox1.TabIndex = 4
         Me.GunaPictureBox1.TabStop = False
+        '
+        'GunaVSeparator1
+        '
+        Me.GunaVSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.GunaVSeparator1.LineColor = System.Drawing.Color.WhiteSmoke
+        Me.GunaVSeparator1.Location = New System.Drawing.Point(707, 12)
+        Me.GunaVSeparator1.Name = "GunaVSeparator1"
+        Me.GunaVSeparator1.Size = New System.Drawing.Size(10, 25)
+        Me.GunaVSeparator1.TabIndex = 3
         '
         'GunaImageButton3
         '
@@ -121,24 +125,53 @@ Partial Class FrmHome
         Me.GunaImageButton1.Size = New System.Drawing.Size(32, 32)
         Me.GunaImageButton1.TabIndex = 0
         '
-        'GunaLabel1
+        'GunaPanel2
         '
-        Me.GunaLabel1.AutoSize = True
-        Me.GunaLabel1.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GunaLabel1.Location = New System.Drawing.Point(628, 15)
-        Me.GunaLabel1.Name = "GunaLabel1"
-        Me.GunaLabel1.Size = New System.Drawing.Size(65, 20)
-        Me.GunaLabel1.TabIndex = 5
-        Me.GunaLabel1.Text = "Manuel"
+        Me.GunaPanel2.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.GunaPanel2.Controls.Add(Me.GunaAdvenceButton1)
+        Me.GunaPanel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.GunaPanel2.Location = New System.Drawing.Point(0, 50)
+        Me.GunaPanel2.Name = "GunaPanel2"
+        Me.GunaPanel2.Size = New System.Drawing.Size(800, 50)
+        Me.GunaPanel2.TabIndex = 1
         '
-        'GunaVSeparator2
+        'GunaPanel3
         '
-        Me.GunaVSeparator2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.GunaVSeparator2.LineColor = System.Drawing.Color.WhiteSmoke
-        Me.GunaVSeparator2.Location = New System.Drawing.Point(561, 12)
-        Me.GunaVSeparator2.Name = "GunaVSeparator2"
-        Me.GunaVSeparator2.Size = New System.Drawing.Size(10, 25)
-        Me.GunaVSeparator2.TabIndex = 6
+        Me.GunaPanel3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GunaPanel3.Location = New System.Drawing.Point(0, 100)
+        Me.GunaPanel3.Name = "GunaPanel3"
+        Me.GunaPanel3.Size = New System.Drawing.Size(800, 500)
+        Me.GunaPanel3.TabIndex = 2
+        '
+        'GunaAdvenceButton1
+        '
+        Me.GunaAdvenceButton1.AnimationHoverSpeed = 0.07!
+        Me.GunaAdvenceButton1.AnimationSpeed = 0.03!
+        Me.GunaAdvenceButton1.BaseColor = System.Drawing.Color.WhiteSmoke
+        Me.GunaAdvenceButton1.BorderColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton1.CheckedBaseColor = System.Drawing.Color.WhiteSmoke
+        Me.GunaAdvenceButton1.CheckedBorderColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton1.CheckedForeColor = System.Drawing.Color.White
+        Me.GunaAdvenceButton1.CheckedImage = Nothing
+        Me.GunaAdvenceButton1.CheckedLineColor = System.Drawing.Color.DimGray
+        Me.GunaAdvenceButton1.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaAdvenceButton1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaAdvenceButton1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton1.Image = Nothing
+        Me.GunaAdvenceButton1.ImageSize = New System.Drawing.Size(20, 20)
+        Me.GunaAdvenceButton1.LineBottom = 5
+        Me.GunaAdvenceButton1.LineColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton1.Location = New System.Drawing.Point(329, 5)
+        Me.GunaAdvenceButton1.Name = "GunaAdvenceButton1"
+        Me.GunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(151, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.GunaAdvenceButton1.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton1.OnHoverForeColor = System.Drawing.Color.White
+        Me.GunaAdvenceButton1.OnHoverImage = Nothing
+        Me.GunaAdvenceButton1.OnHoverLineColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(170, Byte), Integer))
+        Me.GunaAdvenceButton1.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton1.Size = New System.Drawing.Size(180, 42)
+        Me.GunaAdvenceButton1.TabIndex = 0
+        Me.GunaAdvenceButton1.Text = "GunaAdvenceButton1"
         '
         'FrmHome
         '
@@ -153,9 +186,11 @@ Partial Class FrmHome
         Me.Name = "FrmHome"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.GunaPanel1.ResumeLayout(False)
         Me.GunaPanel1.PerformLayout()
         CType(Me.GunaPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GunaPanel2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -170,4 +205,5 @@ Partial Class FrmHome
     Friend WithEvents GunaVSeparator1 As Guna.UI.WinForms.GunaVSeparator
     Friend WithEvents GunaVSeparator2 As Guna.UI.WinForms.GunaVSeparator
     Friend WithEvents GunaLabel1 As Guna.UI.WinForms.GunaLabel
+    Friend WithEvents GunaAdvenceButton1 As Guna.UI.WinForms.GunaAdvenceButton
 End Class

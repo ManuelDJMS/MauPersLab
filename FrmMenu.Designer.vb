@@ -87,6 +87,32 @@ Partial Class FrmHome
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GunaCirclePictureBox1 = New Guna.UI.WinForms.GunaCirclePictureBox()
         Me.GunaElipse1 = New Guna.UI.WinForms.GunaElipse(Me.components)
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.GunaElipsePanel9 = New Guna.UI.WinForms.GunaElipsePanel()
+        Me.GunaButton1 = New Guna.UI.WinForms.GunaButton()
+        Me.GunaLabel18 = New Guna.UI.WinForms.GunaLabel()
+        Me.GunaLabel19 = New Guna.UI.WinForms.GunaLabel()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.GunaCirclePictureBox9 = New Guna.UI.WinForms.GunaCirclePictureBox()
+        Me.GunaElipsePanel11 = New Guna.UI.WinForms.GunaElipsePanel()
+        Me.GunaButton3 = New Guna.UI.WinForms.GunaButton()
+        Me.GunaLabel22 = New Guna.UI.WinForms.GunaLabel()
+        Me.GunaLabel23 = New Guna.UI.WinForms.GunaLabel()
+        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
+        Me.GunaCirclePictureBox11 = New Guna.UI.WinForms.GunaCirclePictureBox()
+        Me.GunaElipsePanel13 = New Guna.UI.WinForms.GunaElipsePanel()
+        Me.GunaButton5 = New Guna.UI.WinForms.GunaButton()
+        Me.GunaLabel26 = New Guna.UI.WinForms.GunaLabel()
+        Me.GunaLabel27 = New Guna.UI.WinForms.GunaLabel()
+        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
+        Me.GunaCirclePictureBox13 = New Guna.UI.WinForms.GunaCirclePictureBox()
+        Me.GunaElipsePanel15 = New Guna.UI.WinForms.GunaElipsePanel()
+        Me.GunaButton7 = New Guna.UI.WinForms.GunaButton()
+        Me.GunaLabel30 = New Guna.UI.WinForms.GunaLabel()
+        Me.GunaLabel31 = New Guna.UI.WinForms.GunaLabel()
+        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
+        Me.GunaCirclePictureBox15 = New Guna.UI.WinForms.GunaCirclePictureBox()
         Me.GunaPanel1.SuspendLayout()
         CType(Me.GunaPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GunaPanel2.SuspendLayout()
@@ -116,6 +142,20 @@ Partial Class FrmHome
         Me.GunaElipsePanel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GunaCirclePictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
+        Me.GunaElipsePanel9.SuspendLayout()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GunaCirclePictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GunaElipsePanel11.SuspendLayout()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GunaCirclePictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GunaElipsePanel13.SuspendLayout()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GunaCirclePictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GunaElipsePanel15.SuspendLayout()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GunaCirclePictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GunaPanel1
@@ -360,14 +400,8 @@ Partial Class FrmHome
         '
         'GunaPanel3
         '
-        Me.GunaPanel3.Controls.Add(Me.GunaElipsePanel8)
-        Me.GunaPanel3.Controls.Add(Me.GunaElipsePanel7)
-        Me.GunaPanel3.Controls.Add(Me.GunaElipsePanel6)
-        Me.GunaPanel3.Controls.Add(Me.GunaElipsePanel5)
-        Me.GunaPanel3.Controls.Add(Me.GunaElipsePanel4)
-        Me.GunaPanel3.Controls.Add(Me.GunaElipsePanel3)
-        Me.GunaPanel3.Controls.Add(Me.GunaElipsePanel2)
-        Me.GunaPanel3.Controls.Add(Me.GunaElipsePanel1)
+        Me.GunaPanel3.Controls.Add(Me.Panel2)
+        Me.GunaPanel3.Controls.Add(Me.Panel1)
         Me.GunaPanel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GunaPanel3.Location = New System.Drawing.Point(0, 100)
         Me.GunaPanel3.Name = "GunaPanel3"
@@ -382,7 +416,7 @@ Partial Class FrmHome
         Me.GunaElipsePanel8.Controls.Add(Me.GunaLabel17)
         Me.GunaElipsePanel8.Controls.Add(Me.PictureBox8)
         Me.GunaElipsePanel8.Controls.Add(Me.GunaCirclePictureBox8)
-        Me.GunaElipsePanel8.Location = New System.Drawing.Point(32, 275)
+        Me.GunaElipsePanel8.Location = New System.Drawing.Point(16, 262)
         Me.GunaElipsePanel8.Name = "GunaElipsePanel8"
         Me.GunaElipsePanel8.Size = New System.Drawing.Size(170, 180)
         Me.GunaElipsePanel8.TabIndex = 7
@@ -463,7 +497,7 @@ Partial Class FrmHome
         Me.GunaElipsePanel7.Controls.Add(Me.GunaLabel15)
         Me.GunaElipsePanel7.Controls.Add(Me.PictureBox7)
         Me.GunaElipsePanel7.Controls.Add(Me.GunaCirclePictureBox7)
-        Me.GunaElipsePanel7.Location = New System.Drawing.Point(604, 275)
+        Me.GunaElipsePanel7.Location = New System.Drawing.Point(588, 262)
         Me.GunaElipsePanel7.Name = "GunaElipsePanel7"
         Me.GunaElipsePanel7.Size = New System.Drawing.Size(170, 180)
         Me.GunaElipsePanel7.TabIndex = 6
@@ -544,7 +578,7 @@ Partial Class FrmHome
         Me.GunaElipsePanel6.Controls.Add(Me.GunaLabel13)
         Me.GunaElipsePanel6.Controls.Add(Me.PictureBox6)
         Me.GunaElipsePanel6.Controls.Add(Me.GunaCirclePictureBox6)
-        Me.GunaElipsePanel6.Location = New System.Drawing.Point(415, 275)
+        Me.GunaElipsePanel6.Location = New System.Drawing.Point(399, 262)
         Me.GunaElipsePanel6.Name = "GunaElipsePanel6"
         Me.GunaElipsePanel6.Size = New System.Drawing.Size(170, 180)
         Me.GunaElipsePanel6.TabIndex = 5
@@ -625,7 +659,7 @@ Partial Class FrmHome
         Me.GunaElipsePanel5.Controls.Add(Me.GunaLabel11)
         Me.GunaElipsePanel5.Controls.Add(Me.PictureBox5)
         Me.GunaElipsePanel5.Controls.Add(Me.GunaCirclePictureBox5)
-        Me.GunaElipsePanel5.Location = New System.Drawing.Point(223, 275)
+        Me.GunaElipsePanel5.Location = New System.Drawing.Point(207, 262)
         Me.GunaElipsePanel5.Name = "GunaElipsePanel5"
         Me.GunaElipsePanel5.Size = New System.Drawing.Size(170, 180)
         Me.GunaElipsePanel5.TabIndex = 4
@@ -706,7 +740,7 @@ Partial Class FrmHome
         Me.GunaElipsePanel4.Controls.Add(Me.GunaLabel9)
         Me.GunaElipsePanel4.Controls.Add(Me.PictureBox4)
         Me.GunaElipsePanel4.Controls.Add(Me.GunaCirclePictureBox4)
-        Me.GunaElipsePanel4.Location = New System.Drawing.Point(604, 60)
+        Me.GunaElipsePanel4.Location = New System.Drawing.Point(588, 47)
         Me.GunaElipsePanel4.Name = "GunaElipsePanel4"
         Me.GunaElipsePanel4.Size = New System.Drawing.Size(170, 180)
         Me.GunaElipsePanel4.TabIndex = 3
@@ -787,7 +821,7 @@ Partial Class FrmHome
         Me.GunaElipsePanel3.Controls.Add(Me.GunaLabel7)
         Me.GunaElipsePanel3.Controls.Add(Me.PictureBox3)
         Me.GunaElipsePanel3.Controls.Add(Me.GunaCirclePictureBox3)
-        Me.GunaElipsePanel3.Location = New System.Drawing.Point(415, 60)
+        Me.GunaElipsePanel3.Location = New System.Drawing.Point(399, 47)
         Me.GunaElipsePanel3.Name = "GunaElipsePanel3"
         Me.GunaElipsePanel3.Size = New System.Drawing.Size(170, 180)
         Me.GunaElipsePanel3.TabIndex = 2
@@ -868,7 +902,7 @@ Partial Class FrmHome
         Me.GunaElipsePanel2.Controls.Add(Me.GunaLabel5)
         Me.GunaElipsePanel2.Controls.Add(Me.PictureBox2)
         Me.GunaElipsePanel2.Controls.Add(Me.GunaCirclePictureBox2)
-        Me.GunaElipsePanel2.Location = New System.Drawing.Point(223, 60)
+        Me.GunaElipsePanel2.Location = New System.Drawing.Point(207, 47)
         Me.GunaElipsePanel2.Name = "GunaElipsePanel2"
         Me.GunaElipsePanel2.Size = New System.Drawing.Size(170, 180)
         Me.GunaElipsePanel2.TabIndex = 1
@@ -949,7 +983,7 @@ Partial Class FrmHome
         Me.GunaElipsePanel1.Controls.Add(Me.GunaLabel2)
         Me.GunaElipsePanel1.Controls.Add(Me.PictureBox1)
         Me.GunaElipsePanel1.Controls.Add(Me.GunaCirclePictureBox1)
-        Me.GunaElipsePanel1.Location = New System.Drawing.Point(32, 60)
+        Me.GunaElipsePanel1.Location = New System.Drawing.Point(16, 47)
         Me.GunaElipsePanel1.Name = "GunaElipsePanel1"
         Me.GunaElipsePanel1.Size = New System.Drawing.Size(170, 180)
         Me.GunaElipsePanel1.TabIndex = 0
@@ -1026,6 +1060,356 @@ Partial Class FrmHome
         '
         Me.GunaElipse1.TargetControl = Me
         '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.GunaElipsePanel1)
+        Me.Panel1.Controls.Add(Me.GunaElipsePanel8)
+        Me.Panel1.Controls.Add(Me.GunaElipsePanel2)
+        Me.Panel1.Controls.Add(Me.GunaElipsePanel7)
+        Me.Panel1.Controls.Add(Me.GunaElipsePanel3)
+        Me.Panel1.Controls.Add(Me.GunaElipsePanel6)
+        Me.Panel1.Controls.Add(Me.GunaElipsePanel4)
+        Me.Panel1.Controls.Add(Me.GunaElipsePanel5)
+        Me.Panel1.Location = New System.Drawing.Point(12, 9)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(776, 479)
+        Me.Panel1.TabIndex = 8
+        '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.GunaElipsePanel9)
+        Me.Panel2.Controls.Add(Me.GunaElipsePanel11)
+        Me.Panel2.Controls.Add(Me.GunaElipsePanel13)
+        Me.Panel2.Controls.Add(Me.GunaElipsePanel15)
+        Me.Panel2.Location = New System.Drawing.Point(811, 9)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(776, 479)
+        Me.Panel2.TabIndex = 9
+        '
+        'GunaElipsePanel9
+        '
+        Me.GunaElipsePanel9.BaseColor = System.Drawing.Color.WhiteSmoke
+        Me.GunaElipsePanel9.Controls.Add(Me.GunaButton1)
+        Me.GunaElipsePanel9.Controls.Add(Me.GunaLabel18)
+        Me.GunaElipsePanel9.Controls.Add(Me.GunaLabel19)
+        Me.GunaElipsePanel9.Controls.Add(Me.PictureBox9)
+        Me.GunaElipsePanel9.Controls.Add(Me.GunaCirclePictureBox9)
+        Me.GunaElipsePanel9.Location = New System.Drawing.Point(16, 47)
+        Me.GunaElipsePanel9.Name = "GunaElipsePanel9"
+        Me.GunaElipsePanel9.Size = New System.Drawing.Size(170, 180)
+        Me.GunaElipsePanel9.TabIndex = 0
+        '
+        'GunaButton1
+        '
+        Me.GunaButton1.AnimationHoverSpeed = 0.07!
+        Me.GunaButton1.AnimationSpeed = 0.03!
+        Me.GunaButton1.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.GunaButton1.BorderColor = System.Drawing.Color.Black
+        Me.GunaButton1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaButton1.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaButton1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaButton1.ForeColor = System.Drawing.Color.White
+        Me.GunaButton1.Image = Nothing
+        Me.GunaButton1.ImageSize = New System.Drawing.Size(20, 20)
+        Me.GunaButton1.Location = New System.Drawing.Point(40, 139)
+        Me.GunaButton1.Name = "GunaButton1"
+        Me.GunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.GunaButton1.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.GunaButton1.OnHoverForeColor = System.Drawing.Color.White
+        Me.GunaButton1.OnHoverImage = Nothing
+        Me.GunaButton1.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaButton1.Radius = 3
+        Me.GunaButton1.Size = New System.Drawing.Size(90, 29)
+        Me.GunaButton1.TabIndex = 1
+        Me.GunaButton1.Text = "Abrir"
+        Me.GunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'GunaLabel18
+        '
+        Me.GunaLabel18.AutoSize = True
+        Me.GunaLabel18.BackColor = System.Drawing.Color.Transparent
+        Me.GunaLabel18.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaLabel18.Location = New System.Drawing.Point(3, 110)
+        Me.GunaLabel18.Name = "GunaLabel18"
+        Me.GunaLabel18.Size = New System.Drawing.Size(152, 15)
+        Me.GunaLabel18.TabIndex = 2
+        Me.GunaLabel18.Text = "Altas y control de pacientes"
+        '
+        'GunaLabel19
+        '
+        Me.GunaLabel19.AutoSize = True
+        Me.GunaLabel19.BackColor = System.Drawing.Color.Transparent
+        Me.GunaLabel19.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GunaLabel19.Location = New System.Drawing.Point(39, 75)
+        Me.GunaLabel19.Name = "GunaLabel19"
+        Me.GunaLabel19.Size = New System.Drawing.Size(91, 25)
+        Me.GunaLabel19.TabIndex = 1
+        Me.GunaLabel19.Text = "Pacientes"
+        '
+        'PictureBox9
+        '
+        Me.PictureBox9.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox9.Image = Global.Maulabs.My.Resources.Resources.icons8_health_checkup_48
+        Me.PictureBox9.Location = New System.Drawing.Point(60, 23)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(48, 48)
+        Me.PictureBox9.TabIndex = 1
+        Me.PictureBox9.TabStop = False
+        '
+        'GunaCirclePictureBox9
+        '
+        Me.GunaCirclePictureBox9.BaseColor = System.Drawing.SystemColors.HotTrack
+        Me.GunaCirclePictureBox9.Location = New System.Drawing.Point(12, 13)
+        Me.GunaCirclePictureBox9.Name = "GunaCirclePictureBox9"
+        Me.GunaCirclePictureBox9.Size = New System.Drawing.Size(8, 8)
+        Me.GunaCirclePictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.GunaCirclePictureBox9.TabIndex = 1
+        Me.GunaCirclePictureBox9.TabStop = False
+        Me.GunaCirclePictureBox9.UseTransfarantBackground = False
+        '
+        'GunaElipsePanel11
+        '
+        Me.GunaElipsePanel11.BaseColor = System.Drawing.Color.WhiteSmoke
+        Me.GunaElipsePanel11.Controls.Add(Me.GunaButton3)
+        Me.GunaElipsePanel11.Controls.Add(Me.GunaLabel22)
+        Me.GunaElipsePanel11.Controls.Add(Me.GunaLabel23)
+        Me.GunaElipsePanel11.Controls.Add(Me.PictureBox11)
+        Me.GunaElipsePanel11.Controls.Add(Me.GunaCirclePictureBox11)
+        Me.GunaElipsePanel11.Location = New System.Drawing.Point(207, 47)
+        Me.GunaElipsePanel11.Name = "GunaElipsePanel11"
+        Me.GunaElipsePanel11.Size = New System.Drawing.Size(170, 180)
+        Me.GunaElipsePanel11.TabIndex = 1
+        '
+        'GunaButton3
+        '
+        Me.GunaButton3.AnimationHoverSpeed = 0.07!
+        Me.GunaButton3.AnimationSpeed = 0.03!
+        Me.GunaButton3.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.GunaButton3.BorderColor = System.Drawing.Color.Black
+        Me.GunaButton3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaButton3.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaButton3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaButton3.ForeColor = System.Drawing.Color.White
+        Me.GunaButton3.Image = Nothing
+        Me.GunaButton3.ImageSize = New System.Drawing.Size(20, 20)
+        Me.GunaButton3.Location = New System.Drawing.Point(40, 139)
+        Me.GunaButton3.Name = "GunaButton3"
+        Me.GunaButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.GunaButton3.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.GunaButton3.OnHoverForeColor = System.Drawing.Color.White
+        Me.GunaButton3.OnHoverImage = Nothing
+        Me.GunaButton3.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaButton3.Radius = 3
+        Me.GunaButton3.Size = New System.Drawing.Size(90, 29)
+        Me.GunaButton3.TabIndex = 1
+        Me.GunaButton3.Text = "Abrir"
+        Me.GunaButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'GunaLabel22
+        '
+        Me.GunaLabel22.AutoSize = True
+        Me.GunaLabel22.BackColor = System.Drawing.Color.Transparent
+        Me.GunaLabel22.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaLabel22.Location = New System.Drawing.Point(5, 110)
+        Me.GunaLabel22.Name = "GunaLabel22"
+        Me.GunaLabel22.Size = New System.Drawing.Size(160, 15)
+        Me.GunaLabel22.TabIndex = 2
+        Me.GunaLabel22.Text = "Altas de solicitud de estudios"
+        '
+        'GunaLabel23
+        '
+        Me.GunaLabel23.AutoSize = True
+        Me.GunaLabel23.BackColor = System.Drawing.Color.Transparent
+        Me.GunaLabel23.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GunaLabel23.Location = New System.Drawing.Point(32, 75)
+        Me.GunaLabel23.Name = "GunaLabel23"
+        Me.GunaLabel23.Size = New System.Drawing.Size(103, 25)
+        Me.GunaLabel23.TabIndex = 1
+        Me.GunaLabel23.Text = "Solicitudes"
+        '
+        'PictureBox11
+        '
+        Me.PictureBox11.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox11.Image = Global.Maulabs.My.Resources.Resources.icons8_edit_property_48
+        Me.PictureBox11.Location = New System.Drawing.Point(60, 23)
+        Me.PictureBox11.Name = "PictureBox11"
+        Me.PictureBox11.Size = New System.Drawing.Size(48, 48)
+        Me.PictureBox11.TabIndex = 1
+        Me.PictureBox11.TabStop = False
+        '
+        'GunaCirclePictureBox11
+        '
+        Me.GunaCirclePictureBox11.BaseColor = System.Drawing.SystemColors.HotTrack
+        Me.GunaCirclePictureBox11.Location = New System.Drawing.Point(12, 13)
+        Me.GunaCirclePictureBox11.Name = "GunaCirclePictureBox11"
+        Me.GunaCirclePictureBox11.Size = New System.Drawing.Size(8, 8)
+        Me.GunaCirclePictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.GunaCirclePictureBox11.TabIndex = 1
+        Me.GunaCirclePictureBox11.TabStop = False
+        Me.GunaCirclePictureBox11.UseTransfarantBackground = False
+        '
+        'GunaElipsePanel13
+        '
+        Me.GunaElipsePanel13.BaseColor = System.Drawing.Color.WhiteSmoke
+        Me.GunaElipsePanel13.Controls.Add(Me.GunaButton5)
+        Me.GunaElipsePanel13.Controls.Add(Me.GunaLabel26)
+        Me.GunaElipsePanel13.Controls.Add(Me.GunaLabel27)
+        Me.GunaElipsePanel13.Controls.Add(Me.PictureBox13)
+        Me.GunaElipsePanel13.Controls.Add(Me.GunaCirclePictureBox13)
+        Me.GunaElipsePanel13.Location = New System.Drawing.Point(399, 47)
+        Me.GunaElipsePanel13.Name = "GunaElipsePanel13"
+        Me.GunaElipsePanel13.Size = New System.Drawing.Size(170, 180)
+        Me.GunaElipsePanel13.TabIndex = 2
+        '
+        'GunaButton5
+        '
+        Me.GunaButton5.AnimationHoverSpeed = 0.07!
+        Me.GunaButton5.AnimationSpeed = 0.03!
+        Me.GunaButton5.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.GunaButton5.BorderColor = System.Drawing.Color.Black
+        Me.GunaButton5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaButton5.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaButton5.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaButton5.ForeColor = System.Drawing.Color.White
+        Me.GunaButton5.Image = Nothing
+        Me.GunaButton5.ImageSize = New System.Drawing.Size(20, 20)
+        Me.GunaButton5.Location = New System.Drawing.Point(40, 139)
+        Me.GunaButton5.Name = "GunaButton5"
+        Me.GunaButton5.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.GunaButton5.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.GunaButton5.OnHoverForeColor = System.Drawing.Color.White
+        Me.GunaButton5.OnHoverImage = Nothing
+        Me.GunaButton5.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaButton5.Radius = 3
+        Me.GunaButton5.Size = New System.Drawing.Size(90, 29)
+        Me.GunaButton5.TabIndex = 1
+        Me.GunaButton5.Text = "Abrir"
+        Me.GunaButton5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'GunaLabel26
+        '
+        Me.GunaLabel26.BackColor = System.Drawing.Color.Transparent
+        Me.GunaLabel26.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaLabel26.Location = New System.Drawing.Point(5, 99)
+        Me.GunaLabel26.Name = "GunaLabel26"
+        Me.GunaLabel26.Size = New System.Drawing.Size(160, 37)
+        Me.GunaLabel26.TabIndex = 2
+        Me.GunaLabel26.Text = "Impresión de etiquetas para muestras"
+        Me.GunaLabel26.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'GunaLabel27
+        '
+        Me.GunaLabel27.AutoSize = True
+        Me.GunaLabel27.BackColor = System.Drawing.Color.Transparent
+        Me.GunaLabel27.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GunaLabel27.Location = New System.Drawing.Point(41, 74)
+        Me.GunaLabel27.Name = "GunaLabel27"
+        Me.GunaLabel27.Size = New System.Drawing.Size(89, 25)
+        Me.GunaLabel27.TabIndex = 1
+        Me.GunaLabel27.Text = "Etiquetas"
+        '
+        'PictureBox13
+        '
+        Me.PictureBox13.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox13.Image = Global.Maulabs.My.Resources.Resources.icons8_experiment_48
+        Me.PictureBox13.Location = New System.Drawing.Point(60, 23)
+        Me.PictureBox13.Name = "PictureBox13"
+        Me.PictureBox13.Size = New System.Drawing.Size(48, 48)
+        Me.PictureBox13.TabIndex = 1
+        Me.PictureBox13.TabStop = False
+        '
+        'GunaCirclePictureBox13
+        '
+        Me.GunaCirclePictureBox13.BaseColor = System.Drawing.SystemColors.HotTrack
+        Me.GunaCirclePictureBox13.Location = New System.Drawing.Point(12, 13)
+        Me.GunaCirclePictureBox13.Name = "GunaCirclePictureBox13"
+        Me.GunaCirclePictureBox13.Size = New System.Drawing.Size(8, 8)
+        Me.GunaCirclePictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.GunaCirclePictureBox13.TabIndex = 1
+        Me.GunaCirclePictureBox13.TabStop = False
+        Me.GunaCirclePictureBox13.UseTransfarantBackground = False
+        '
+        'GunaElipsePanel15
+        '
+        Me.GunaElipsePanel15.BaseColor = System.Drawing.Color.WhiteSmoke
+        Me.GunaElipsePanel15.Controls.Add(Me.GunaButton7)
+        Me.GunaElipsePanel15.Controls.Add(Me.GunaLabel30)
+        Me.GunaElipsePanel15.Controls.Add(Me.GunaLabel31)
+        Me.GunaElipsePanel15.Controls.Add(Me.PictureBox15)
+        Me.GunaElipsePanel15.Controls.Add(Me.GunaCirclePictureBox15)
+        Me.GunaElipsePanel15.Location = New System.Drawing.Point(207, 262)
+        Me.GunaElipsePanel15.Name = "GunaElipsePanel15"
+        Me.GunaElipsePanel15.Size = New System.Drawing.Size(170, 180)
+        Me.GunaElipsePanel15.TabIndex = 3
+        '
+        'GunaButton7
+        '
+        Me.GunaButton7.AnimationHoverSpeed = 0.07!
+        Me.GunaButton7.AnimationSpeed = 0.03!
+        Me.GunaButton7.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.GunaButton7.BorderColor = System.Drawing.Color.Black
+        Me.GunaButton7.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaButton7.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaButton7.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaButton7.ForeColor = System.Drawing.Color.White
+        Me.GunaButton7.Image = Nothing
+        Me.GunaButton7.ImageSize = New System.Drawing.Size(20, 20)
+        Me.GunaButton7.Location = New System.Drawing.Point(40, 139)
+        Me.GunaButton7.Name = "GunaButton7"
+        Me.GunaButton7.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.GunaButton7.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.GunaButton7.OnHoverForeColor = System.Drawing.Color.White
+        Me.GunaButton7.OnHoverImage = Nothing
+        Me.GunaButton7.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaButton7.Radius = 3
+        Me.GunaButton7.Size = New System.Drawing.Size(90, 29)
+        Me.GunaButton7.TabIndex = 1
+        Me.GunaButton7.Text = "Abrir"
+        Me.GunaButton7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'GunaLabel30
+        '
+        Me.GunaLabel30.BackColor = System.Drawing.Color.Transparent
+        Me.GunaLabel30.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaLabel30.Location = New System.Drawing.Point(5, 99)
+        Me.GunaLabel30.Name = "GunaLabel30"
+        Me.GunaLabel30.Size = New System.Drawing.Size(160, 37)
+        Me.GunaLabel30.TabIndex = 2
+        Me.GunaLabel30.Text = "Registro de resultados de los estudios"
+        Me.GunaLabel30.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'GunaLabel31
+        '
+        Me.GunaLabel31.AutoSize = True
+        Me.GunaLabel31.BackColor = System.Drawing.Color.Transparent
+        Me.GunaLabel31.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GunaLabel31.Location = New System.Drawing.Point(32, 75)
+        Me.GunaLabel31.Name = "GunaLabel31"
+        Me.GunaLabel31.Size = New System.Drawing.Size(102, 25)
+        Me.GunaLabel31.TabIndex = 1
+        Me.GunaLabel31.Text = "Resultados"
+        '
+        'PictureBox15
+        '
+        Me.PictureBox15.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox15.Image = Global.Maulabs.My.Resources.Resources.icons8_treatment_48
+        Me.PictureBox15.Location = New System.Drawing.Point(60, 23)
+        Me.PictureBox15.Name = "PictureBox15"
+        Me.PictureBox15.Size = New System.Drawing.Size(48, 48)
+        Me.PictureBox15.TabIndex = 1
+        Me.PictureBox15.TabStop = False
+        '
+        'GunaCirclePictureBox15
+        '
+        Me.GunaCirclePictureBox15.BaseColor = System.Drawing.SystemColors.HotTrack
+        Me.GunaCirclePictureBox15.Location = New System.Drawing.Point(12, 13)
+        Me.GunaCirclePictureBox15.Name = "GunaCirclePictureBox15"
+        Me.GunaCirclePictureBox15.Size = New System.Drawing.Size(8, 8)
+        Me.GunaCirclePictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.GunaCirclePictureBox15.TabIndex = 1
+        Me.GunaCirclePictureBox15.TabStop = False
+        Me.GunaCirclePictureBox15.UseTransfarantBackground = False
+        '
         'FrmHome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1077,6 +1461,24 @@ Partial Class FrmHome
         Me.GunaElipsePanel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GunaCirclePictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel2.ResumeLayout(False)
+        Me.GunaElipsePanel9.ResumeLayout(False)
+        Me.GunaElipsePanel9.PerformLayout()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GunaCirclePictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GunaElipsePanel11.ResumeLayout(False)
+        Me.GunaElipsePanel11.PerformLayout()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GunaCirclePictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GunaElipsePanel13.ResumeLayout(False)
+        Me.GunaElipsePanel13.PerformLayout()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GunaCirclePictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GunaElipsePanel15.ResumeLayout(False)
+        Me.GunaElipsePanel15.PerformLayout()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GunaCirclePictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1145,4 +1547,30 @@ Partial Class FrmHome
     Friend WithEvents GunaLabel17 As Guna.UI.WinForms.GunaLabel
     Friend WithEvents PictureBox8 As PictureBox
     Friend WithEvents GunaCirclePictureBox8 As Guna.UI.WinForms.GunaCirclePictureBox
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents GunaElipsePanel9 As Guna.UI.WinForms.GunaElipsePanel
+    Friend WithEvents GunaButton1 As Guna.UI.WinForms.GunaButton
+    Friend WithEvents GunaLabel18 As Guna.UI.WinForms.GunaLabel
+    Friend WithEvents GunaLabel19 As Guna.UI.WinForms.GunaLabel
+    Friend WithEvents PictureBox9 As PictureBox
+    Friend WithEvents GunaCirclePictureBox9 As Guna.UI.WinForms.GunaCirclePictureBox
+    Friend WithEvents GunaElipsePanel11 As Guna.UI.WinForms.GunaElipsePanel
+    Friend WithEvents GunaButton3 As Guna.UI.WinForms.GunaButton
+    Friend WithEvents GunaLabel22 As Guna.UI.WinForms.GunaLabel
+    Friend WithEvents GunaLabel23 As Guna.UI.WinForms.GunaLabel
+    Friend WithEvents PictureBox11 As PictureBox
+    Friend WithEvents GunaCirclePictureBox11 As Guna.UI.WinForms.GunaCirclePictureBox
+    Friend WithEvents GunaElipsePanel13 As Guna.UI.WinForms.GunaElipsePanel
+    Friend WithEvents GunaButton5 As Guna.UI.WinForms.GunaButton
+    Friend WithEvents GunaLabel26 As Guna.UI.WinForms.GunaLabel
+    Friend WithEvents GunaLabel27 As Guna.UI.WinForms.GunaLabel
+    Friend WithEvents PictureBox13 As PictureBox
+    Friend WithEvents GunaCirclePictureBox13 As Guna.UI.WinForms.GunaCirclePictureBox
+    Friend WithEvents GunaElipsePanel15 As Guna.UI.WinForms.GunaElipsePanel
+    Friend WithEvents GunaButton7 As Guna.UI.WinForms.GunaButton
+    Friend WithEvents GunaLabel30 As Guna.UI.WinForms.GunaLabel
+    Friend WithEvents GunaLabel31 As Guna.UI.WinForms.GunaLabel
+    Friend WithEvents PictureBox15 As PictureBox
+    Friend WithEvents GunaCirclePictureBox15 As Guna.UI.WinForms.GunaCirclePictureBox
 End Class

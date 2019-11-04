@@ -98,6 +98,24 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Presentación\FrmMedicos.Designer.vb">
+      <DependentUpon>FrmMedicos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentación\FrmMedicos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentación\FrmPacientes.Designer.vb">
+      <DependentUpon>FrmPacientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentación\FrmPacientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentación\FrmSolicitudes.Designer.vb">
+      <DependentUpon>FrmSolicitudes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentación\FrmSolicitudes.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="FrmMenu.resx">
@@ -108,6 +126,15 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentación\FrmMedicos.resx">
+      <DependentUpon>FrmMedicos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentación\FrmPacientes.resx">
+      <DependentUpon>FrmPacientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentación\FrmSolicitudes.resx">
+      <DependentUpon>FrmSolicitudes.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -163,6 +190,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-graph-report-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-save-28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cancel-28.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

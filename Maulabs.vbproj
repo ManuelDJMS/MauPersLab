@@ -110,6 +110,12 @@
     <Compile Include="Presentación\FrmPacientes.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Presentación\FrmPagos.Designer.vb">
+      <DependentUpon>FrmPagos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentación\FrmPagos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentación\FrmSolicitudes.Designer.vb">
       <DependentUpon>FrmSolicitudes.vb</DependentUpon>
     </Compile>
@@ -132,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentación\FrmPacientes.resx">
       <DependentUpon>FrmPacientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentación\FrmPagos.resx">
+      <DependentUpon>FrmPagos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentación\FrmSolicitudes.resx">
       <DependentUpon>FrmSolicitudes.vb</DependentUpon>
@@ -196,6 +205,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-cancel-28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-24 %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

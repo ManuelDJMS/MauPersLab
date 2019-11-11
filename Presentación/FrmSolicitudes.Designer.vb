@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FrmSolicitudes
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,14 +20,18 @@ Partial Class FrmSolicitudes
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.GunaElipse1 = New Guna.UI.WinForms.GunaElipse(Me.components)
         Me.GunaPanel1 = New Guna.UI.WinForms.GunaPanel()
         Me.GunaVSeparator2 = New Guna.UI.WinForms.GunaVSeparator()
         Me.GunaLabel1 = New Guna.UI.WinForms.GunaLabel()
+        Me.GunaPictureBox1 = New Guna.UI.WinForms.GunaPictureBox()
         Me.GunaVSeparator1 = New Guna.UI.WinForms.GunaVSeparator()
+        Me.btnCerrar = New Guna.UI.WinForms.GunaImageButton()
+        Me.btnMinimizar = New Guna.UI.WinForms.GunaImageButton()
+        Me.GunaImageButton1 = New Guna.UI.WinForms.GunaImageButton()
         Me.GunaLabel4 = New Guna.UI.WinForms.GunaLabel()
         Me.GunaLabel2 = New Guna.UI.WinForms.GunaLabel()
         Me.GunaSeparator1 = New Guna.UI.WinForms.GunaSeparator()
@@ -35,59 +39,53 @@ Partial Class FrmSolicitudes
         Me.GunaTextBox1 = New Guna.UI.WinForms.GunaTextBox()
         Me.GunaTextBox2 = New Guna.UI.WinForms.GunaTextBox()
         Me.GunaSeparator2 = New Guna.UI.WinForms.GunaSeparator()
-        Me.GunaCheckBox1 = New Guna.UI.WinForms.GunaCheckBox()
         Me.GunaLabel3 = New Guna.UI.WinForms.GunaLabel()
         Me.GunaLabel6 = New Guna.UI.WinForms.GunaLabel()
-        Me.GunaCheckBox2 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox3 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox4 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox5 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox6 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox7 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox8 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox9 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox10 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox11 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox12 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox13 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox14 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox15 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox16 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox17 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox18 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox19 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox20 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox21 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox22 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox23 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox24 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox25 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox26 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox27 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox28 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox29 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox30 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox31 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox32 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox33 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox34 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox35 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox36 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox37 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox38 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox39 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox40 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox41 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox42 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox43 = New Guna.UI.WinForms.GunaCheckBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.GunaPictureBox1 = New Guna.UI.WinForms.GunaPictureBox()
-        Me.btnCerrar = New Guna.UI.WinForms.GunaImageButton()
-        Me.btnMinimizar = New Guna.UI.WinForms.GunaImageButton()
-        Me.GunaImageButton1 = New Guna.UI.WinForms.GunaImageButton()
+        Me.GunaElipsePanel1 = New Guna.UI.WinForms.GunaElipsePanel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.GunaAdvenceButton3 = New Guna.UI.WinForms.GunaAdvenceButton()
+        Me.GunaAdvenceButton2 = New Guna.UI.WinForms.GunaAdvenceButton()
+        Me.GunaAdvenceButton1 = New Guna.UI.WinForms.GunaAdvenceButton()
+        Me.btnMenu = New Guna.UI.WinForms.GunaAdvenceButton()
+        Me.btnEtiquetas = New Guna.UI.WinForms.GunaButton()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.GunaAdvenceButton4 = New Guna.UI.WinForms.GunaAdvenceButton()
+        Me.GunaAdvenceButton5 = New Guna.UI.WinForms.GunaAdvenceButton()
+        Me.GunaAdvenceButton6 = New Guna.UI.WinForms.GunaAdvenceButton()
+        Me.GunaAdvenceButton7 = New Guna.UI.WinForms.GunaAdvenceButton()
+        Me.GunaButton1 = New Guna.UI.WinForms.GunaButton()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.GunaAdvenceButton8 = New Guna.UI.WinForms.GunaAdvenceButton()
+        Me.GunaAdvenceButton9 = New Guna.UI.WinForms.GunaAdvenceButton()
+        Me.GunaAdvenceButton10 = New Guna.UI.WinForms.GunaAdvenceButton()
+        Me.GunaAdvenceButton11 = New Guna.UI.WinForms.GunaAdvenceButton()
+        Me.GunaButton2 = New Guna.UI.WinForms.GunaButton()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.GunaAdvenceButton12 = New Guna.UI.WinForms.GunaAdvenceButton()
+        Me.GunaAdvenceButton13 = New Guna.UI.WinForms.GunaAdvenceButton()
+        Me.GunaAdvenceButton14 = New Guna.UI.WinForms.GunaAdvenceButton()
+        Me.GunaAdvenceButton15 = New Guna.UI.WinForms.GunaAdvenceButton()
+        Me.GunaButton3 = New Guna.UI.WinForms.GunaButton()
+        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.GunaAdvenceButton16 = New Guna.UI.WinForms.GunaAdvenceButton()
+        Me.GunaAdvenceButton17 = New Guna.UI.WinForms.GunaAdvenceButton()
+        Me.GunaAdvenceButton18 = New Guna.UI.WinForms.GunaAdvenceButton()
+        Me.GunaAdvenceButton19 = New Guna.UI.WinForms.GunaAdvenceButton()
+        Me.GunaButton4 = New Guna.UI.WinForms.GunaButton()
         Me.GunaPanel1.SuspendLayout()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GunaPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GunaElipsePanel1.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        Me.Panel4.SuspendLayout()
+        Me.Panel5.SuspendLayout()
+        Me.Panel6.SuspendLayout()
+        Me.Panel7.SuspendLayout()
         Me.SuspendLayout()
         '
         'GunaElipse1
@@ -96,6 +94,7 @@ Partial Class FrmSolicitudes
         '
         'GunaPanel1
         '
+        Me.GunaPanel1.BackColor = System.Drawing.Color.White
         Me.GunaPanel1.Controls.Add(Me.GunaVSeparator2)
         Me.GunaPanel1.Controls.Add(Me.GunaLabel1)
         Me.GunaPanel1.Controls.Add(Me.GunaPictureBox1)
@@ -105,14 +104,14 @@ Partial Class FrmSolicitudes
         Me.GunaPanel1.Controls.Add(Me.GunaImageButton1)
         Me.GunaPanel1.Location = New System.Drawing.Point(0, 0)
         Me.GunaPanel1.Name = "GunaPanel1"
-        Me.GunaPanel1.Size = New System.Drawing.Size(800, 50)
+        Me.GunaPanel1.Size = New System.Drawing.Size(662, 50)
         Me.GunaPanel1.TabIndex = 1
         '
         'GunaVSeparator2
         '
         Me.GunaVSeparator2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.GunaVSeparator2.LineColor = System.Drawing.Color.WhiteSmoke
-        Me.GunaVSeparator2.Location = New System.Drawing.Point(561, 12)
+        Me.GunaVSeparator2.Location = New System.Drawing.Point(432, 12)
         Me.GunaVSeparator2.Name = "GunaVSeparator2"
         Me.GunaVSeparator2.Size = New System.Drawing.Size(10, 25)
         Me.GunaVSeparator2.TabIndex = 6
@@ -121,20 +120,64 @@ Partial Class FrmSolicitudes
         '
         Me.GunaLabel1.AutoSize = True
         Me.GunaLabel1.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GunaLabel1.Location = New System.Drawing.Point(628, 15)
+        Me.GunaLabel1.Location = New System.Drawing.Point(499, 15)
         Me.GunaLabel1.Name = "GunaLabel1"
         Me.GunaLabel1.Size = New System.Drawing.Size(65, 20)
         Me.GunaLabel1.TabIndex = 5
         Me.GunaLabel1.Text = "Manuel"
         '
+        'GunaPictureBox1
+        '
+        Me.GunaPictureBox1.BaseColor = System.Drawing.Color.White
+        Me.GunaPictureBox1.Image = Global.Maulabs.My.Resources.Resources.icons8_verified_account_28
+        Me.GunaPictureBox1.Location = New System.Drawing.Point(458, 8)
+        Me.GunaPictureBox1.Name = "GunaPictureBox1"
+        Me.GunaPictureBox1.Size = New System.Drawing.Size(32, 32)
+        Me.GunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.GunaPictureBox1.TabIndex = 4
+        Me.GunaPictureBox1.TabStop = False
+        '
         'GunaVSeparator1
         '
         Me.GunaVSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.GunaVSeparator1.LineColor = System.Drawing.Color.WhiteSmoke
-        Me.GunaVSeparator1.Location = New System.Drawing.Point(707, 12)
+        Me.GunaVSeparator1.Location = New System.Drawing.Point(578, 12)
         Me.GunaVSeparator1.Name = "GunaVSeparator1"
         Me.GunaVSeparator1.Size = New System.Drawing.Size(10, 25)
         Me.GunaVSeparator1.TabIndex = 3
+        '
+        'btnCerrar
+        '
+        Me.btnCerrar.Image = Global.Maulabs.My.Resources.Resources.icons8_multiply_48
+        Me.btnCerrar.ImageSize = New System.Drawing.Size(16, 16)
+        Me.btnCerrar.Location = New System.Drawing.Point(627, 8)
+        Me.btnCerrar.Name = "btnCerrar"
+        Me.btnCerrar.OnHoverImage = Nothing
+        Me.btnCerrar.OnHoverImageOffset = New System.Drawing.Point(0, -1)
+        Me.btnCerrar.Size = New System.Drawing.Size(32, 32)
+        Me.btnCerrar.TabIndex = 2
+        '
+        'btnMinimizar
+        '
+        Me.btnMinimizar.Image = Global.Maulabs.My.Resources.Resources.icons8_horizontal_line_48
+        Me.btnMinimizar.ImageSize = New System.Drawing.Size(16, 16)
+        Me.btnMinimizar.Location = New System.Drawing.Point(589, 8)
+        Me.btnMinimizar.Name = "btnMinimizar"
+        Me.btnMinimizar.OnHoverImage = Nothing
+        Me.btnMinimizar.OnHoverImageOffset = New System.Drawing.Point(0, -1)
+        Me.btnMinimizar.Size = New System.Drawing.Size(32, 32)
+        Me.btnMinimizar.TabIndex = 1
+        '
+        'GunaImageButton1
+        '
+        Me.GunaImageButton1.Image = Global.Maulabs.My.Resources.Resources.icons8_menu_48
+        Me.GunaImageButton1.ImageSize = New System.Drawing.Size(16, 16)
+        Me.GunaImageButton1.Location = New System.Drawing.Point(8, 8)
+        Me.GunaImageButton1.Name = "GunaImageButton1"
+        Me.GunaImageButton1.OnHoverImage = Nothing
+        Me.GunaImageButton1.OnHoverImageOffset = New System.Drawing.Point(0, -1)
+        Me.GunaImageButton1.Size = New System.Drawing.Size(32, 32)
+        Me.GunaImageButton1.TabIndex = 0
         '
         'GunaLabel4
         '
@@ -217,18 +260,6 @@ Partial Class FrmSolicitudes
         Me.GunaSeparator2.Size = New System.Drawing.Size(738, 32)
         Me.GunaSeparator2.TabIndex = 57
         '
-        'GunaCheckBox1
-        '
-        Me.GunaCheckBox1.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox1.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox1.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox1.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox1.Location = New System.Drawing.Point(49, 221)
-        Me.GunaCheckBox1.Name = "GunaCheckBox1"
-        Me.GunaCheckBox1.Size = New System.Drawing.Size(115, 20)
-        Me.GunaCheckBox1.TabIndex = 58
-        Me.GunaCheckBox1.Text = "GunaCheckBox1"
-        '
         'GunaLabel3
         '
         Me.GunaLabel3.AutoSize = True
@@ -251,510 +282,6 @@ Partial Class FrmSolicitudes
         Me.GunaLabel6.TabIndex = 60
         Me.GunaLabel6.Text = "Fecha:"
         '
-        'GunaCheckBox2
-        '
-        Me.GunaCheckBox2.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox2.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox2.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox2.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox2.Location = New System.Drawing.Point(49, 241)
-        Me.GunaCheckBox2.Name = "GunaCheckBox2"
-        Me.GunaCheckBox2.Size = New System.Drawing.Size(115, 20)
-        Me.GunaCheckBox2.TabIndex = 61
-        Me.GunaCheckBox2.Text = "GunaCheckBox2"
-        '
-        'GunaCheckBox3
-        '
-        Me.GunaCheckBox3.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox3.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox3.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox3.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox3.Location = New System.Drawing.Point(49, 261)
-        Me.GunaCheckBox3.Name = "GunaCheckBox3"
-        Me.GunaCheckBox3.Size = New System.Drawing.Size(115, 20)
-        Me.GunaCheckBox3.TabIndex = 62
-        Me.GunaCheckBox3.Text = "GunaCheckBox3"
-        '
-        'GunaCheckBox4
-        '
-        Me.GunaCheckBox4.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox4.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox4.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox4.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox4.Location = New System.Drawing.Point(49, 301)
-        Me.GunaCheckBox4.Name = "GunaCheckBox4"
-        Me.GunaCheckBox4.Size = New System.Drawing.Size(115, 20)
-        Me.GunaCheckBox4.TabIndex = 63
-        Me.GunaCheckBox4.Text = "GunaCheckBox4"
-        '
-        'GunaCheckBox5
-        '
-        Me.GunaCheckBox5.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox5.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox5.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox5.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox5.Location = New System.Drawing.Point(49, 361)
-        Me.GunaCheckBox5.Name = "GunaCheckBox5"
-        Me.GunaCheckBox5.Size = New System.Drawing.Size(115, 20)
-        Me.GunaCheckBox5.TabIndex = 64
-        Me.GunaCheckBox5.Text = "GunaCheckBox5"
-        '
-        'GunaCheckBox6
-        '
-        Me.GunaCheckBox6.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox6.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox6.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox6.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox6.Location = New System.Drawing.Point(49, 381)
-        Me.GunaCheckBox6.Name = "GunaCheckBox6"
-        Me.GunaCheckBox6.Size = New System.Drawing.Size(115, 20)
-        Me.GunaCheckBox6.TabIndex = 65
-        Me.GunaCheckBox6.Text = "GunaCheckBox6"
-        '
-        'GunaCheckBox7
-        '
-        Me.GunaCheckBox7.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox7.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox7.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox7.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox7.Location = New System.Drawing.Point(49, 421)
-        Me.GunaCheckBox7.Name = "GunaCheckBox7"
-        Me.GunaCheckBox7.Size = New System.Drawing.Size(115, 20)
-        Me.GunaCheckBox7.TabIndex = 66
-        Me.GunaCheckBox7.Text = "GunaCheckBox7"
-        '
-        'GunaCheckBox8
-        '
-        Me.GunaCheckBox8.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox8.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox8.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox8.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox8.Location = New System.Drawing.Point(49, 481)
-        Me.GunaCheckBox8.Name = "GunaCheckBox8"
-        Me.GunaCheckBox8.Size = New System.Drawing.Size(115, 20)
-        Me.GunaCheckBox8.TabIndex = 67
-        Me.GunaCheckBox8.Text = "GunaCheckBox8"
-        '
-        'GunaCheckBox9
-        '
-        Me.GunaCheckBox9.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox9.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox9.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox9.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox9.Location = New System.Drawing.Point(49, 501)
-        Me.GunaCheckBox9.Name = "GunaCheckBox9"
-        Me.GunaCheckBox9.Size = New System.Drawing.Size(115, 20)
-        Me.GunaCheckBox9.TabIndex = 68
-        Me.GunaCheckBox9.Text = "GunaCheckBox9"
-        '
-        'GunaCheckBox10
-        '
-        Me.GunaCheckBox10.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox10.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox10.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox10.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox10.Location = New System.Drawing.Point(49, 281)
-        Me.GunaCheckBox10.Name = "GunaCheckBox10"
-        Me.GunaCheckBox10.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox10.TabIndex = 69
-        Me.GunaCheckBox10.Text = "GunaCheckBox10"
-        '
-        'GunaCheckBox11
-        '
-        Me.GunaCheckBox11.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox11.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox11.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox11.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox11.Location = New System.Drawing.Point(49, 321)
-        Me.GunaCheckBox11.Name = "GunaCheckBox11"
-        Me.GunaCheckBox11.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox11.TabIndex = 70
-        Me.GunaCheckBox11.Text = "GunaCheckBox11"
-        '
-        'GunaCheckBox12
-        '
-        Me.GunaCheckBox12.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox12.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox12.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox12.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox12.Location = New System.Drawing.Point(49, 341)
-        Me.GunaCheckBox12.Name = "GunaCheckBox12"
-        Me.GunaCheckBox12.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox12.TabIndex = 71
-        Me.GunaCheckBox12.Text = "GunaCheckBox12"
-        '
-        'GunaCheckBox13
-        '
-        Me.GunaCheckBox13.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox13.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox13.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox13.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox13.Location = New System.Drawing.Point(49, 401)
-        Me.GunaCheckBox13.Name = "GunaCheckBox13"
-        Me.GunaCheckBox13.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox13.TabIndex = 72
-        Me.GunaCheckBox13.Text = "GunaCheckBox13"
-        '
-        'GunaCheckBox14
-        '
-        Me.GunaCheckBox14.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox14.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox14.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox14.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox14.Location = New System.Drawing.Point(49, 441)
-        Me.GunaCheckBox14.Name = "GunaCheckBox14"
-        Me.GunaCheckBox14.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox14.TabIndex = 73
-        Me.GunaCheckBox14.Text = "GunaCheckBox14"
-        '
-        'GunaCheckBox15
-        '
-        Me.GunaCheckBox15.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox15.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox15.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox15.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox15.Location = New System.Drawing.Point(49, 461)
-        Me.GunaCheckBox15.Name = "GunaCheckBox15"
-        Me.GunaCheckBox15.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox15.TabIndex = 74
-        Me.GunaCheckBox15.Text = "GunaCheckBox15"
-        '
-        'GunaCheckBox16
-        '
-        Me.GunaCheckBox16.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox16.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox16.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox16.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox16.Location = New System.Drawing.Point(49, 521)
-        Me.GunaCheckBox16.Name = "GunaCheckBox16"
-        Me.GunaCheckBox16.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox16.TabIndex = 75
-        Me.GunaCheckBox16.Text = "GunaCheckBox16"
-        '
-        'GunaCheckBox17
-        '
-        Me.GunaCheckBox17.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox17.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox17.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox17.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox17.Location = New System.Drawing.Point(49, 541)
-        Me.GunaCheckBox17.Name = "GunaCheckBox17"
-        Me.GunaCheckBox17.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox17.TabIndex = 76
-        Me.GunaCheckBox17.Text = "GunaCheckBox17"
-        '
-        'GunaCheckBox18
-        '
-        Me.GunaCheckBox18.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox18.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox18.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox18.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox18.Location = New System.Drawing.Point(49, 561)
-        Me.GunaCheckBox18.Name = "GunaCheckBox18"
-        Me.GunaCheckBox18.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox18.TabIndex = 77
-        Me.GunaCheckBox18.Text = "GunaCheckBox18"
-        '
-        'GunaCheckBox19
-        '
-        Me.GunaCheckBox19.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox19.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox19.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox19.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox19.Location = New System.Drawing.Point(49, 581)
-        Me.GunaCheckBox19.Name = "GunaCheckBox19"
-        Me.GunaCheckBox19.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox19.TabIndex = 78
-        Me.GunaCheckBox19.Text = "GunaCheckBox19"
-        '
-        'GunaCheckBox20
-        '
-        Me.GunaCheckBox20.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox20.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox20.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox20.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox20.Location = New System.Drawing.Point(49, 601)
-        Me.GunaCheckBox20.Name = "GunaCheckBox20"
-        Me.GunaCheckBox20.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox20.TabIndex = 79
-        Me.GunaCheckBox20.Text = "GunaCheckBox20"
-        '
-        'GunaCheckBox21
-        '
-        Me.GunaCheckBox21.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox21.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox21.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox21.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox21.Location = New System.Drawing.Point(49, 621)
-        Me.GunaCheckBox21.Name = "GunaCheckBox21"
-        Me.GunaCheckBox21.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox21.TabIndex = 80
-        Me.GunaCheckBox21.Text = "GunaCheckBox21"
-        '
-        'GunaCheckBox22
-        '
-        Me.GunaCheckBox22.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox22.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox22.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox22.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox22.Location = New System.Drawing.Point(49, 641)
-        Me.GunaCheckBox22.Name = "GunaCheckBox22"
-        Me.GunaCheckBox22.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox22.TabIndex = 81
-        Me.GunaCheckBox22.Text = "GunaCheckBox22"
-        '
-        'GunaCheckBox23
-        '
-        Me.GunaCheckBox23.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox23.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox23.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox23.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox23.Location = New System.Drawing.Point(49, 661)
-        Me.GunaCheckBox23.Name = "GunaCheckBox23"
-        Me.GunaCheckBox23.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox23.TabIndex = 82
-        Me.GunaCheckBox23.Text = "GunaCheckBox23"
-        '
-        'GunaCheckBox24
-        '
-        Me.GunaCheckBox24.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox24.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox24.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox24.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox24.Location = New System.Drawing.Point(49, 681)
-        Me.GunaCheckBox24.Name = "GunaCheckBox24"
-        Me.GunaCheckBox24.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox24.TabIndex = 83
-        Me.GunaCheckBox24.Text = "GunaCheckBox24"
-        '
-        'GunaCheckBox25
-        '
-        Me.GunaCheckBox25.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox25.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox25.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox25.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox25.Location = New System.Drawing.Point(49, 701)
-        Me.GunaCheckBox25.Name = "GunaCheckBox25"
-        Me.GunaCheckBox25.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox25.TabIndex = 84
-        Me.GunaCheckBox25.Text = "GunaCheckBox25"
-        '
-        'GunaCheckBox26
-        '
-        Me.GunaCheckBox26.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox26.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox26.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox26.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox26.Location = New System.Drawing.Point(49, 721)
-        Me.GunaCheckBox26.Name = "GunaCheckBox26"
-        Me.GunaCheckBox26.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox26.TabIndex = 85
-        Me.GunaCheckBox26.Text = "GunaCheckBox26"
-        '
-        'GunaCheckBox27
-        '
-        Me.GunaCheckBox27.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox27.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox27.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox27.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox27.Location = New System.Drawing.Point(49, 741)
-        Me.GunaCheckBox27.Name = "GunaCheckBox27"
-        Me.GunaCheckBox27.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox27.TabIndex = 86
-        Me.GunaCheckBox27.Text = "GunaCheckBox27"
-        '
-        'GunaCheckBox28
-        '
-        Me.GunaCheckBox28.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox28.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox28.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox28.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox28.Location = New System.Drawing.Point(49, 761)
-        Me.GunaCheckBox28.Name = "GunaCheckBox28"
-        Me.GunaCheckBox28.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox28.TabIndex = 87
-        Me.GunaCheckBox28.Text = "GunaCheckBox28"
-        '
-        'GunaCheckBox29
-        '
-        Me.GunaCheckBox29.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox29.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox29.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox29.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox29.Location = New System.Drawing.Point(49, 781)
-        Me.GunaCheckBox29.Name = "GunaCheckBox29"
-        Me.GunaCheckBox29.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox29.TabIndex = 88
-        Me.GunaCheckBox29.Text = "GunaCheckBox29"
-        '
-        'GunaCheckBox30
-        '
-        Me.GunaCheckBox30.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox30.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox30.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox30.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox30.Location = New System.Drawing.Point(49, 801)
-        Me.GunaCheckBox30.Name = "GunaCheckBox30"
-        Me.GunaCheckBox30.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox30.TabIndex = 89
-        Me.GunaCheckBox30.Text = "GunaCheckBox30"
-        '
-        'GunaCheckBox31
-        '
-        Me.GunaCheckBox31.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox31.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox31.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox31.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox31.Location = New System.Drawing.Point(49, 821)
-        Me.GunaCheckBox31.Name = "GunaCheckBox31"
-        Me.GunaCheckBox31.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox31.TabIndex = 90
-        Me.GunaCheckBox31.Text = "GunaCheckBox31"
-        '
-        'GunaCheckBox32
-        '
-        Me.GunaCheckBox32.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox32.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox32.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox32.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox32.Location = New System.Drawing.Point(49, 841)
-        Me.GunaCheckBox32.Name = "GunaCheckBox32"
-        Me.GunaCheckBox32.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox32.TabIndex = 91
-        Me.GunaCheckBox32.Text = "GunaCheckBox32"
-        '
-        'GunaCheckBox33
-        '
-        Me.GunaCheckBox33.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox33.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox33.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox33.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox33.Location = New System.Drawing.Point(49, 861)
-        Me.GunaCheckBox33.Name = "GunaCheckBox33"
-        Me.GunaCheckBox33.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox33.TabIndex = 92
-        Me.GunaCheckBox33.Text = "GunaCheckBox33"
-        '
-        'GunaCheckBox34
-        '
-        Me.GunaCheckBox34.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox34.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox34.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox34.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox34.Location = New System.Drawing.Point(49, 881)
-        Me.GunaCheckBox34.Name = "GunaCheckBox34"
-        Me.GunaCheckBox34.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox34.TabIndex = 93
-        Me.GunaCheckBox34.Text = "GunaCheckBox34"
-        '
-        'GunaCheckBox35
-        '
-        Me.GunaCheckBox35.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox35.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox35.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox35.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox35.Location = New System.Drawing.Point(49, 901)
-        Me.GunaCheckBox35.Name = "GunaCheckBox35"
-        Me.GunaCheckBox35.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox35.TabIndex = 94
-        Me.GunaCheckBox35.Text = "GunaCheckBox35"
-        '
-        'GunaCheckBox36
-        '
-        Me.GunaCheckBox36.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox36.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox36.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox36.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox36.Location = New System.Drawing.Point(49, 921)
-        Me.GunaCheckBox36.Name = "GunaCheckBox36"
-        Me.GunaCheckBox36.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox36.TabIndex = 95
-        Me.GunaCheckBox36.Text = "GunaCheckBox36"
-        '
-        'GunaCheckBox37
-        '
-        Me.GunaCheckBox37.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox37.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox37.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox37.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox37.Location = New System.Drawing.Point(49, 941)
-        Me.GunaCheckBox37.Name = "GunaCheckBox37"
-        Me.GunaCheckBox37.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox37.TabIndex = 96
-        Me.GunaCheckBox37.Text = "GunaCheckBox37"
-        '
-        'GunaCheckBox38
-        '
-        Me.GunaCheckBox38.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox38.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox38.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox38.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox38.Location = New System.Drawing.Point(49, 961)
-        Me.GunaCheckBox38.Name = "GunaCheckBox38"
-        Me.GunaCheckBox38.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox38.TabIndex = 97
-        Me.GunaCheckBox38.Text = "GunaCheckBox38"
-        '
-        'GunaCheckBox39
-        '
-        Me.GunaCheckBox39.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox39.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox39.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox39.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox39.Location = New System.Drawing.Point(49, 981)
-        Me.GunaCheckBox39.Name = "GunaCheckBox39"
-        Me.GunaCheckBox39.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox39.TabIndex = 98
-        Me.GunaCheckBox39.Text = "GunaCheckBox39"
-        '
-        'GunaCheckBox40
-        '
-        Me.GunaCheckBox40.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox40.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox40.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox40.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox40.Location = New System.Drawing.Point(49, 1001)
-        Me.GunaCheckBox40.Name = "GunaCheckBox40"
-        Me.GunaCheckBox40.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox40.TabIndex = 99
-        Me.GunaCheckBox40.Text = "GunaCheckBox40"
-        '
-        'GunaCheckBox41
-        '
-        Me.GunaCheckBox41.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox41.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox41.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox41.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox41.Location = New System.Drawing.Point(49, 1021)
-        Me.GunaCheckBox41.Name = "GunaCheckBox41"
-        Me.GunaCheckBox41.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox41.TabIndex = 100
-        Me.GunaCheckBox41.Text = "GunaCheckBox41"
-        '
-        'GunaCheckBox42
-        '
-        Me.GunaCheckBox42.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox42.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox42.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox42.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox42.Location = New System.Drawing.Point(49, 1041)
-        Me.GunaCheckBox42.Name = "GunaCheckBox42"
-        Me.GunaCheckBox42.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox42.TabIndex = 101
-        Me.GunaCheckBox42.Text = "GunaCheckBox42"
-        '
-        'GunaCheckBox43
-        '
-        Me.GunaCheckBox43.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox43.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox43.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox43.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox43.Location = New System.Drawing.Point(49, 1061)
-        Me.GunaCheckBox43.Name = "GunaCheckBox43"
-        Me.GunaCheckBox43.Size = New System.Drawing.Size(122, 20)
-        Me.GunaCheckBox43.TabIndex = 102
-        Me.GunaCheckBox43.Text = "GunaCheckBox43"
-        '
         'PictureBox8
         '
         Me.PictureBox8.BackColor = System.Drawing.Color.Transparent
@@ -766,100 +293,935 @@ Partial Class FrmSolicitudes
         Me.PictureBox8.TabIndex = 52
         Me.PictureBox8.TabStop = False
         '
-        'GunaPictureBox1
+        'GunaElipsePanel1
         '
-        Me.GunaPictureBox1.BaseColor = System.Drawing.Color.White
-        Me.GunaPictureBox1.Image = Global.Maulabs.My.Resources.Resources.icons8_verified_account_28
-        Me.GunaPictureBox1.Location = New System.Drawing.Point(587, 8)
-        Me.GunaPictureBox1.Name = "GunaPictureBox1"
-        Me.GunaPictureBox1.Size = New System.Drawing.Size(32, 32)
-        Me.GunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.GunaPictureBox1.TabIndex = 4
-        Me.GunaPictureBox1.TabStop = False
+        Me.GunaElipsePanel1.BaseColor = System.Drawing.Color.White
+        Me.GunaElipsePanel1.Controls.Add(Me.Panel2)
+        Me.GunaElipsePanel1.Controls.Add(Me.Panel1)
+        Me.GunaElipsePanel1.Location = New System.Drawing.Point(12, 221)
+        Me.GunaElipsePanel1.Name = "GunaElipsePanel1"
+        Me.GunaElipsePanel1.Size = New System.Drawing.Size(630, 334)
+        Me.GunaElipsePanel1.TabIndex = 61
         '
-        'btnCerrar
+        'Panel2
         '
-        Me.btnCerrar.Image = Global.Maulabs.My.Resources.Resources.icons8_multiply_48
-        Me.btnCerrar.ImageSize = New System.Drawing.Size(16, 16)
-        Me.btnCerrar.Location = New System.Drawing.Point(756, 8)
-        Me.btnCerrar.Name = "btnCerrar"
-        Me.btnCerrar.OnHoverImage = Nothing
-        Me.btnCerrar.OnHoverImageOffset = New System.Drawing.Point(0, -1)
-        Me.btnCerrar.Size = New System.Drawing.Size(32, 32)
-        Me.btnCerrar.TabIndex = 2
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Panel2.Location = New System.Drawing.Point(315, 0)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(315, 334)
+        Me.Panel2.TabIndex = 1
         '
-        'btnMinimizar
+        'Panel1
         '
-        Me.btnMinimizar.Image = Global.Maulabs.My.Resources.Resources.icons8_horizontal_line_48
-        Me.btnMinimizar.ImageSize = New System.Drawing.Size(16, 16)
-        Me.btnMinimizar.Location = New System.Drawing.Point(718, 8)
-        Me.btnMinimizar.Name = "btnMinimizar"
-        Me.btnMinimizar.OnHoverImage = Nothing
-        Me.btnMinimizar.OnHoverImageOffset = New System.Drawing.Point(0, -1)
-        Me.btnMinimizar.Size = New System.Drawing.Size(32, 32)
-        Me.btnMinimizar.TabIndex = 1
+        Me.Panel1.Controls.Add(Me.Panel7)
+        Me.Panel1.Controls.Add(Me.Panel6)
+        Me.Panel1.Controls.Add(Me.Panel5)
+        Me.Panel1.Controls.Add(Me.Panel4)
+        Me.Panel1.Controls.Add(Me.Panel3)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(315, 334)
+        Me.Panel1.TabIndex = 0
         '
-        'GunaImageButton1
+        'Panel3
         '
-        Me.GunaImageButton1.Image = Global.Maulabs.My.Resources.Resources.icons8_menu_48
-        Me.GunaImageButton1.ImageSize = New System.Drawing.Size(16, 16)
-        Me.GunaImageButton1.Location = New System.Drawing.Point(8, 8)
-        Me.GunaImageButton1.Name = "GunaImageButton1"
-        Me.GunaImageButton1.OnHoverImage = Nothing
-        Me.GunaImageButton1.OnHoverImageOffset = New System.Drawing.Point(0, -1)
-        Me.GunaImageButton1.Size = New System.Drawing.Size(32, 32)
-        Me.GunaImageButton1.TabIndex = 0
+        Me.Panel3.Controls.Add(Me.GunaAdvenceButton3)
+        Me.Panel3.Controls.Add(Me.GunaAdvenceButton2)
+        Me.Panel3.Controls.Add(Me.GunaAdvenceButton1)
+        Me.Panel3.Controls.Add(Me.btnMenu)
+        Me.Panel3.Controls.Add(Me.btnEtiquetas)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Panel3.MaximumSize = New System.Drawing.Size(315, 251)
+        Me.Panel3.MinimumSize = New System.Drawing.Size(315, 50)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(315, 50)
+        Me.Panel3.TabIndex = 1
+        '
+        'GunaAdvenceButton3
+        '
+        Me.GunaAdvenceButton3.AnimationHoverSpeed = 0.07!
+        Me.GunaAdvenceButton3.AnimationSpeed = 0.03!
+        Me.GunaAdvenceButton3.BaseColor = System.Drawing.Color.WhiteSmoke
+        Me.GunaAdvenceButton3.BorderColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton3.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton
+        Me.GunaAdvenceButton3.CheckedBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton3.CheckedBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton3.CheckedForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton3.CheckedImage = Nothing
+        Me.GunaAdvenceButton3.CheckedLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaAdvenceButton3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.GunaAdvenceButton3.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaAdvenceButton3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaAdvenceButton3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton3.Image = Nothing
+        Me.GunaAdvenceButton3.ImageSize = New System.Drawing.Size(20, 20)
+        Me.GunaAdvenceButton3.LineBottom = 5
+        Me.GunaAdvenceButton3.LineColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton3.Location = New System.Drawing.Point(0, 201)
+        Me.GunaAdvenceButton3.Name = "GunaAdvenceButton3"
+        Me.GunaAdvenceButton3.OnHoverBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton3.OnHoverBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton3.OnHoverForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton3.OnHoverImage = Nothing
+        Me.GunaAdvenceButton3.OnHoverLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton3.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton3.Size = New System.Drawing.Size(315, 50)
+        Me.GunaAdvenceButton3.TabIndex = 5
+        Me.GunaAdvenceButton3.Text = "MENÚ PRINCIPAL"
+        Me.GunaAdvenceButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'GunaAdvenceButton2
+        '
+        Me.GunaAdvenceButton2.AnimationHoverSpeed = 0.07!
+        Me.GunaAdvenceButton2.AnimationSpeed = 0.03!
+        Me.GunaAdvenceButton2.BaseColor = System.Drawing.Color.WhiteSmoke
+        Me.GunaAdvenceButton2.BorderColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton2.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton
+        Me.GunaAdvenceButton2.CheckedBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton2.CheckedBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton2.CheckedForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton2.CheckedImage = Nothing
+        Me.GunaAdvenceButton2.CheckedLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaAdvenceButton2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.GunaAdvenceButton2.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaAdvenceButton2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaAdvenceButton2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton2.Image = Nothing
+        Me.GunaAdvenceButton2.ImageSize = New System.Drawing.Size(20, 20)
+        Me.GunaAdvenceButton2.LineBottom = 5
+        Me.GunaAdvenceButton2.LineColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton2.Location = New System.Drawing.Point(0, 151)
+        Me.GunaAdvenceButton2.Name = "GunaAdvenceButton2"
+        Me.GunaAdvenceButton2.OnHoverBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton2.OnHoverBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton2.OnHoverForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton2.OnHoverImage = Nothing
+        Me.GunaAdvenceButton2.OnHoverLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton2.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton2.Size = New System.Drawing.Size(315, 50)
+        Me.GunaAdvenceButton2.TabIndex = 4
+        Me.GunaAdvenceButton2.Text = "MENÚ PRINCIPAL"
+        Me.GunaAdvenceButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'GunaAdvenceButton1
+        '
+        Me.GunaAdvenceButton1.AnimationHoverSpeed = 0.07!
+        Me.GunaAdvenceButton1.AnimationSpeed = 0.03!
+        Me.GunaAdvenceButton1.BaseColor = System.Drawing.Color.WhiteSmoke
+        Me.GunaAdvenceButton1.BorderColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton1.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton
+        Me.GunaAdvenceButton1.CheckedBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton1.CheckedBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton1.CheckedForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton1.CheckedImage = Nothing
+        Me.GunaAdvenceButton1.CheckedLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaAdvenceButton1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.GunaAdvenceButton1.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaAdvenceButton1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaAdvenceButton1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton1.Image = Nothing
+        Me.GunaAdvenceButton1.ImageSize = New System.Drawing.Size(20, 20)
+        Me.GunaAdvenceButton1.LineBottom = 5
+        Me.GunaAdvenceButton1.LineColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton1.Location = New System.Drawing.Point(0, 101)
+        Me.GunaAdvenceButton1.Name = "GunaAdvenceButton1"
+        Me.GunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton1.OnHoverBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton1.OnHoverForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton1.OnHoverImage = Nothing
+        Me.GunaAdvenceButton1.OnHoverLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton1.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton1.Size = New System.Drawing.Size(315, 50)
+        Me.GunaAdvenceButton1.TabIndex = 3
+        Me.GunaAdvenceButton1.Text = "MENÚ PRINCIPAL"
+        Me.GunaAdvenceButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'btnMenu
+        '
+        Me.btnMenu.AnimationHoverSpeed = 0.07!
+        Me.btnMenu.AnimationSpeed = 0.03!
+        Me.btnMenu.BaseColor = System.Drawing.Color.WhiteSmoke
+        Me.btnMenu.BorderColor = System.Drawing.Color.Black
+        Me.btnMenu.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton
+        Me.btnMenu.CheckedBaseColor = System.Drawing.Color.Transparent
+        Me.btnMenu.CheckedBorderColor = System.Drawing.Color.Transparent
+        Me.btnMenu.CheckedForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.btnMenu.CheckedImage = Nothing
+        Me.btnMenu.CheckedLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMenu.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnMenu.FocusedColor = System.Drawing.Color.Empty
+        Me.btnMenu.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btnMenu.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.btnMenu.Image = Nothing
+        Me.btnMenu.ImageSize = New System.Drawing.Size(20, 20)
+        Me.btnMenu.LineBottom = 5
+        Me.btnMenu.LineColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.btnMenu.Location = New System.Drawing.Point(0, 51)
+        Me.btnMenu.Name = "btnMenu"
+        Me.btnMenu.OnHoverBaseColor = System.Drawing.Color.Transparent
+        Me.btnMenu.OnHoverBorderColor = System.Drawing.Color.Transparent
+        Me.btnMenu.OnHoverForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.btnMenu.OnHoverImage = Nothing
+        Me.btnMenu.OnHoverLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.btnMenu.OnPressedColor = System.Drawing.Color.Black
+        Me.btnMenu.Size = New System.Drawing.Size(315, 50)
+        Me.btnMenu.TabIndex = 1
+        Me.btnMenu.Text = "MENÚ PRINCIPAL"
+        Me.btnMenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'btnEtiquetas
+        '
+        Me.btnEtiquetas.AnimationHoverSpeed = 0.07!
+        Me.btnEtiquetas.AnimationSpeed = 0.03!
+        Me.btnEtiquetas.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnEtiquetas.BorderColor = System.Drawing.Color.Black
+        Me.btnEtiquetas.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnEtiquetas.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnEtiquetas.FocusedColor = System.Drawing.Color.Empty
+        Me.btnEtiquetas.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btnEtiquetas.ForeColor = System.Drawing.Color.White
+        Me.btnEtiquetas.Image = Nothing
+        Me.btnEtiquetas.ImageSize = New System.Drawing.Size(20, 20)
+        Me.btnEtiquetas.Location = New System.Drawing.Point(0, 0)
+        Me.btnEtiquetas.Name = "btnEtiquetas"
+        Me.btnEtiquetas.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.btnEtiquetas.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.btnEtiquetas.OnHoverForeColor = System.Drawing.Color.White
+        Me.btnEtiquetas.OnHoverImage = Nothing
+        Me.btnEtiquetas.OnPressedColor = System.Drawing.Color.Black
+        Me.btnEtiquetas.Radius = 3
+        Me.btnEtiquetas.Size = New System.Drawing.Size(315, 51)
+        Me.btnEtiquetas.TabIndex = 2
+        Me.btnEtiquetas.Text = "Abrir"
+        Me.btnEtiquetas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Timer1
+        '
+        Me.Timer1.Interval = 15
+        '
+        'Panel4
+        '
+        Me.Panel4.Controls.Add(Me.GunaAdvenceButton4)
+        Me.Panel4.Controls.Add(Me.GunaAdvenceButton5)
+        Me.Panel4.Controls.Add(Me.GunaAdvenceButton6)
+        Me.Panel4.Controls.Add(Me.GunaAdvenceButton7)
+        Me.Panel4.Controls.Add(Me.GunaButton1)
+        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel4.Location = New System.Drawing.Point(0, 50)
+        Me.Panel4.MaximumSize = New System.Drawing.Size(315, 251)
+        Me.Panel4.MinimumSize = New System.Drawing.Size(315, 50)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(315, 50)
+        Me.Panel4.TabIndex = 2
+        '
+        'GunaAdvenceButton4
+        '
+        Me.GunaAdvenceButton4.AnimationHoverSpeed = 0.07!
+        Me.GunaAdvenceButton4.AnimationSpeed = 0.03!
+        Me.GunaAdvenceButton4.BaseColor = System.Drawing.Color.WhiteSmoke
+        Me.GunaAdvenceButton4.BorderColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton4.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton
+        Me.GunaAdvenceButton4.CheckedBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton4.CheckedBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton4.CheckedForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton4.CheckedImage = Nothing
+        Me.GunaAdvenceButton4.CheckedLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaAdvenceButton4.Dock = System.Windows.Forms.DockStyle.Top
+        Me.GunaAdvenceButton4.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaAdvenceButton4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaAdvenceButton4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton4.Image = Nothing
+        Me.GunaAdvenceButton4.ImageSize = New System.Drawing.Size(20, 20)
+        Me.GunaAdvenceButton4.LineBottom = 5
+        Me.GunaAdvenceButton4.LineColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton4.Location = New System.Drawing.Point(0, 201)
+        Me.GunaAdvenceButton4.Name = "GunaAdvenceButton4"
+        Me.GunaAdvenceButton4.OnHoverBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton4.OnHoverBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton4.OnHoverForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton4.OnHoverImage = Nothing
+        Me.GunaAdvenceButton4.OnHoverLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton4.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton4.Size = New System.Drawing.Size(315, 50)
+        Me.GunaAdvenceButton4.TabIndex = 5
+        Me.GunaAdvenceButton4.Text = "MENÚ PRINCIPAL"
+        Me.GunaAdvenceButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'GunaAdvenceButton5
+        '
+        Me.GunaAdvenceButton5.AnimationHoverSpeed = 0.07!
+        Me.GunaAdvenceButton5.AnimationSpeed = 0.03!
+        Me.GunaAdvenceButton5.BaseColor = System.Drawing.Color.WhiteSmoke
+        Me.GunaAdvenceButton5.BorderColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton5.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton
+        Me.GunaAdvenceButton5.CheckedBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton5.CheckedBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton5.CheckedForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton5.CheckedImage = Nothing
+        Me.GunaAdvenceButton5.CheckedLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaAdvenceButton5.Dock = System.Windows.Forms.DockStyle.Top
+        Me.GunaAdvenceButton5.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaAdvenceButton5.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaAdvenceButton5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton5.Image = Nothing
+        Me.GunaAdvenceButton5.ImageSize = New System.Drawing.Size(20, 20)
+        Me.GunaAdvenceButton5.LineBottom = 5
+        Me.GunaAdvenceButton5.LineColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton5.Location = New System.Drawing.Point(0, 151)
+        Me.GunaAdvenceButton5.Name = "GunaAdvenceButton5"
+        Me.GunaAdvenceButton5.OnHoverBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton5.OnHoverBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton5.OnHoverForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton5.OnHoverImage = Nothing
+        Me.GunaAdvenceButton5.OnHoverLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton5.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton5.Size = New System.Drawing.Size(315, 50)
+        Me.GunaAdvenceButton5.TabIndex = 4
+        Me.GunaAdvenceButton5.Text = "MENÚ PRINCIPAL"
+        Me.GunaAdvenceButton5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'GunaAdvenceButton6
+        '
+        Me.GunaAdvenceButton6.AnimationHoverSpeed = 0.07!
+        Me.GunaAdvenceButton6.AnimationSpeed = 0.03!
+        Me.GunaAdvenceButton6.BaseColor = System.Drawing.Color.WhiteSmoke
+        Me.GunaAdvenceButton6.BorderColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton6.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton
+        Me.GunaAdvenceButton6.CheckedBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton6.CheckedBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton6.CheckedForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton6.CheckedImage = Nothing
+        Me.GunaAdvenceButton6.CheckedLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton6.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaAdvenceButton6.Dock = System.Windows.Forms.DockStyle.Top
+        Me.GunaAdvenceButton6.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaAdvenceButton6.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaAdvenceButton6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton6.Image = Nothing
+        Me.GunaAdvenceButton6.ImageSize = New System.Drawing.Size(20, 20)
+        Me.GunaAdvenceButton6.LineBottom = 5
+        Me.GunaAdvenceButton6.LineColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton6.Location = New System.Drawing.Point(0, 101)
+        Me.GunaAdvenceButton6.Name = "GunaAdvenceButton6"
+        Me.GunaAdvenceButton6.OnHoverBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton6.OnHoverBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton6.OnHoverForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton6.OnHoverImage = Nothing
+        Me.GunaAdvenceButton6.OnHoverLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton6.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton6.Size = New System.Drawing.Size(315, 50)
+        Me.GunaAdvenceButton6.TabIndex = 3
+        Me.GunaAdvenceButton6.Text = "MENÚ PRINCIPAL"
+        Me.GunaAdvenceButton6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'GunaAdvenceButton7
+        '
+        Me.GunaAdvenceButton7.AnimationHoverSpeed = 0.07!
+        Me.GunaAdvenceButton7.AnimationSpeed = 0.03!
+        Me.GunaAdvenceButton7.BaseColor = System.Drawing.Color.WhiteSmoke
+        Me.GunaAdvenceButton7.BorderColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton7.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton
+        Me.GunaAdvenceButton7.CheckedBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton7.CheckedBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton7.CheckedForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton7.CheckedImage = Nothing
+        Me.GunaAdvenceButton7.CheckedLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton7.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaAdvenceButton7.Dock = System.Windows.Forms.DockStyle.Top
+        Me.GunaAdvenceButton7.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaAdvenceButton7.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaAdvenceButton7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton7.Image = Nothing
+        Me.GunaAdvenceButton7.ImageSize = New System.Drawing.Size(20, 20)
+        Me.GunaAdvenceButton7.LineBottom = 5
+        Me.GunaAdvenceButton7.LineColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton7.Location = New System.Drawing.Point(0, 51)
+        Me.GunaAdvenceButton7.Name = "GunaAdvenceButton7"
+        Me.GunaAdvenceButton7.OnHoverBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton7.OnHoverBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton7.OnHoverForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton7.OnHoverImage = Nothing
+        Me.GunaAdvenceButton7.OnHoverLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton7.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton7.Size = New System.Drawing.Size(315, 50)
+        Me.GunaAdvenceButton7.TabIndex = 1
+        Me.GunaAdvenceButton7.Text = "MENÚ PRINCIPAL"
+        Me.GunaAdvenceButton7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'GunaButton1
+        '
+        Me.GunaButton1.AnimationHoverSpeed = 0.07!
+        Me.GunaButton1.AnimationSpeed = 0.03!
+        Me.GunaButton1.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.GunaButton1.BorderColor = System.Drawing.Color.Black
+        Me.GunaButton1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaButton1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.GunaButton1.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaButton1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaButton1.ForeColor = System.Drawing.Color.White
+        Me.GunaButton1.Image = Nothing
+        Me.GunaButton1.ImageSize = New System.Drawing.Size(20, 20)
+        Me.GunaButton1.Location = New System.Drawing.Point(0, 0)
+        Me.GunaButton1.Name = "GunaButton1"
+        Me.GunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.GunaButton1.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.GunaButton1.OnHoverForeColor = System.Drawing.Color.White
+        Me.GunaButton1.OnHoverImage = Nothing
+        Me.GunaButton1.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaButton1.Radius = 3
+        Me.GunaButton1.Size = New System.Drawing.Size(315, 51)
+        Me.GunaButton1.TabIndex = 2
+        Me.GunaButton1.Text = "Abrir"
+        Me.GunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Panel5
+        '
+        Me.Panel5.Controls.Add(Me.GunaAdvenceButton8)
+        Me.Panel5.Controls.Add(Me.GunaAdvenceButton9)
+        Me.Panel5.Controls.Add(Me.GunaAdvenceButton10)
+        Me.Panel5.Controls.Add(Me.GunaAdvenceButton11)
+        Me.Panel5.Controls.Add(Me.GunaButton2)
+        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel5.Location = New System.Drawing.Point(0, 100)
+        Me.Panel5.MaximumSize = New System.Drawing.Size(315, 251)
+        Me.Panel5.MinimumSize = New System.Drawing.Size(315, 50)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(315, 50)
+        Me.Panel5.TabIndex = 3
+        '
+        'GunaAdvenceButton8
+        '
+        Me.GunaAdvenceButton8.AnimationHoverSpeed = 0.07!
+        Me.GunaAdvenceButton8.AnimationSpeed = 0.03!
+        Me.GunaAdvenceButton8.BaseColor = System.Drawing.Color.WhiteSmoke
+        Me.GunaAdvenceButton8.BorderColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton8.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton
+        Me.GunaAdvenceButton8.CheckedBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton8.CheckedBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton8.CheckedForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton8.CheckedImage = Nothing
+        Me.GunaAdvenceButton8.CheckedLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton8.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaAdvenceButton8.Dock = System.Windows.Forms.DockStyle.Top
+        Me.GunaAdvenceButton8.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaAdvenceButton8.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaAdvenceButton8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton8.Image = Nothing
+        Me.GunaAdvenceButton8.ImageSize = New System.Drawing.Size(20, 20)
+        Me.GunaAdvenceButton8.LineBottom = 5
+        Me.GunaAdvenceButton8.LineColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton8.Location = New System.Drawing.Point(0, 201)
+        Me.GunaAdvenceButton8.Name = "GunaAdvenceButton8"
+        Me.GunaAdvenceButton8.OnHoverBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton8.OnHoverBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton8.OnHoverForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton8.OnHoverImage = Nothing
+        Me.GunaAdvenceButton8.OnHoverLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton8.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton8.Size = New System.Drawing.Size(315, 50)
+        Me.GunaAdvenceButton8.TabIndex = 5
+        Me.GunaAdvenceButton8.Text = "MENÚ PRINCIPAL"
+        Me.GunaAdvenceButton8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'GunaAdvenceButton9
+        '
+        Me.GunaAdvenceButton9.AnimationHoverSpeed = 0.07!
+        Me.GunaAdvenceButton9.AnimationSpeed = 0.03!
+        Me.GunaAdvenceButton9.BaseColor = System.Drawing.Color.WhiteSmoke
+        Me.GunaAdvenceButton9.BorderColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton9.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton
+        Me.GunaAdvenceButton9.CheckedBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton9.CheckedBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton9.CheckedForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton9.CheckedImage = Nothing
+        Me.GunaAdvenceButton9.CheckedLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton9.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaAdvenceButton9.Dock = System.Windows.Forms.DockStyle.Top
+        Me.GunaAdvenceButton9.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaAdvenceButton9.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaAdvenceButton9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton9.Image = Nothing
+        Me.GunaAdvenceButton9.ImageSize = New System.Drawing.Size(20, 20)
+        Me.GunaAdvenceButton9.LineBottom = 5
+        Me.GunaAdvenceButton9.LineColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton9.Location = New System.Drawing.Point(0, 151)
+        Me.GunaAdvenceButton9.Name = "GunaAdvenceButton9"
+        Me.GunaAdvenceButton9.OnHoverBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton9.OnHoverBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton9.OnHoverForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton9.OnHoverImage = Nothing
+        Me.GunaAdvenceButton9.OnHoverLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton9.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton9.Size = New System.Drawing.Size(315, 50)
+        Me.GunaAdvenceButton9.TabIndex = 4
+        Me.GunaAdvenceButton9.Text = "MENÚ PRINCIPAL"
+        Me.GunaAdvenceButton9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'GunaAdvenceButton10
+        '
+        Me.GunaAdvenceButton10.AnimationHoverSpeed = 0.07!
+        Me.GunaAdvenceButton10.AnimationSpeed = 0.03!
+        Me.GunaAdvenceButton10.BaseColor = System.Drawing.Color.WhiteSmoke
+        Me.GunaAdvenceButton10.BorderColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton10.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton
+        Me.GunaAdvenceButton10.CheckedBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton10.CheckedBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton10.CheckedForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton10.CheckedImage = Nothing
+        Me.GunaAdvenceButton10.CheckedLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton10.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaAdvenceButton10.Dock = System.Windows.Forms.DockStyle.Top
+        Me.GunaAdvenceButton10.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaAdvenceButton10.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaAdvenceButton10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton10.Image = Nothing
+        Me.GunaAdvenceButton10.ImageSize = New System.Drawing.Size(20, 20)
+        Me.GunaAdvenceButton10.LineBottom = 5
+        Me.GunaAdvenceButton10.LineColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton10.Location = New System.Drawing.Point(0, 101)
+        Me.GunaAdvenceButton10.Name = "GunaAdvenceButton10"
+        Me.GunaAdvenceButton10.OnHoverBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton10.OnHoverBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton10.OnHoverForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton10.OnHoverImage = Nothing
+        Me.GunaAdvenceButton10.OnHoverLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton10.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton10.Size = New System.Drawing.Size(315, 50)
+        Me.GunaAdvenceButton10.TabIndex = 3
+        Me.GunaAdvenceButton10.Text = "MENÚ PRINCIPAL"
+        Me.GunaAdvenceButton10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'GunaAdvenceButton11
+        '
+        Me.GunaAdvenceButton11.AnimationHoverSpeed = 0.07!
+        Me.GunaAdvenceButton11.AnimationSpeed = 0.03!
+        Me.GunaAdvenceButton11.BaseColor = System.Drawing.Color.WhiteSmoke
+        Me.GunaAdvenceButton11.BorderColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton11.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton
+        Me.GunaAdvenceButton11.CheckedBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton11.CheckedBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton11.CheckedForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton11.CheckedImage = Nothing
+        Me.GunaAdvenceButton11.CheckedLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton11.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaAdvenceButton11.Dock = System.Windows.Forms.DockStyle.Top
+        Me.GunaAdvenceButton11.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaAdvenceButton11.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaAdvenceButton11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton11.Image = Nothing
+        Me.GunaAdvenceButton11.ImageSize = New System.Drawing.Size(20, 20)
+        Me.GunaAdvenceButton11.LineBottom = 5
+        Me.GunaAdvenceButton11.LineColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton11.Location = New System.Drawing.Point(0, 51)
+        Me.GunaAdvenceButton11.Name = "GunaAdvenceButton11"
+        Me.GunaAdvenceButton11.OnHoverBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton11.OnHoverBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton11.OnHoverForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton11.OnHoverImage = Nothing
+        Me.GunaAdvenceButton11.OnHoverLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton11.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton11.Size = New System.Drawing.Size(315, 50)
+        Me.GunaAdvenceButton11.TabIndex = 1
+        Me.GunaAdvenceButton11.Text = "MENÚ PRINCIPAL"
+        Me.GunaAdvenceButton11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'GunaButton2
+        '
+        Me.GunaButton2.AnimationHoverSpeed = 0.07!
+        Me.GunaButton2.AnimationSpeed = 0.03!
+        Me.GunaButton2.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.GunaButton2.BorderColor = System.Drawing.Color.Black
+        Me.GunaButton2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaButton2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.GunaButton2.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaButton2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaButton2.ForeColor = System.Drawing.Color.White
+        Me.GunaButton2.Image = Nothing
+        Me.GunaButton2.ImageSize = New System.Drawing.Size(20, 20)
+        Me.GunaButton2.Location = New System.Drawing.Point(0, 0)
+        Me.GunaButton2.Name = "GunaButton2"
+        Me.GunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.GunaButton2.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.GunaButton2.OnHoverForeColor = System.Drawing.Color.White
+        Me.GunaButton2.OnHoverImage = Nothing
+        Me.GunaButton2.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaButton2.Radius = 3
+        Me.GunaButton2.Size = New System.Drawing.Size(315, 51)
+        Me.GunaButton2.TabIndex = 2
+        Me.GunaButton2.Text = "Abrir"
+        Me.GunaButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Panel6
+        '
+        Me.Panel6.Controls.Add(Me.GunaAdvenceButton12)
+        Me.Panel6.Controls.Add(Me.GunaAdvenceButton13)
+        Me.Panel6.Controls.Add(Me.GunaAdvenceButton14)
+        Me.Panel6.Controls.Add(Me.GunaAdvenceButton15)
+        Me.Panel6.Controls.Add(Me.GunaButton3)
+        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel6.Location = New System.Drawing.Point(0, 150)
+        Me.Panel6.MaximumSize = New System.Drawing.Size(315, 251)
+        Me.Panel6.MinimumSize = New System.Drawing.Size(315, 50)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(315, 50)
+        Me.Panel6.TabIndex = 4
+        '
+        'GunaAdvenceButton12
+        '
+        Me.GunaAdvenceButton12.AnimationHoverSpeed = 0.07!
+        Me.GunaAdvenceButton12.AnimationSpeed = 0.03!
+        Me.GunaAdvenceButton12.BaseColor = System.Drawing.Color.WhiteSmoke
+        Me.GunaAdvenceButton12.BorderColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton12.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton
+        Me.GunaAdvenceButton12.CheckedBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton12.CheckedBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton12.CheckedForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton12.CheckedImage = Nothing
+        Me.GunaAdvenceButton12.CheckedLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton12.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaAdvenceButton12.Dock = System.Windows.Forms.DockStyle.Top
+        Me.GunaAdvenceButton12.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaAdvenceButton12.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaAdvenceButton12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton12.Image = Nothing
+        Me.GunaAdvenceButton12.ImageSize = New System.Drawing.Size(20, 20)
+        Me.GunaAdvenceButton12.LineBottom = 5
+        Me.GunaAdvenceButton12.LineColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton12.Location = New System.Drawing.Point(0, 201)
+        Me.GunaAdvenceButton12.Name = "GunaAdvenceButton12"
+        Me.GunaAdvenceButton12.OnHoverBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton12.OnHoverBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton12.OnHoverForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton12.OnHoverImage = Nothing
+        Me.GunaAdvenceButton12.OnHoverLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton12.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton12.Size = New System.Drawing.Size(315, 50)
+        Me.GunaAdvenceButton12.TabIndex = 5
+        Me.GunaAdvenceButton12.Text = "MENÚ PRINCIPAL"
+        Me.GunaAdvenceButton12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'GunaAdvenceButton13
+        '
+        Me.GunaAdvenceButton13.AnimationHoverSpeed = 0.07!
+        Me.GunaAdvenceButton13.AnimationSpeed = 0.03!
+        Me.GunaAdvenceButton13.BaseColor = System.Drawing.Color.WhiteSmoke
+        Me.GunaAdvenceButton13.BorderColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton13.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton
+        Me.GunaAdvenceButton13.CheckedBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton13.CheckedBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton13.CheckedForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton13.CheckedImage = Nothing
+        Me.GunaAdvenceButton13.CheckedLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton13.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaAdvenceButton13.Dock = System.Windows.Forms.DockStyle.Top
+        Me.GunaAdvenceButton13.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaAdvenceButton13.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaAdvenceButton13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton13.Image = Nothing
+        Me.GunaAdvenceButton13.ImageSize = New System.Drawing.Size(20, 20)
+        Me.GunaAdvenceButton13.LineBottom = 5
+        Me.GunaAdvenceButton13.LineColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton13.Location = New System.Drawing.Point(0, 151)
+        Me.GunaAdvenceButton13.Name = "GunaAdvenceButton13"
+        Me.GunaAdvenceButton13.OnHoverBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton13.OnHoverBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton13.OnHoverForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton13.OnHoverImage = Nothing
+        Me.GunaAdvenceButton13.OnHoverLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton13.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton13.Size = New System.Drawing.Size(315, 50)
+        Me.GunaAdvenceButton13.TabIndex = 4
+        Me.GunaAdvenceButton13.Text = "MENÚ PRINCIPAL"
+        Me.GunaAdvenceButton13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'GunaAdvenceButton14
+        '
+        Me.GunaAdvenceButton14.AnimationHoverSpeed = 0.07!
+        Me.GunaAdvenceButton14.AnimationSpeed = 0.03!
+        Me.GunaAdvenceButton14.BaseColor = System.Drawing.Color.WhiteSmoke
+        Me.GunaAdvenceButton14.BorderColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton14.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton
+        Me.GunaAdvenceButton14.CheckedBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton14.CheckedBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton14.CheckedForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton14.CheckedImage = Nothing
+        Me.GunaAdvenceButton14.CheckedLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton14.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaAdvenceButton14.Dock = System.Windows.Forms.DockStyle.Top
+        Me.GunaAdvenceButton14.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaAdvenceButton14.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaAdvenceButton14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton14.Image = Nothing
+        Me.GunaAdvenceButton14.ImageSize = New System.Drawing.Size(20, 20)
+        Me.GunaAdvenceButton14.LineBottom = 5
+        Me.GunaAdvenceButton14.LineColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton14.Location = New System.Drawing.Point(0, 101)
+        Me.GunaAdvenceButton14.Name = "GunaAdvenceButton14"
+        Me.GunaAdvenceButton14.OnHoverBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton14.OnHoverBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton14.OnHoverForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton14.OnHoverImage = Nothing
+        Me.GunaAdvenceButton14.OnHoverLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton14.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton14.Size = New System.Drawing.Size(315, 50)
+        Me.GunaAdvenceButton14.TabIndex = 3
+        Me.GunaAdvenceButton14.Text = "MENÚ PRINCIPAL"
+        Me.GunaAdvenceButton14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'GunaAdvenceButton15
+        '
+        Me.GunaAdvenceButton15.AnimationHoverSpeed = 0.07!
+        Me.GunaAdvenceButton15.AnimationSpeed = 0.03!
+        Me.GunaAdvenceButton15.BaseColor = System.Drawing.Color.WhiteSmoke
+        Me.GunaAdvenceButton15.BorderColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton15.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton
+        Me.GunaAdvenceButton15.CheckedBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton15.CheckedBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton15.CheckedForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton15.CheckedImage = Nothing
+        Me.GunaAdvenceButton15.CheckedLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton15.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaAdvenceButton15.Dock = System.Windows.Forms.DockStyle.Top
+        Me.GunaAdvenceButton15.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaAdvenceButton15.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaAdvenceButton15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton15.Image = Nothing
+        Me.GunaAdvenceButton15.ImageSize = New System.Drawing.Size(20, 20)
+        Me.GunaAdvenceButton15.LineBottom = 5
+        Me.GunaAdvenceButton15.LineColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton15.Location = New System.Drawing.Point(0, 51)
+        Me.GunaAdvenceButton15.Name = "GunaAdvenceButton15"
+        Me.GunaAdvenceButton15.OnHoverBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton15.OnHoverBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton15.OnHoverForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton15.OnHoverImage = Nothing
+        Me.GunaAdvenceButton15.OnHoverLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton15.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton15.Size = New System.Drawing.Size(315, 50)
+        Me.GunaAdvenceButton15.TabIndex = 1
+        Me.GunaAdvenceButton15.Text = "MENÚ PRINCIPAL"
+        Me.GunaAdvenceButton15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'GunaButton3
+        '
+        Me.GunaButton3.AnimationHoverSpeed = 0.07!
+        Me.GunaButton3.AnimationSpeed = 0.03!
+        Me.GunaButton3.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.GunaButton3.BorderColor = System.Drawing.Color.Black
+        Me.GunaButton3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaButton3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.GunaButton3.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaButton3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaButton3.ForeColor = System.Drawing.Color.White
+        Me.GunaButton3.Image = Nothing
+        Me.GunaButton3.ImageSize = New System.Drawing.Size(20, 20)
+        Me.GunaButton3.Location = New System.Drawing.Point(0, 0)
+        Me.GunaButton3.Name = "GunaButton3"
+        Me.GunaButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.GunaButton3.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.GunaButton3.OnHoverForeColor = System.Drawing.Color.White
+        Me.GunaButton3.OnHoverImage = Nothing
+        Me.GunaButton3.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaButton3.Radius = 3
+        Me.GunaButton3.Size = New System.Drawing.Size(315, 51)
+        Me.GunaButton3.TabIndex = 2
+        Me.GunaButton3.Text = "Abrir"
+        Me.GunaButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Panel7
+        '
+        Me.Panel7.Controls.Add(Me.GunaAdvenceButton16)
+        Me.Panel7.Controls.Add(Me.GunaAdvenceButton17)
+        Me.Panel7.Controls.Add(Me.GunaAdvenceButton18)
+        Me.Panel7.Controls.Add(Me.GunaAdvenceButton19)
+        Me.Panel7.Controls.Add(Me.GunaButton4)
+        Me.Panel7.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel7.Location = New System.Drawing.Point(0, 200)
+        Me.Panel7.MaximumSize = New System.Drawing.Size(315, 251)
+        Me.Panel7.MinimumSize = New System.Drawing.Size(315, 50)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(315, 50)
+        Me.Panel7.TabIndex = 5
+        '
+        'GunaAdvenceButton16
+        '
+        Me.GunaAdvenceButton16.AnimationHoverSpeed = 0.07!
+        Me.GunaAdvenceButton16.AnimationSpeed = 0.03!
+        Me.GunaAdvenceButton16.BaseColor = System.Drawing.Color.WhiteSmoke
+        Me.GunaAdvenceButton16.BorderColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton16.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton
+        Me.GunaAdvenceButton16.CheckedBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton16.CheckedBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton16.CheckedForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton16.CheckedImage = Nothing
+        Me.GunaAdvenceButton16.CheckedLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton16.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaAdvenceButton16.Dock = System.Windows.Forms.DockStyle.Top
+        Me.GunaAdvenceButton16.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaAdvenceButton16.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaAdvenceButton16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton16.Image = Nothing
+        Me.GunaAdvenceButton16.ImageSize = New System.Drawing.Size(20, 20)
+        Me.GunaAdvenceButton16.LineBottom = 5
+        Me.GunaAdvenceButton16.LineColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton16.Location = New System.Drawing.Point(0, 201)
+        Me.GunaAdvenceButton16.Name = "GunaAdvenceButton16"
+        Me.GunaAdvenceButton16.OnHoverBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton16.OnHoverBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton16.OnHoverForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton16.OnHoverImage = Nothing
+        Me.GunaAdvenceButton16.OnHoverLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton16.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton16.Size = New System.Drawing.Size(315, 50)
+        Me.GunaAdvenceButton16.TabIndex = 5
+        Me.GunaAdvenceButton16.Text = "MENÚ PRINCIPAL"
+        Me.GunaAdvenceButton16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'GunaAdvenceButton17
+        '
+        Me.GunaAdvenceButton17.AnimationHoverSpeed = 0.07!
+        Me.GunaAdvenceButton17.AnimationSpeed = 0.03!
+        Me.GunaAdvenceButton17.BaseColor = System.Drawing.Color.WhiteSmoke
+        Me.GunaAdvenceButton17.BorderColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton17.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton
+        Me.GunaAdvenceButton17.CheckedBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton17.CheckedBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton17.CheckedForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton17.CheckedImage = Nothing
+        Me.GunaAdvenceButton17.CheckedLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton17.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaAdvenceButton17.Dock = System.Windows.Forms.DockStyle.Top
+        Me.GunaAdvenceButton17.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaAdvenceButton17.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaAdvenceButton17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton17.Image = Nothing
+        Me.GunaAdvenceButton17.ImageSize = New System.Drawing.Size(20, 20)
+        Me.GunaAdvenceButton17.LineBottom = 5
+        Me.GunaAdvenceButton17.LineColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton17.Location = New System.Drawing.Point(0, 151)
+        Me.GunaAdvenceButton17.Name = "GunaAdvenceButton17"
+        Me.GunaAdvenceButton17.OnHoverBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton17.OnHoverBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton17.OnHoverForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton17.OnHoverImage = Nothing
+        Me.GunaAdvenceButton17.OnHoverLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton17.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton17.Size = New System.Drawing.Size(315, 50)
+        Me.GunaAdvenceButton17.TabIndex = 4
+        Me.GunaAdvenceButton17.Text = "MENÚ PRINCIPAL"
+        Me.GunaAdvenceButton17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'GunaAdvenceButton18
+        '
+        Me.GunaAdvenceButton18.AnimationHoverSpeed = 0.07!
+        Me.GunaAdvenceButton18.AnimationSpeed = 0.03!
+        Me.GunaAdvenceButton18.BaseColor = System.Drawing.Color.WhiteSmoke
+        Me.GunaAdvenceButton18.BorderColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton18.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton
+        Me.GunaAdvenceButton18.CheckedBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton18.CheckedBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton18.CheckedForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton18.CheckedImage = Nothing
+        Me.GunaAdvenceButton18.CheckedLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton18.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaAdvenceButton18.Dock = System.Windows.Forms.DockStyle.Top
+        Me.GunaAdvenceButton18.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaAdvenceButton18.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaAdvenceButton18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton18.Image = Nothing
+        Me.GunaAdvenceButton18.ImageSize = New System.Drawing.Size(20, 20)
+        Me.GunaAdvenceButton18.LineBottom = 5
+        Me.GunaAdvenceButton18.LineColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton18.Location = New System.Drawing.Point(0, 101)
+        Me.GunaAdvenceButton18.Name = "GunaAdvenceButton18"
+        Me.GunaAdvenceButton18.OnHoverBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton18.OnHoverBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton18.OnHoverForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton18.OnHoverImage = Nothing
+        Me.GunaAdvenceButton18.OnHoverLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton18.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton18.Size = New System.Drawing.Size(315, 50)
+        Me.GunaAdvenceButton18.TabIndex = 3
+        Me.GunaAdvenceButton18.Text = "MENÚ PRINCIPAL"
+        Me.GunaAdvenceButton18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'GunaAdvenceButton19
+        '
+        Me.GunaAdvenceButton19.AnimationHoverSpeed = 0.07!
+        Me.GunaAdvenceButton19.AnimationSpeed = 0.03!
+        Me.GunaAdvenceButton19.BaseColor = System.Drawing.Color.WhiteSmoke
+        Me.GunaAdvenceButton19.BorderColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton19.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton
+        Me.GunaAdvenceButton19.CheckedBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton19.CheckedBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton19.CheckedForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton19.CheckedImage = Nothing
+        Me.GunaAdvenceButton19.CheckedLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton19.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaAdvenceButton19.Dock = System.Windows.Forms.DockStyle.Top
+        Me.GunaAdvenceButton19.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaAdvenceButton19.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaAdvenceButton19.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton19.Image = Nothing
+        Me.GunaAdvenceButton19.ImageSize = New System.Drawing.Size(20, 20)
+        Me.GunaAdvenceButton19.LineBottom = 5
+        Me.GunaAdvenceButton19.LineColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.GunaAdvenceButton19.Location = New System.Drawing.Point(0, 51)
+        Me.GunaAdvenceButton19.Name = "GunaAdvenceButton19"
+        Me.GunaAdvenceButton19.OnHoverBaseColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton19.OnHoverBorderColor = System.Drawing.Color.Transparent
+        Me.GunaAdvenceButton19.OnHoverForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton19.OnHoverImage = Nothing
+        Me.GunaAdvenceButton19.OnHoverLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.GunaAdvenceButton19.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaAdvenceButton19.Size = New System.Drawing.Size(315, 50)
+        Me.GunaAdvenceButton19.TabIndex = 1
+        Me.GunaAdvenceButton19.Text = "MENÚ PRINCIPAL"
+        Me.GunaAdvenceButton19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'GunaButton4
+        '
+        Me.GunaButton4.AnimationHoverSpeed = 0.07!
+        Me.GunaButton4.AnimationSpeed = 0.03!
+        Me.GunaButton4.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.GunaButton4.BorderColor = System.Drawing.Color.Black
+        Me.GunaButton4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaButton4.Dock = System.Windows.Forms.DockStyle.Top
+        Me.GunaButton4.FocusedColor = System.Drawing.Color.Empty
+        Me.GunaButton4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GunaButton4.ForeColor = System.Drawing.Color.White
+        Me.GunaButton4.Image = Nothing
+        Me.GunaButton4.ImageSize = New System.Drawing.Size(20, 20)
+        Me.GunaButton4.Location = New System.Drawing.Point(0, 0)
+        Me.GunaButton4.Name = "GunaButton4"
+        Me.GunaButton4.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.GunaButton4.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.GunaButton4.OnHoverForeColor = System.Drawing.Color.White
+        Me.GunaButton4.OnHoverImage = Nothing
+        Me.GunaButton4.OnPressedColor = System.Drawing.Color.Black
+        Me.GunaButton4.Radius = 3
+        Me.GunaButton4.Size = New System.Drawing.Size(315, 51)
+        Me.GunaButton4.TabIndex = 2
+        Me.GunaButton4.Text = "Abrir"
+        Me.GunaButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'FrmSolicitudes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(797, 1121)
-        Me.Controls.Add(Me.GunaCheckBox43)
-        Me.Controls.Add(Me.GunaCheckBox42)
-        Me.Controls.Add(Me.GunaCheckBox41)
-        Me.Controls.Add(Me.GunaCheckBox40)
-        Me.Controls.Add(Me.GunaCheckBox39)
-        Me.Controls.Add(Me.GunaCheckBox38)
-        Me.Controls.Add(Me.GunaCheckBox37)
-        Me.Controls.Add(Me.GunaCheckBox36)
-        Me.Controls.Add(Me.GunaCheckBox35)
-        Me.Controls.Add(Me.GunaCheckBox34)
-        Me.Controls.Add(Me.GunaCheckBox33)
-        Me.Controls.Add(Me.GunaCheckBox32)
-        Me.Controls.Add(Me.GunaCheckBox31)
-        Me.Controls.Add(Me.GunaCheckBox30)
-        Me.Controls.Add(Me.GunaCheckBox29)
-        Me.Controls.Add(Me.GunaCheckBox28)
-        Me.Controls.Add(Me.GunaCheckBox27)
-        Me.Controls.Add(Me.GunaCheckBox26)
-        Me.Controls.Add(Me.GunaCheckBox25)
-        Me.Controls.Add(Me.GunaCheckBox24)
-        Me.Controls.Add(Me.GunaCheckBox23)
-        Me.Controls.Add(Me.GunaCheckBox22)
-        Me.Controls.Add(Me.GunaCheckBox21)
-        Me.Controls.Add(Me.GunaCheckBox20)
-        Me.Controls.Add(Me.GunaCheckBox19)
-        Me.Controls.Add(Me.GunaCheckBox18)
-        Me.Controls.Add(Me.GunaCheckBox17)
-        Me.Controls.Add(Me.GunaCheckBox16)
-        Me.Controls.Add(Me.GunaCheckBox15)
-        Me.Controls.Add(Me.GunaCheckBox14)
-        Me.Controls.Add(Me.GunaCheckBox13)
-        Me.Controls.Add(Me.GunaCheckBox12)
-        Me.Controls.Add(Me.GunaCheckBox11)
-        Me.Controls.Add(Me.GunaCheckBox10)
-        Me.Controls.Add(Me.GunaCheckBox9)
-        Me.Controls.Add(Me.GunaCheckBox8)
-        Me.Controls.Add(Me.GunaCheckBox7)
-        Me.Controls.Add(Me.GunaCheckBox6)
-        Me.Controls.Add(Me.GunaCheckBox5)
-        Me.Controls.Add(Me.GunaCheckBox4)
-        Me.Controls.Add(Me.GunaCheckBox3)
-        Me.Controls.Add(Me.GunaCheckBox2)
+        Me.BackColor = System.Drawing.Color.White
+        Me.ClientSize = New System.Drawing.Size(666, 589)
+        Me.Controls.Add(Me.GunaElipsePanel1)
         Me.Controls.Add(Me.GunaLabel6)
         Me.Controls.Add(Me.GunaLabel3)
-        Me.Controls.Add(Me.GunaCheckBox1)
         Me.Controls.Add(Me.GunaSeparator2)
         Me.Controls.Add(Me.GunaTextBox2)
         Me.Controls.Add(Me.GunaTextBox1)
@@ -874,8 +1236,15 @@ Partial Class FrmSolicitudes
         Me.Text = "FrmSolicitudes"
         Me.GunaPanel1.ResumeLayout(False)
         Me.GunaPanel1.PerformLayout()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GunaPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GunaElipsePanel1.ResumeLayout(False)
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel6.ResumeLayout(False)
+        Me.Panel7.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -895,52 +1264,43 @@ Partial Class FrmSolicitudes
     Friend WithEvents PictureBox8 As PictureBox
     Friend WithEvents GunaLabel2 As Guna.UI.WinForms.GunaLabel
     Friend WithEvents GunaSeparator1 As Guna.UI.WinForms.GunaSeparator
-    Friend WithEvents GunaCheckBox43 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox42 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox41 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox40 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox39 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox38 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox37 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox36 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox35 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox34 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox33 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox32 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox31 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox30 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox29 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox28 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox27 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox26 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox25 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox24 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox23 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox22 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox21 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox20 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox19 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox18 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox17 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox16 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox15 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox14 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox13 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox12 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox11 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox10 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox9 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox8 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox7 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox6 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox5 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox4 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox3 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox2 As Guna.UI.WinForms.GunaCheckBox
     Friend WithEvents GunaLabel6 As Guna.UI.WinForms.GunaLabel
     Friend WithEvents GunaLabel3 As Guna.UI.WinForms.GunaLabel
-    Friend WithEvents GunaCheckBox1 As Guna.UI.WinForms.GunaCheckBox
     Friend WithEvents GunaSeparator2 As Guna.UI.WinForms.GunaSeparator
     Friend WithEvents GunaTextBox2 As Guna.UI.WinForms.GunaTextBox
     Friend WithEvents GunaTextBox1 As Guna.UI.WinForms.GunaTextBox
+    Friend WithEvents GunaElipsePanel1 As Guna.UI.WinForms.GunaElipsePanel
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Timer1 As Timer
+    Friend WithEvents btnMenu As Guna.UI.WinForms.GunaAdvenceButton
+    Friend WithEvents btnEtiquetas As Guna.UI.WinForms.GunaButton
+    Friend WithEvents GunaAdvenceButton3 As Guna.UI.WinForms.GunaAdvenceButton
+    Friend WithEvents GunaAdvenceButton2 As Guna.UI.WinForms.GunaAdvenceButton
+    Friend WithEvents GunaAdvenceButton1 As Guna.UI.WinForms.GunaAdvenceButton
+    Friend WithEvents Panel7 As Panel
+    Friend WithEvents GunaAdvenceButton16 As Guna.UI.WinForms.GunaAdvenceButton
+    Friend WithEvents GunaAdvenceButton17 As Guna.UI.WinForms.GunaAdvenceButton
+    Friend WithEvents GunaAdvenceButton18 As Guna.UI.WinForms.GunaAdvenceButton
+    Friend WithEvents GunaAdvenceButton19 As Guna.UI.WinForms.GunaAdvenceButton
+    Friend WithEvents GunaButton4 As Guna.UI.WinForms.GunaButton
+    Friend WithEvents Panel6 As Panel
+    Friend WithEvents GunaAdvenceButton12 As Guna.UI.WinForms.GunaAdvenceButton
+    Friend WithEvents GunaAdvenceButton13 As Guna.UI.WinForms.GunaAdvenceButton
+    Friend WithEvents GunaAdvenceButton14 As Guna.UI.WinForms.GunaAdvenceButton
+    Friend WithEvents GunaAdvenceButton15 As Guna.UI.WinForms.GunaAdvenceButton
+    Friend WithEvents GunaButton3 As Guna.UI.WinForms.GunaButton
+    Friend WithEvents Panel5 As Panel
+    Friend WithEvents GunaAdvenceButton8 As Guna.UI.WinForms.GunaAdvenceButton
+    Friend WithEvents GunaAdvenceButton9 As Guna.UI.WinForms.GunaAdvenceButton
+    Friend WithEvents GunaAdvenceButton10 As Guna.UI.WinForms.GunaAdvenceButton
+    Friend WithEvents GunaAdvenceButton11 As Guna.UI.WinForms.GunaAdvenceButton
+    Friend WithEvents GunaButton2 As Guna.UI.WinForms.GunaButton
+    Friend WithEvents Panel4 As Panel
+    Friend WithEvents GunaAdvenceButton4 As Guna.UI.WinForms.GunaAdvenceButton
+    Friend WithEvents GunaAdvenceButton5 As Guna.UI.WinForms.GunaAdvenceButton
+    Friend WithEvents GunaAdvenceButton6 As Guna.UI.WinForms.GunaAdvenceButton
+    Friend WithEvents GunaAdvenceButton7 As Guna.UI.WinForms.GunaAdvenceButton
+    Friend WithEvents GunaButton1 As Guna.UI.WinForms.GunaButton
 End Class

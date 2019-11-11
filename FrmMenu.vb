@@ -6,4 +6,9 @@
         Guna.UI.Lib.GraphicsHelper.DrawLineShadow(GunaPanel3, Color.Black, 20, 10, Guna.UI.WinForms.VerHorAlign.HoriziontalTop)
 
     End Sub
+
+    Private Sub GunaAdvenceButton3_Click(sender As Object, e As EventArgs) Handles GunaAdvenceButton3.Click
+        Panel1.BringToFront()
+        GunaTransition1.Hide(Panel1)
+    End Sub
 End Class

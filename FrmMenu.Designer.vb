@@ -23,6 +23,8 @@ Partial Class FrmHome
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim Animation1 As Guna.UI.Animation.Animation = New Guna.UI.Animation.Animation()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmHome))
         Me.GunaPanel1 = New Guna.UI.WinForms.GunaPanel()
         Me.GunaVSeparator2 = New Guna.UI.WinForms.GunaVSeparator()
         Me.GunaLabel1 = New Guna.UI.WinForms.GunaLabel()
@@ -113,6 +115,10 @@ Partial Class FrmHome
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.GunaCirclePictureBox5 = New Guna.UI.WinForms.GunaCirclePictureBox()
         Me.GunaElipse1 = New Guna.UI.WinForms.GunaElipse(Me.components)
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.GunaTransition1 = New Guna.UI.WinForms.GunaTransition(Me.components)
+        Me.GunaDragControl1 = New Guna.UI.WinForms.GunaDragControl(Me.components)
+        Me.GunaDragControl2 = New Guna.UI.WinForms.GunaDragControl(Me.components)
         Me.GunaPanel1.SuspendLayout()
         CType(Me.GunaPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GunaPanel2.SuspendLayout()
@@ -167,6 +173,7 @@ Partial Class FrmHome
         Me.GunaPanel1.Controls.Add(Me.btnCerrar)
         Me.GunaPanel1.Controls.Add(Me.btnMinimizar)
         Me.GunaPanel1.Controls.Add(Me.GunaImageButton1)
+        Me.GunaTransition1.SetDecoration(Me.GunaPanel1, Guna.UI.Animation.DecorationType.None)
         Me.GunaPanel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.GunaPanel1.Location = New System.Drawing.Point(0, 0)
         Me.GunaPanel1.Name = "GunaPanel1"
@@ -176,6 +183,7 @@ Partial Class FrmHome
         'GunaVSeparator2
         '
         Me.GunaVSeparator2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.GunaTransition1.SetDecoration(Me.GunaVSeparator2, Guna.UI.Animation.DecorationType.None)
         Me.GunaVSeparator2.LineColor = System.Drawing.Color.WhiteSmoke
         Me.GunaVSeparator2.Location = New System.Drawing.Point(561, 12)
         Me.GunaVSeparator2.Name = "GunaVSeparator2"
@@ -185,6 +193,7 @@ Partial Class FrmHome
         'GunaLabel1
         '
         Me.GunaLabel1.AutoSize = True
+        Me.GunaTransition1.SetDecoration(Me.GunaLabel1, Guna.UI.Animation.DecorationType.None)
         Me.GunaLabel1.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GunaLabel1.Location = New System.Drawing.Point(628, 15)
         Me.GunaLabel1.Name = "GunaLabel1"
@@ -195,6 +204,7 @@ Partial Class FrmHome
         'GunaPictureBox1
         '
         Me.GunaPictureBox1.BaseColor = System.Drawing.Color.White
+        Me.GunaTransition1.SetDecoration(Me.GunaPictureBox1, Guna.UI.Animation.DecorationType.None)
         Me.GunaPictureBox1.Image = Global.Maulabs.My.Resources.Resources.icons8_verified_account_28
         Me.GunaPictureBox1.Location = New System.Drawing.Point(587, 8)
         Me.GunaPictureBox1.Name = "GunaPictureBox1"
@@ -206,6 +216,7 @@ Partial Class FrmHome
         'GunaVSeparator1
         '
         Me.GunaVSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.GunaTransition1.SetDecoration(Me.GunaVSeparator1, Guna.UI.Animation.DecorationType.None)
         Me.GunaVSeparator1.LineColor = System.Drawing.Color.WhiteSmoke
         Me.GunaVSeparator1.Location = New System.Drawing.Point(707, 12)
         Me.GunaVSeparator1.Name = "GunaVSeparator1"
@@ -214,6 +225,7 @@ Partial Class FrmHome
         '
         'btnCerrar
         '
+        Me.GunaTransition1.SetDecoration(Me.btnCerrar, Guna.UI.Animation.DecorationType.None)
         Me.btnCerrar.Image = Global.Maulabs.My.Resources.Resources.icons8_multiply_48
         Me.btnCerrar.ImageSize = New System.Drawing.Size(16, 16)
         Me.btnCerrar.Location = New System.Drawing.Point(756, 8)
@@ -225,6 +237,7 @@ Partial Class FrmHome
         '
         'btnMinimizar
         '
+        Me.GunaTransition1.SetDecoration(Me.btnMinimizar, Guna.UI.Animation.DecorationType.None)
         Me.btnMinimizar.Image = Global.Maulabs.My.Resources.Resources.icons8_horizontal_line_48
         Me.btnMinimizar.ImageSize = New System.Drawing.Size(16, 16)
         Me.btnMinimizar.Location = New System.Drawing.Point(718, 8)
@@ -236,6 +249,7 @@ Partial Class FrmHome
         '
         'GunaImageButton1
         '
+        Me.GunaTransition1.SetDecoration(Me.GunaImageButton1, Guna.UI.Animation.DecorationType.None)
         Me.GunaImageButton1.Image = Global.Maulabs.My.Resources.Resources.icons8_menu_48
         Me.GunaImageButton1.ImageSize = New System.Drawing.Size(16, 16)
         Me.GunaImageButton1.Location = New System.Drawing.Point(8, 8)
@@ -249,6 +263,7 @@ Partial Class FrmHome
         '
         Me.GunaPanel2.BackColor = System.Drawing.Color.WhiteSmoke
         Me.GunaPanel2.Controls.Add(Me.GunaPanel4)
+        Me.GunaTransition1.SetDecoration(Me.GunaPanel2, Guna.UI.Animation.DecorationType.None)
         Me.GunaPanel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.GunaPanel2.Location = New System.Drawing.Point(0, 50)
         Me.GunaPanel2.Name = "GunaPanel2"
@@ -261,6 +276,7 @@ Partial Class FrmHome
         Me.GunaPanel4.Controls.Add(Me.GunaAdvenceButton3)
         Me.GunaPanel4.Controls.Add(Me.GunaAdvenceButton2)
         Me.GunaPanel4.Controls.Add(Me.btnMenu)
+        Me.GunaTransition1.SetDecoration(Me.GunaPanel4, Guna.UI.Animation.DecorationType.None)
         Me.GunaPanel4.Location = New System.Drawing.Point(132, 0)
         Me.GunaPanel4.Name = "GunaPanel4"
         Me.GunaPanel4.Size = New System.Drawing.Size(541, 50)
@@ -279,6 +295,7 @@ Partial Class FrmHome
         Me.GunaAdvenceButton4.CheckedImage = Nothing
         Me.GunaAdvenceButton4.CheckedLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.GunaAdvenceButton4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaTransition1.SetDecoration(Me.GunaAdvenceButton4, Guna.UI.Animation.DecorationType.None)
         Me.GunaAdvenceButton4.FocusedColor = System.Drawing.Color.Empty
         Me.GunaAdvenceButton4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GunaAdvenceButton4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
@@ -312,6 +329,7 @@ Partial Class FrmHome
         Me.GunaAdvenceButton3.CheckedImage = Nothing
         Me.GunaAdvenceButton3.CheckedLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.GunaAdvenceButton3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaTransition1.SetDecoration(Me.GunaAdvenceButton3, Guna.UI.Animation.DecorationType.None)
         Me.GunaAdvenceButton3.FocusedColor = System.Drawing.Color.Empty
         Me.GunaAdvenceButton3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GunaAdvenceButton3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
@@ -345,6 +363,7 @@ Partial Class FrmHome
         Me.GunaAdvenceButton2.CheckedImage = Nothing
         Me.GunaAdvenceButton2.CheckedLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.GunaAdvenceButton2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaTransition1.SetDecoration(Me.GunaAdvenceButton2, Guna.UI.Animation.DecorationType.None)
         Me.GunaAdvenceButton2.FocusedColor = System.Drawing.Color.Empty
         Me.GunaAdvenceButton2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GunaAdvenceButton2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
@@ -378,6 +397,7 @@ Partial Class FrmHome
         Me.btnMenu.CheckedImage = Nothing
         Me.btnMenu.CheckedLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaTransition1.SetDecoration(Me.btnMenu, Guna.UI.Animation.DecorationType.None)
         Me.btnMenu.FocusedColor = System.Drawing.Color.Empty
         Me.btnMenu.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.btnMenu.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
@@ -400,8 +420,9 @@ Partial Class FrmHome
         '
         'GunaPanel3
         '
-        Me.GunaPanel3.Controls.Add(Me.Panel2)
         Me.GunaPanel3.Controls.Add(Me.Panel1)
+        Me.GunaPanel3.Controls.Add(Me.Panel2)
+        Me.GunaTransition1.SetDecoration(Me.GunaPanel3, Guna.UI.Animation.DecorationType.None)
         Me.GunaPanel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GunaPanel3.Location = New System.Drawing.Point(0, 100)
         Me.GunaPanel3.Name = "GunaPanel3"
@@ -414,7 +435,8 @@ Partial Class FrmHome
         Me.Panel2.Controls.Add(Me.GunaElipsePanel11)
         Me.Panel2.Controls.Add(Me.GunaElipsePanel13)
         Me.Panel2.Controls.Add(Me.GunaElipsePanel15)
-        Me.Panel2.Location = New System.Drawing.Point(811, 9)
+        Me.GunaTransition1.SetDecoration(Me.Panel2, Guna.UI.Animation.DecorationType.None)
+        Me.Panel2.Location = New System.Drawing.Point(12, 9)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(776, 479)
         Me.Panel2.TabIndex = 9
@@ -427,6 +449,7 @@ Partial Class FrmHome
         Me.GunaElipsePanel9.Controls.Add(Me.GunaLabel19)
         Me.GunaElipsePanel9.Controls.Add(Me.PictureBox9)
         Me.GunaElipsePanel9.Controls.Add(Me.GunaCirclePictureBox9)
+        Me.GunaTransition1.SetDecoration(Me.GunaElipsePanel9, Guna.UI.Animation.DecorationType.None)
         Me.GunaElipsePanel9.Location = New System.Drawing.Point(16, 47)
         Me.GunaElipsePanel9.Name = "GunaElipsePanel9"
         Me.GunaElipsePanel9.Size = New System.Drawing.Size(170, 180)
@@ -439,6 +462,7 @@ Partial Class FrmHome
         Me.GunaButton1.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GunaButton1.BorderColor = System.Drawing.Color.Black
         Me.GunaButton1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaTransition1.SetDecoration(Me.GunaButton1, Guna.UI.Animation.DecorationType.None)
         Me.GunaButton1.FocusedColor = System.Drawing.Color.Empty
         Me.GunaButton1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GunaButton1.ForeColor = System.Drawing.Color.White
@@ -461,6 +485,7 @@ Partial Class FrmHome
         '
         Me.GunaLabel18.AutoSize = True
         Me.GunaLabel18.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.GunaLabel18, Guna.UI.Animation.DecorationType.None)
         Me.GunaLabel18.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GunaLabel18.Location = New System.Drawing.Point(3, 110)
         Me.GunaLabel18.Name = "GunaLabel18"
@@ -472,6 +497,7 @@ Partial Class FrmHome
         '
         Me.GunaLabel19.AutoSize = True
         Me.GunaLabel19.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.GunaLabel19, Guna.UI.Animation.DecorationType.None)
         Me.GunaLabel19.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GunaLabel19.Location = New System.Drawing.Point(39, 75)
         Me.GunaLabel19.Name = "GunaLabel19"
@@ -482,6 +508,7 @@ Partial Class FrmHome
         'PictureBox9
         '
         Me.PictureBox9.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.PictureBox9, Guna.UI.Animation.DecorationType.None)
         Me.PictureBox9.Image = Global.Maulabs.My.Resources.Resources.icons8_health_checkup_48
         Me.PictureBox9.Location = New System.Drawing.Point(60, 23)
         Me.PictureBox9.Name = "PictureBox9"
@@ -492,6 +519,7 @@ Partial Class FrmHome
         'GunaCirclePictureBox9
         '
         Me.GunaCirclePictureBox9.BaseColor = System.Drawing.SystemColors.HotTrack
+        Me.GunaTransition1.SetDecoration(Me.GunaCirclePictureBox9, Guna.UI.Animation.DecorationType.None)
         Me.GunaCirclePictureBox9.Location = New System.Drawing.Point(12, 13)
         Me.GunaCirclePictureBox9.Name = "GunaCirclePictureBox9"
         Me.GunaCirclePictureBox9.Size = New System.Drawing.Size(8, 8)
@@ -508,6 +536,7 @@ Partial Class FrmHome
         Me.GunaElipsePanel11.Controls.Add(Me.GunaLabel23)
         Me.GunaElipsePanel11.Controls.Add(Me.PictureBox11)
         Me.GunaElipsePanel11.Controls.Add(Me.GunaCirclePictureBox11)
+        Me.GunaTransition1.SetDecoration(Me.GunaElipsePanel11, Guna.UI.Animation.DecorationType.None)
         Me.GunaElipsePanel11.Location = New System.Drawing.Point(207, 47)
         Me.GunaElipsePanel11.Name = "GunaElipsePanel11"
         Me.GunaElipsePanel11.Size = New System.Drawing.Size(170, 180)
@@ -520,6 +549,7 @@ Partial Class FrmHome
         Me.GunaButton3.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GunaButton3.BorderColor = System.Drawing.Color.Black
         Me.GunaButton3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaTransition1.SetDecoration(Me.GunaButton3, Guna.UI.Animation.DecorationType.None)
         Me.GunaButton3.FocusedColor = System.Drawing.Color.Empty
         Me.GunaButton3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GunaButton3.ForeColor = System.Drawing.Color.White
@@ -542,6 +572,7 @@ Partial Class FrmHome
         '
         Me.GunaLabel22.AutoSize = True
         Me.GunaLabel22.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.GunaLabel22, Guna.UI.Animation.DecorationType.None)
         Me.GunaLabel22.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GunaLabel22.Location = New System.Drawing.Point(5, 110)
         Me.GunaLabel22.Name = "GunaLabel22"
@@ -553,6 +584,7 @@ Partial Class FrmHome
         '
         Me.GunaLabel23.AutoSize = True
         Me.GunaLabel23.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.GunaLabel23, Guna.UI.Animation.DecorationType.None)
         Me.GunaLabel23.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GunaLabel23.Location = New System.Drawing.Point(32, 75)
         Me.GunaLabel23.Name = "GunaLabel23"
@@ -563,6 +595,7 @@ Partial Class FrmHome
         'PictureBox11
         '
         Me.PictureBox11.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.PictureBox11, Guna.UI.Animation.DecorationType.None)
         Me.PictureBox11.Image = Global.Maulabs.My.Resources.Resources.icons8_edit_property_48
         Me.PictureBox11.Location = New System.Drawing.Point(60, 23)
         Me.PictureBox11.Name = "PictureBox11"
@@ -573,6 +606,7 @@ Partial Class FrmHome
         'GunaCirclePictureBox11
         '
         Me.GunaCirclePictureBox11.BaseColor = System.Drawing.SystemColors.HotTrack
+        Me.GunaTransition1.SetDecoration(Me.GunaCirclePictureBox11, Guna.UI.Animation.DecorationType.None)
         Me.GunaCirclePictureBox11.Location = New System.Drawing.Point(12, 13)
         Me.GunaCirclePictureBox11.Name = "GunaCirclePictureBox11"
         Me.GunaCirclePictureBox11.Size = New System.Drawing.Size(8, 8)
@@ -589,6 +623,7 @@ Partial Class FrmHome
         Me.GunaElipsePanel13.Controls.Add(Me.GunaLabel27)
         Me.GunaElipsePanel13.Controls.Add(Me.PictureBox13)
         Me.GunaElipsePanel13.Controls.Add(Me.GunaCirclePictureBox13)
+        Me.GunaTransition1.SetDecoration(Me.GunaElipsePanel13, Guna.UI.Animation.DecorationType.None)
         Me.GunaElipsePanel13.Location = New System.Drawing.Point(399, 47)
         Me.GunaElipsePanel13.Name = "GunaElipsePanel13"
         Me.GunaElipsePanel13.Size = New System.Drawing.Size(170, 180)
@@ -601,6 +636,7 @@ Partial Class FrmHome
         Me.GunaButton5.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GunaButton5.BorderColor = System.Drawing.Color.Black
         Me.GunaButton5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaTransition1.SetDecoration(Me.GunaButton5, Guna.UI.Animation.DecorationType.None)
         Me.GunaButton5.FocusedColor = System.Drawing.Color.Empty
         Me.GunaButton5.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GunaButton5.ForeColor = System.Drawing.Color.White
@@ -622,6 +658,7 @@ Partial Class FrmHome
         'GunaLabel26
         '
         Me.GunaLabel26.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.GunaLabel26, Guna.UI.Animation.DecorationType.None)
         Me.GunaLabel26.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GunaLabel26.Location = New System.Drawing.Point(5, 99)
         Me.GunaLabel26.Name = "GunaLabel26"
@@ -634,6 +671,7 @@ Partial Class FrmHome
         '
         Me.GunaLabel27.AutoSize = True
         Me.GunaLabel27.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.GunaLabel27, Guna.UI.Animation.DecorationType.None)
         Me.GunaLabel27.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GunaLabel27.Location = New System.Drawing.Point(41, 74)
         Me.GunaLabel27.Name = "GunaLabel27"
@@ -644,6 +682,7 @@ Partial Class FrmHome
         'PictureBox13
         '
         Me.PictureBox13.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.PictureBox13, Guna.UI.Animation.DecorationType.None)
         Me.PictureBox13.Image = Global.Maulabs.My.Resources.Resources.icons8_experiment_48
         Me.PictureBox13.Location = New System.Drawing.Point(60, 23)
         Me.PictureBox13.Name = "PictureBox13"
@@ -654,6 +693,7 @@ Partial Class FrmHome
         'GunaCirclePictureBox13
         '
         Me.GunaCirclePictureBox13.BaseColor = System.Drawing.SystemColors.HotTrack
+        Me.GunaTransition1.SetDecoration(Me.GunaCirclePictureBox13, Guna.UI.Animation.DecorationType.None)
         Me.GunaCirclePictureBox13.Location = New System.Drawing.Point(12, 13)
         Me.GunaCirclePictureBox13.Name = "GunaCirclePictureBox13"
         Me.GunaCirclePictureBox13.Size = New System.Drawing.Size(8, 8)
@@ -670,6 +710,7 @@ Partial Class FrmHome
         Me.GunaElipsePanel15.Controls.Add(Me.GunaLabel31)
         Me.GunaElipsePanel15.Controls.Add(Me.PictureBox15)
         Me.GunaElipsePanel15.Controls.Add(Me.GunaCirclePictureBox15)
+        Me.GunaTransition1.SetDecoration(Me.GunaElipsePanel15, Guna.UI.Animation.DecorationType.None)
         Me.GunaElipsePanel15.Location = New System.Drawing.Point(207, 262)
         Me.GunaElipsePanel15.Name = "GunaElipsePanel15"
         Me.GunaElipsePanel15.Size = New System.Drawing.Size(170, 180)
@@ -682,6 +723,7 @@ Partial Class FrmHome
         Me.GunaButton7.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GunaButton7.BorderColor = System.Drawing.Color.Black
         Me.GunaButton7.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaTransition1.SetDecoration(Me.GunaButton7, Guna.UI.Animation.DecorationType.None)
         Me.GunaButton7.FocusedColor = System.Drawing.Color.Empty
         Me.GunaButton7.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GunaButton7.ForeColor = System.Drawing.Color.White
@@ -703,6 +745,7 @@ Partial Class FrmHome
         'GunaLabel30
         '
         Me.GunaLabel30.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.GunaLabel30, Guna.UI.Animation.DecorationType.None)
         Me.GunaLabel30.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GunaLabel30.Location = New System.Drawing.Point(5, 99)
         Me.GunaLabel30.Name = "GunaLabel30"
@@ -715,6 +758,7 @@ Partial Class FrmHome
         '
         Me.GunaLabel31.AutoSize = True
         Me.GunaLabel31.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.GunaLabel31, Guna.UI.Animation.DecorationType.None)
         Me.GunaLabel31.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GunaLabel31.Location = New System.Drawing.Point(32, 75)
         Me.GunaLabel31.Name = "GunaLabel31"
@@ -725,6 +769,7 @@ Partial Class FrmHome
         'PictureBox15
         '
         Me.PictureBox15.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.PictureBox15, Guna.UI.Animation.DecorationType.None)
         Me.PictureBox15.Image = Global.Maulabs.My.Resources.Resources.icons8_treatment_48
         Me.PictureBox15.Location = New System.Drawing.Point(60, 23)
         Me.PictureBox15.Name = "PictureBox15"
@@ -735,6 +780,7 @@ Partial Class FrmHome
         'GunaCirclePictureBox15
         '
         Me.GunaCirclePictureBox15.BaseColor = System.Drawing.SystemColors.HotTrack
+        Me.GunaTransition1.SetDecoration(Me.GunaCirclePictureBox15, Guna.UI.Animation.DecorationType.None)
         Me.GunaCirclePictureBox15.Location = New System.Drawing.Point(12, 13)
         Me.GunaCirclePictureBox15.Name = "GunaCirclePictureBox15"
         Me.GunaCirclePictureBox15.Size = New System.Drawing.Size(8, 8)
@@ -753,6 +799,7 @@ Partial Class FrmHome
         Me.Panel1.Controls.Add(Me.GunaElipsePanel6)
         Me.Panel1.Controls.Add(Me.GunaElipsePanel4)
         Me.Panel1.Controls.Add(Me.GunaElipsePanel5)
+        Me.GunaTransition1.SetDecoration(Me.Panel1, Guna.UI.Animation.DecorationType.None)
         Me.Panel1.Location = New System.Drawing.Point(12, 9)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(776, 479)
@@ -766,6 +813,7 @@ Partial Class FrmHome
         Me.GunaElipsePanel1.Controls.Add(Me.GunaLabel2)
         Me.GunaElipsePanel1.Controls.Add(Me.PictureBox1)
         Me.GunaElipsePanel1.Controls.Add(Me.GunaCirclePictureBox1)
+        Me.GunaTransition1.SetDecoration(Me.GunaElipsePanel1, Guna.UI.Animation.DecorationType.None)
         Me.GunaElipsePanel1.Location = New System.Drawing.Point(16, 47)
         Me.GunaElipsePanel1.Name = "GunaElipsePanel1"
         Me.GunaElipsePanel1.Size = New System.Drawing.Size(170, 180)
@@ -778,6 +826,7 @@ Partial Class FrmHome
         Me.btnPacientes.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnPacientes.BorderColor = System.Drawing.Color.Black
         Me.btnPacientes.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaTransition1.SetDecoration(Me.btnPacientes, Guna.UI.Animation.DecorationType.None)
         Me.btnPacientes.FocusedColor = System.Drawing.Color.Empty
         Me.btnPacientes.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.btnPacientes.ForeColor = System.Drawing.Color.White
@@ -800,6 +849,7 @@ Partial Class FrmHome
         '
         Me.GunaLabel3.AutoSize = True
         Me.GunaLabel3.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.GunaLabel3, Guna.UI.Animation.DecorationType.None)
         Me.GunaLabel3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GunaLabel3.Location = New System.Drawing.Point(3, 110)
         Me.GunaLabel3.Name = "GunaLabel3"
@@ -811,6 +861,7 @@ Partial Class FrmHome
         '
         Me.GunaLabel2.AutoSize = True
         Me.GunaLabel2.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.GunaLabel2, Guna.UI.Animation.DecorationType.None)
         Me.GunaLabel2.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GunaLabel2.Location = New System.Drawing.Point(39, 75)
         Me.GunaLabel2.Name = "GunaLabel2"
@@ -821,6 +872,7 @@ Partial Class FrmHome
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.PictureBox1, Guna.UI.Animation.DecorationType.None)
         Me.PictureBox1.Image = Global.Maulabs.My.Resources.Resources.icons8_health_checkup_48
         Me.PictureBox1.Location = New System.Drawing.Point(60, 23)
         Me.PictureBox1.Name = "PictureBox1"
@@ -831,6 +883,7 @@ Partial Class FrmHome
         'GunaCirclePictureBox1
         '
         Me.GunaCirclePictureBox1.BaseColor = System.Drawing.SystemColors.HotTrack
+        Me.GunaTransition1.SetDecoration(Me.GunaCirclePictureBox1, Guna.UI.Animation.DecorationType.None)
         Me.GunaCirclePictureBox1.Location = New System.Drawing.Point(12, 13)
         Me.GunaCirclePictureBox1.Name = "GunaCirclePictureBox1"
         Me.GunaCirclePictureBox1.Size = New System.Drawing.Size(8, 8)
@@ -847,6 +900,7 @@ Partial Class FrmHome
         Me.GunaElipsePanel8.Controls.Add(Me.GunaLabel17)
         Me.GunaElipsePanel8.Controls.Add(Me.PictureBox8)
         Me.GunaElipsePanel8.Controls.Add(Me.GunaCirclePictureBox8)
+        Me.GunaTransition1.SetDecoration(Me.GunaElipsePanel8, Guna.UI.Animation.DecorationType.None)
         Me.GunaElipsePanel8.Location = New System.Drawing.Point(16, 262)
         Me.GunaElipsePanel8.Name = "GunaElipsePanel8"
         Me.GunaElipsePanel8.Size = New System.Drawing.Size(170, 180)
@@ -859,6 +913,7 @@ Partial Class FrmHome
         Me.btnMedicos.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnMedicos.BorderColor = System.Drawing.Color.Black
         Me.btnMedicos.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaTransition1.SetDecoration(Me.btnMedicos, Guna.UI.Animation.DecorationType.None)
         Me.btnMedicos.FocusedColor = System.Drawing.Color.Empty
         Me.btnMedicos.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.btnMedicos.ForeColor = System.Drawing.Color.White
@@ -881,6 +936,7 @@ Partial Class FrmHome
         '
         Me.GunaLabel16.AutoSize = True
         Me.GunaLabel16.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.GunaLabel16, Guna.UI.Animation.DecorationType.None)
         Me.GunaLabel16.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GunaLabel16.Location = New System.Drawing.Point(11, 110)
         Me.GunaLabel16.Name = "GunaLabel16"
@@ -892,6 +948,7 @@ Partial Class FrmHome
         '
         Me.GunaLabel17.AutoSize = True
         Me.GunaLabel17.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.GunaLabel17, Guna.UI.Animation.DecorationType.None)
         Me.GunaLabel17.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GunaLabel17.Location = New System.Drawing.Point(43, 75)
         Me.GunaLabel17.Name = "GunaLabel17"
@@ -902,6 +959,7 @@ Partial Class FrmHome
         'PictureBox8
         '
         Me.PictureBox8.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.PictureBox8, Guna.UI.Animation.DecorationType.None)
         Me.PictureBox8.Image = Global.Maulabs.My.Resources.Resources.icons8_caduceus_48
         Me.PictureBox8.Location = New System.Drawing.Point(60, 23)
         Me.PictureBox8.Name = "PictureBox8"
@@ -912,6 +970,7 @@ Partial Class FrmHome
         'GunaCirclePictureBox8
         '
         Me.GunaCirclePictureBox8.BaseColor = System.Drawing.SystemColors.HotTrack
+        Me.GunaTransition1.SetDecoration(Me.GunaCirclePictureBox8, Guna.UI.Animation.DecorationType.None)
         Me.GunaCirclePictureBox8.Location = New System.Drawing.Point(12, 13)
         Me.GunaCirclePictureBox8.Name = "GunaCirclePictureBox8"
         Me.GunaCirclePictureBox8.Size = New System.Drawing.Size(8, 8)
@@ -928,6 +987,7 @@ Partial Class FrmHome
         Me.GunaElipsePanel2.Controls.Add(Me.GunaLabel5)
         Me.GunaElipsePanel2.Controls.Add(Me.PictureBox2)
         Me.GunaElipsePanel2.Controls.Add(Me.GunaCirclePictureBox2)
+        Me.GunaTransition1.SetDecoration(Me.GunaElipsePanel2, Guna.UI.Animation.DecorationType.None)
         Me.GunaElipsePanel2.Location = New System.Drawing.Point(207, 47)
         Me.GunaElipsePanel2.Name = "GunaElipsePanel2"
         Me.GunaElipsePanel2.Size = New System.Drawing.Size(170, 180)
@@ -940,6 +1000,7 @@ Partial Class FrmHome
         Me.btnSolicitudes.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnSolicitudes.BorderColor = System.Drawing.Color.Black
         Me.btnSolicitudes.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaTransition1.SetDecoration(Me.btnSolicitudes, Guna.UI.Animation.DecorationType.None)
         Me.btnSolicitudes.FocusedColor = System.Drawing.Color.Empty
         Me.btnSolicitudes.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.btnSolicitudes.ForeColor = System.Drawing.Color.White
@@ -962,6 +1023,7 @@ Partial Class FrmHome
         '
         Me.GunaLabel4.AutoSize = True
         Me.GunaLabel4.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.GunaLabel4, Guna.UI.Animation.DecorationType.None)
         Me.GunaLabel4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GunaLabel4.Location = New System.Drawing.Point(5, 110)
         Me.GunaLabel4.Name = "GunaLabel4"
@@ -973,6 +1035,7 @@ Partial Class FrmHome
         '
         Me.GunaLabel5.AutoSize = True
         Me.GunaLabel5.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.GunaLabel5, Guna.UI.Animation.DecorationType.None)
         Me.GunaLabel5.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GunaLabel5.Location = New System.Drawing.Point(32, 75)
         Me.GunaLabel5.Name = "GunaLabel5"
@@ -983,6 +1046,7 @@ Partial Class FrmHome
         'PictureBox2
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.PictureBox2, Guna.UI.Animation.DecorationType.None)
         Me.PictureBox2.Image = Global.Maulabs.My.Resources.Resources.icons8_edit_property_48
         Me.PictureBox2.Location = New System.Drawing.Point(60, 23)
         Me.PictureBox2.Name = "PictureBox2"
@@ -993,6 +1057,7 @@ Partial Class FrmHome
         'GunaCirclePictureBox2
         '
         Me.GunaCirclePictureBox2.BaseColor = System.Drawing.SystemColors.HotTrack
+        Me.GunaTransition1.SetDecoration(Me.GunaCirclePictureBox2, Guna.UI.Animation.DecorationType.None)
         Me.GunaCirclePictureBox2.Location = New System.Drawing.Point(12, 13)
         Me.GunaCirclePictureBox2.Name = "GunaCirclePictureBox2"
         Me.GunaCirclePictureBox2.Size = New System.Drawing.Size(8, 8)
@@ -1009,6 +1074,7 @@ Partial Class FrmHome
         Me.GunaElipsePanel7.Controls.Add(Me.GunaLabel15)
         Me.GunaElipsePanel7.Controls.Add(Me.PictureBox7)
         Me.GunaElipsePanel7.Controls.Add(Me.GunaCirclePictureBox7)
+        Me.GunaTransition1.SetDecoration(Me.GunaElipsePanel7, Guna.UI.Animation.DecorationType.None)
         Me.GunaElipsePanel7.Location = New System.Drawing.Point(588, 262)
         Me.GunaElipsePanel7.Name = "GunaElipsePanel7"
         Me.GunaElipsePanel7.Size = New System.Drawing.Size(170, 180)
@@ -1021,6 +1087,7 @@ Partial Class FrmHome
         Me.btnReportes.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnReportes.BorderColor = System.Drawing.Color.Black
         Me.btnReportes.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaTransition1.SetDecoration(Me.btnReportes, Guna.UI.Animation.DecorationType.None)
         Me.btnReportes.FocusedColor = System.Drawing.Color.Empty
         Me.btnReportes.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.btnReportes.ForeColor = System.Drawing.Color.White
@@ -1043,6 +1110,7 @@ Partial Class FrmHome
         '
         Me.GunaLabel14.AutoSize = True
         Me.GunaLabel14.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.GunaLabel14, Guna.UI.Animation.DecorationType.None)
         Me.GunaLabel14.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GunaLabel14.Location = New System.Drawing.Point(29, 110)
         Me.GunaLabel14.Name = "GunaLabel14"
@@ -1054,6 +1122,7 @@ Partial Class FrmHome
         '
         Me.GunaLabel15.AutoSize = True
         Me.GunaLabel15.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.GunaLabel15, Guna.UI.Animation.DecorationType.None)
         Me.GunaLabel15.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GunaLabel15.Location = New System.Drawing.Point(43, 75)
         Me.GunaLabel15.Name = "GunaLabel15"
@@ -1064,6 +1133,7 @@ Partial Class FrmHome
         'PictureBox7
         '
         Me.PictureBox7.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.PictureBox7, Guna.UI.Animation.DecorationType.None)
         Me.PictureBox7.Image = Global.Maulabs.My.Resources.Resources.icons8_graph_report_48
         Me.PictureBox7.Location = New System.Drawing.Point(60, 23)
         Me.PictureBox7.Name = "PictureBox7"
@@ -1074,6 +1144,7 @@ Partial Class FrmHome
         'GunaCirclePictureBox7
         '
         Me.GunaCirclePictureBox7.BaseColor = System.Drawing.SystemColors.HotTrack
+        Me.GunaTransition1.SetDecoration(Me.GunaCirclePictureBox7, Guna.UI.Animation.DecorationType.None)
         Me.GunaCirclePictureBox7.Location = New System.Drawing.Point(12, 13)
         Me.GunaCirclePictureBox7.Name = "GunaCirclePictureBox7"
         Me.GunaCirclePictureBox7.Size = New System.Drawing.Size(8, 8)
@@ -1090,6 +1161,7 @@ Partial Class FrmHome
         Me.GunaElipsePanel3.Controls.Add(Me.GunaLabel7)
         Me.GunaElipsePanel3.Controls.Add(Me.PictureBox3)
         Me.GunaElipsePanel3.Controls.Add(Me.GunaCirclePictureBox3)
+        Me.GunaTransition1.SetDecoration(Me.GunaElipsePanel3, Guna.UI.Animation.DecorationType.None)
         Me.GunaElipsePanel3.Location = New System.Drawing.Point(399, 47)
         Me.GunaElipsePanel3.Name = "GunaElipsePanel3"
         Me.GunaElipsePanel3.Size = New System.Drawing.Size(170, 180)
@@ -1102,6 +1174,7 @@ Partial Class FrmHome
         Me.btnEtiquetas.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnEtiquetas.BorderColor = System.Drawing.Color.Black
         Me.btnEtiquetas.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaTransition1.SetDecoration(Me.btnEtiquetas, Guna.UI.Animation.DecorationType.None)
         Me.btnEtiquetas.FocusedColor = System.Drawing.Color.Empty
         Me.btnEtiquetas.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.btnEtiquetas.ForeColor = System.Drawing.Color.White
@@ -1123,6 +1196,7 @@ Partial Class FrmHome
         'GunaLabel6
         '
         Me.GunaLabel6.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.GunaLabel6, Guna.UI.Animation.DecorationType.None)
         Me.GunaLabel6.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GunaLabel6.Location = New System.Drawing.Point(5, 99)
         Me.GunaLabel6.Name = "GunaLabel6"
@@ -1135,6 +1209,7 @@ Partial Class FrmHome
         '
         Me.GunaLabel7.AutoSize = True
         Me.GunaLabel7.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.GunaLabel7, Guna.UI.Animation.DecorationType.None)
         Me.GunaLabel7.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GunaLabel7.Location = New System.Drawing.Point(41, 74)
         Me.GunaLabel7.Name = "GunaLabel7"
@@ -1145,6 +1220,7 @@ Partial Class FrmHome
         'PictureBox3
         '
         Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.PictureBox3, Guna.UI.Animation.DecorationType.None)
         Me.PictureBox3.Image = Global.Maulabs.My.Resources.Resources.icons8_experiment_48
         Me.PictureBox3.Location = New System.Drawing.Point(60, 23)
         Me.PictureBox3.Name = "PictureBox3"
@@ -1155,6 +1231,7 @@ Partial Class FrmHome
         'GunaCirclePictureBox3
         '
         Me.GunaCirclePictureBox3.BaseColor = System.Drawing.SystemColors.HotTrack
+        Me.GunaTransition1.SetDecoration(Me.GunaCirclePictureBox3, Guna.UI.Animation.DecorationType.None)
         Me.GunaCirclePictureBox3.Location = New System.Drawing.Point(12, 13)
         Me.GunaCirclePictureBox3.Name = "GunaCirclePictureBox3"
         Me.GunaCirclePictureBox3.Size = New System.Drawing.Size(8, 8)
@@ -1171,6 +1248,7 @@ Partial Class FrmHome
         Me.GunaElipsePanel6.Controls.Add(Me.GunaLabel13)
         Me.GunaElipsePanel6.Controls.Add(Me.PictureBox6)
         Me.GunaElipsePanel6.Controls.Add(Me.GunaCirclePictureBox6)
+        Me.GunaTransition1.SetDecoration(Me.GunaElipsePanel6, Guna.UI.Animation.DecorationType.None)
         Me.GunaElipsePanel6.Location = New System.Drawing.Point(399, 262)
         Me.GunaElipsePanel6.Name = "GunaElipsePanel6"
         Me.GunaElipsePanel6.Size = New System.Drawing.Size(170, 180)
@@ -1183,6 +1261,7 @@ Partial Class FrmHome
         Me.btnImpresion.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnImpresion.BorderColor = System.Drawing.Color.Black
         Me.btnImpresion.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaTransition1.SetDecoration(Me.btnImpresion, Guna.UI.Animation.DecorationType.None)
         Me.btnImpresion.FocusedColor = System.Drawing.Color.Empty
         Me.btnImpresion.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.btnImpresion.ForeColor = System.Drawing.Color.White
@@ -1204,6 +1283,7 @@ Partial Class FrmHome
         'GunaLabel12
         '
         Me.GunaLabel12.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.GunaLabel12, Guna.UI.Animation.DecorationType.None)
         Me.GunaLabel12.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GunaLabel12.Location = New System.Drawing.Point(5, 100)
         Me.GunaLabel12.Name = "GunaLabel12"
@@ -1216,6 +1296,7 @@ Partial Class FrmHome
         '
         Me.GunaLabel13.AutoSize = True
         Me.GunaLabel13.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.GunaLabel13, Guna.UI.Animation.DecorationType.None)
         Me.GunaLabel13.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GunaLabel13.Location = New System.Drawing.Point(37, 75)
         Me.GunaLabel13.Name = "GunaLabel13"
@@ -1226,6 +1307,7 @@ Partial Class FrmHome
         'PictureBox6
         '
         Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.PictureBox6, Guna.UI.Animation.DecorationType.None)
         Me.PictureBox6.Image = Global.Maulabs.My.Resources.Resources.icons8_print_48
         Me.PictureBox6.Location = New System.Drawing.Point(60, 23)
         Me.PictureBox6.Name = "PictureBox6"
@@ -1236,6 +1318,7 @@ Partial Class FrmHome
         'GunaCirclePictureBox6
         '
         Me.GunaCirclePictureBox6.BaseColor = System.Drawing.SystemColors.HotTrack
+        Me.GunaTransition1.SetDecoration(Me.GunaCirclePictureBox6, Guna.UI.Animation.DecorationType.None)
         Me.GunaCirclePictureBox6.Location = New System.Drawing.Point(12, 13)
         Me.GunaCirclePictureBox6.Name = "GunaCirclePictureBox6"
         Me.GunaCirclePictureBox6.Size = New System.Drawing.Size(8, 8)
@@ -1252,6 +1335,7 @@ Partial Class FrmHome
         Me.GunaElipsePanel4.Controls.Add(Me.GunaLabel9)
         Me.GunaElipsePanel4.Controls.Add(Me.PictureBox4)
         Me.GunaElipsePanel4.Controls.Add(Me.GunaCirclePictureBox4)
+        Me.GunaTransition1.SetDecoration(Me.GunaElipsePanel4, Guna.UI.Animation.DecorationType.None)
         Me.GunaElipsePanel4.Location = New System.Drawing.Point(588, 47)
         Me.GunaElipsePanel4.Name = "GunaElipsePanel4"
         Me.GunaElipsePanel4.Size = New System.Drawing.Size(170, 180)
@@ -1264,6 +1348,7 @@ Partial Class FrmHome
         Me.btnResultados.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnResultados.BorderColor = System.Drawing.Color.Black
         Me.btnResultados.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaTransition1.SetDecoration(Me.btnResultados, Guna.UI.Animation.DecorationType.None)
         Me.btnResultados.FocusedColor = System.Drawing.Color.Empty
         Me.btnResultados.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.btnResultados.ForeColor = System.Drawing.Color.White
@@ -1285,6 +1370,7 @@ Partial Class FrmHome
         'GunaLabel8
         '
         Me.GunaLabel8.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.GunaLabel8, Guna.UI.Animation.DecorationType.None)
         Me.GunaLabel8.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GunaLabel8.Location = New System.Drawing.Point(5, 99)
         Me.GunaLabel8.Name = "GunaLabel8"
@@ -1297,6 +1383,7 @@ Partial Class FrmHome
         '
         Me.GunaLabel9.AutoSize = True
         Me.GunaLabel9.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.GunaLabel9, Guna.UI.Animation.DecorationType.None)
         Me.GunaLabel9.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GunaLabel9.Location = New System.Drawing.Point(32, 75)
         Me.GunaLabel9.Name = "GunaLabel9"
@@ -1307,6 +1394,7 @@ Partial Class FrmHome
         'PictureBox4
         '
         Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.PictureBox4, Guna.UI.Animation.DecorationType.None)
         Me.PictureBox4.Image = Global.Maulabs.My.Resources.Resources.icons8_treatment_48
         Me.PictureBox4.Location = New System.Drawing.Point(60, 23)
         Me.PictureBox4.Name = "PictureBox4"
@@ -1317,6 +1405,7 @@ Partial Class FrmHome
         'GunaCirclePictureBox4
         '
         Me.GunaCirclePictureBox4.BaseColor = System.Drawing.SystemColors.HotTrack
+        Me.GunaTransition1.SetDecoration(Me.GunaCirclePictureBox4, Guna.UI.Animation.DecorationType.None)
         Me.GunaCirclePictureBox4.Location = New System.Drawing.Point(12, 13)
         Me.GunaCirclePictureBox4.Name = "GunaCirclePictureBox4"
         Me.GunaCirclePictureBox4.Size = New System.Drawing.Size(8, 8)
@@ -1333,6 +1422,7 @@ Partial Class FrmHome
         Me.GunaElipsePanel5.Controls.Add(Me.GunaLabel11)
         Me.GunaElipsePanel5.Controls.Add(Me.PictureBox5)
         Me.GunaElipsePanel5.Controls.Add(Me.GunaCirclePictureBox5)
+        Me.GunaTransition1.SetDecoration(Me.GunaElipsePanel5, Guna.UI.Animation.DecorationType.None)
         Me.GunaElipsePanel5.Location = New System.Drawing.Point(207, 262)
         Me.GunaElipsePanel5.Name = "GunaElipsePanel5"
         Me.GunaElipsePanel5.Size = New System.Drawing.Size(170, 180)
@@ -1345,6 +1435,7 @@ Partial Class FrmHome
         Me.btnPagos.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnPagos.BorderColor = System.Drawing.Color.Black
         Me.btnPagos.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaTransition1.SetDecoration(Me.btnPagos, Guna.UI.Animation.DecorationType.None)
         Me.btnPagos.FocusedColor = System.Drawing.Color.Empty
         Me.btnPagos.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.btnPagos.ForeColor = System.Drawing.Color.White
@@ -1367,6 +1458,7 @@ Partial Class FrmHome
         '
         Me.GunaLabel10.AutoSize = True
         Me.GunaLabel10.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.GunaLabel10, Guna.UI.Animation.DecorationType.None)
         Me.GunaLabel10.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GunaLabel10.Location = New System.Drawing.Point(34, 101)
         Me.GunaLabel10.Name = "GunaLabel10"
@@ -1378,6 +1470,7 @@ Partial Class FrmHome
         '
         Me.GunaLabel11.AutoSize = True
         Me.GunaLabel11.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.GunaLabel11, Guna.UI.Animation.DecorationType.None)
         Me.GunaLabel11.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GunaLabel11.Location = New System.Drawing.Point(52, 75)
         Me.GunaLabel11.Name = "GunaLabel11"
@@ -1388,6 +1481,7 @@ Partial Class FrmHome
         'PictureBox5
         '
         Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
+        Me.GunaTransition1.SetDecoration(Me.PictureBox5, Guna.UI.Animation.DecorationType.None)
         Me.PictureBox5.Image = Global.Maulabs.My.Resources.Resources.icons8_paper_money_48
         Me.PictureBox5.Location = New System.Drawing.Point(60, 23)
         Me.PictureBox5.Name = "PictureBox5"
@@ -1398,6 +1492,7 @@ Partial Class FrmHome
         'GunaCirclePictureBox5
         '
         Me.GunaCirclePictureBox5.BaseColor = System.Drawing.SystemColors.HotTrack
+        Me.GunaTransition1.SetDecoration(Me.GunaCirclePictureBox5, Guna.UI.Animation.DecorationType.None)
         Me.GunaCirclePictureBox5.Location = New System.Drawing.Point(12, 13)
         Me.GunaCirclePictureBox5.Name = "GunaCirclePictureBox5"
         Me.GunaCirclePictureBox5.Size = New System.Drawing.Size(8, 8)
@@ -1410,6 +1505,35 @@ Partial Class FrmHome
         '
         Me.GunaElipse1.TargetControl = Me
         '
+        'GunaTransition1
+        '
+        Me.GunaTransition1.AnimationType = Guna.UI.Animation.AnimationType.HorizSlide
+        Me.GunaTransition1.Cursor = Nothing
+        Animation1.AnimateOnlyDifferences = True
+        Animation1.BlindCoeff = CType(resources.GetObject("Animation1.BlindCoeff"), System.Drawing.PointF)
+        Animation1.LeafCoeff = 0!
+        Animation1.MaxTime = 1.0!
+        Animation1.MinTime = 0!
+        Animation1.MosaicCoeff = CType(resources.GetObject("Animation1.MosaicCoeff"), System.Drawing.PointF)
+        Animation1.MosaicShift = CType(resources.GetObject("Animation1.MosaicShift"), System.Drawing.PointF)
+        Animation1.MosaicSize = 0
+        Animation1.Padding = New System.Windows.Forms.Padding(0, 0, 0, 0)
+        Animation1.RotateCoeff = 0!
+        Animation1.RotateLimit = 0!
+        Animation1.ScaleCoeff = CType(resources.GetObject("Animation1.ScaleCoeff"), System.Drawing.PointF)
+        Animation1.SlideCoeff = CType(resources.GetObject("Animation1.SlideCoeff"), System.Drawing.PointF)
+        Animation1.TimeCoeff = 0!
+        Animation1.TransparencyCoeff = 0!
+        Me.GunaTransition1.DefaultAnimation = Animation1
+        '
+        'GunaDragControl1
+        '
+        Me.GunaDragControl1.TargetControl = Me.Panel1
+        '
+        'GunaDragControl2
+        '
+        Me.GunaDragControl2.TargetControl = Me.Panel2
+        '
         'FrmHome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1419,6 +1543,7 @@ Partial Class FrmHome
         Me.Controls.Add(Me.GunaPanel3)
         Me.Controls.Add(Me.GunaPanel2)
         Me.Controls.Add(Me.GunaPanel1)
+        Me.GunaTransition1.SetDecoration(Me, Guna.UI.Animation.DecorationType.None)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FrmHome"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -1573,4 +1698,8 @@ Partial Class FrmHome
     Friend WithEvents GunaLabel31 As Guna.UI.WinForms.GunaLabel
     Friend WithEvents PictureBox15 As PictureBox
     Friend WithEvents GunaCirclePictureBox15 As Guna.UI.WinForms.GunaCirclePictureBox
+    Friend WithEvents Timer1 As Timer
+    Friend WithEvents GunaTransition1 As Guna.UI.WinForms.GunaTransition
+    Friend WithEvents GunaDragControl1 As Guna.UI.WinForms.GunaDragControl
+    Friend WithEvents GunaDragControl2 As Guna.UI.WinForms.GunaDragControl
 End Class

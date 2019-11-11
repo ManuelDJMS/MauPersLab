@@ -11,4 +11,9 @@
         Panel1.BringToFront()
         GunaTransition1.Hide(Panel1)
     End Sub
+
+    Private Sub btnMenu_Click(sender As Object, e As EventArgs) Handles btnMenu.Click
+        Panel1.BringToFront()
+        GunaTransition1.Show(Panel1)
+    End Sub
 End Class

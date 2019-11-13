@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FrmPacientes
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FrmPacientes
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.GunaElipse1 = New Guna.UI.WinForms.GunaElipse(Me.components)
@@ -46,12 +46,12 @@ Partial Class FrmPacientes
         Me.txtCelular = New Guna.UI.WinForms.GunaTextBox()
         Me.txtEmail = New Guna.UI.WinForms.GunaTextBox()
         Me.txtSangre = New Guna.UI.WinForms.GunaTextBox()
-        Me.dtpFechaNacimiento = New System.Windows.Forms.DateTimePicker()
         Me.GunaSeparator1 = New Guna.UI.WinForms.GunaSeparator()
+        Me.GunaSeparator2 = New Guna.UI.WinForms.GunaSeparator()
         Me.btnCancelar = New Guna.UI.WinForms.GunaButton()
         Me.btnGuardar = New Guna.UI.WinForms.GunaButton()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.GunaSeparator2 = New Guna.UI.WinForms.GunaSeparator()
+        Me.dtpFechaNacimiento = New System.Windows.Forms.MaskedTextBox()
         Me.GunaPanel1.SuspendLayout()
         CType(Me.GunaPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -331,13 +331,6 @@ Partial Class FrmPacientes
         Me.txtSangre.Size = New System.Drawing.Size(197, 30)
         Me.txtSangre.TabIndex = 16
         '
-        'dtpFechaNacimiento
-        '
-        Me.dtpFechaNacimiento.Location = New System.Drawing.Point(158, 292)
-        Me.dtpFechaNacimiento.Name = "dtpFechaNacimiento"
-        Me.dtpFechaNacimiento.Size = New System.Drawing.Size(200, 20)
-        Me.dtpFechaNacimiento.TabIndex = 17
-        '
         'GunaSeparator1
         '
         Me.GunaSeparator1.LineColor = System.Drawing.Color.Silver
@@ -345,6 +338,14 @@ Partial Class FrmPacientes
         Me.GunaSeparator1.Name = "GunaSeparator1"
         Me.GunaSeparator1.Size = New System.Drawing.Size(512, 34)
         Me.GunaSeparator1.TabIndex = 18
+        '
+        'GunaSeparator2
+        '
+        Me.GunaSeparator2.LineColor = System.Drawing.Color.Silver
+        Me.GunaSeparator2.Location = New System.Drawing.Point(12, 317)
+        Me.GunaSeparator2.Name = "GunaSeparator2"
+        Me.GunaSeparator2.Size = New System.Drawing.Size(572, 32)
+        Me.GunaSeparator2.TabIndex = 21
         '
         'btnCancelar
         '
@@ -360,7 +361,7 @@ Partial Class FrmPacientes
         Me.btnCancelar.ImageSize = New System.Drawing.Size(20, 20)
         Me.btnCancelar.Location = New System.Drawing.Point(319, 346)
         Me.btnCancelar.Name = "btnCancelar"
-        Me.btnCancelar.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnCancelar.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(87, Byte), Integer))
         Me.btnCancelar.OnHoverBorderColor = System.Drawing.Color.Black
         Me.btnCancelar.OnHoverForeColor = System.Drawing.Color.White
         Me.btnCancelar.OnHoverImage = Nothing
@@ -384,7 +385,7 @@ Partial Class FrmPacientes
         Me.btnGuardar.ImageSize = New System.Drawing.Size(20, 20)
         Me.btnGuardar.Location = New System.Drawing.Point(175, 346)
         Me.btnGuardar.Name = "btnGuardar"
-        Me.btnGuardar.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnGuardar.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.btnGuardar.OnHoverBorderColor = System.Drawing.Color.Black
         Me.btnGuardar.OnHoverForeColor = System.Drawing.Color.White
         Me.btnGuardar.OnHoverImage = Nothing
@@ -405,13 +406,14 @@ Partial Class FrmPacientes
         Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
         '
-        'GunaSeparator2
+        'dtpFechaNacimiento
         '
-        Me.GunaSeparator2.LineColor = System.Drawing.Color.Silver
-        Me.GunaSeparator2.Location = New System.Drawing.Point(12, 317)
-        Me.GunaSeparator2.Name = "GunaSeparator2"
-        Me.GunaSeparator2.Size = New System.Drawing.Size(572, 32)
-        Me.GunaSeparator2.TabIndex = 21
+        Me.dtpFechaNacimiento.Location = New System.Drawing.Point(158, 291)
+        Me.dtpFechaNacimiento.Mask = "00/00/0000"
+        Me.dtpFechaNacimiento.Name = "dtpFechaNacimiento"
+        Me.dtpFechaNacimiento.Size = New System.Drawing.Size(197, 20)
+        Me.dtpFechaNacimiento.TabIndex = 22
+        Me.dtpFechaNacimiento.ValidatingType = GetType(Date)
         '
         'FrmPacientes
         '
@@ -419,12 +421,12 @@ Partial Class FrmPacientes
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(607, 398)
+        Me.Controls.Add(Me.dtpFechaNacimiento)
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.GunaSeparator2)
         Me.Controls.Add(Me.GunaLabel2)
         Me.Controls.Add(Me.GunaSeparator1)
-        Me.Controls.Add(Me.dtpFechaNacimiento)
         Me.Controls.Add(Me.txtSangre)
         Me.Controls.Add(Me.txtEmail)
         Me.Controls.Add(Me.txtCelular)
@@ -465,7 +467,6 @@ Partial Class FrmPacientes
     Friend WithEvents GunaLabel2 As Guna.UI.WinForms.GunaLabel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents GunaSeparator1 As Guna.UI.WinForms.GunaSeparator
-    Friend WithEvents dtpFechaNacimiento As DateTimePicker
     Friend WithEvents txtSangre As Guna.UI.WinForms.GunaTextBox
     Friend WithEvents txtEmail As Guna.UI.WinForms.GunaTextBox
     Friend WithEvents txtCelular As Guna.UI.WinForms.GunaTextBox
@@ -482,4 +483,5 @@ Partial Class FrmPacientes
     Friend WithEvents btnGuardar As Guna.UI.WinForms.GunaButton
     Friend WithEvents btnCancelar As Guna.UI.WinForms.GunaButton
     Friend WithEvents GunaSeparator2 As Guna.UI.WinForms.GunaSeparator
+    Friend WithEvents dtpFechaNacimiento As MaskedTextBox
 End Class

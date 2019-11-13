@@ -78,6 +78,12 @@
   <ItemGroup>
     <Compile Include="Clases\Conexiones.vb" />
     <Compile Include="Clases\Module1.vb" />
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmMenu.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +144,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMenu.resx">
       <DependentUpon>FrmMenu.vb</DependentUpon>
     </EmbeddedResource>
@@ -179,19 +188,25 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8-menu-48.png" />
+    <None Include="Resources\Checkmark_28px.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8-multiply-48.png" />
+    <None Include="Resources\Error_28px.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8-horizontal-line-48.png" />
+    <None Include="Resources\icons8-caduceus-48.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8-verified-account-48.png" />
+    <None Include="Resources\icons8-cancel-28.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8-verified-account-28.png" />
+    <None Include="Resources\icons8-edit-property-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-experiment-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-graph-report-48.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-health-checkup-28.png" />
@@ -200,37 +215,16 @@
     <None Include="Resources\icons8-health-checkup-48.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8-treatment-48.png" />
+    <None Include="Resources\icons8-horizontal-line-48.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8-experiment-48.png" />
+    <None Include="Resources\icons8-menu-48.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8-edit-property-48.png" />
+    <None Include="Resources\icons8-multiply-48.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-paper-money-48.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-print-48.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-caduceus-48.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-graph-report-48.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-save-28.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-cancel-28.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-search-24.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-search-24 %281%29.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-print-24.png" />
@@ -239,19 +233,37 @@
     <None Include="Resources\icons8-print-24[1].png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Error_28px.png" />
+    <None Include="Resources\icons8-print-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-save-28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-24 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-treatment-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-verified-account-28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-verified-account-48.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Info_28px.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Warning_28px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Checkmark_28px.png" />
+    <None Include="Resources\LabQuimicaSanguinea.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Multiply_18px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warning_28px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

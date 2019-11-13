@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FrmPacientes
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FrmPacientes
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.GunaElipse1 = New Guna.UI.WinForms.GunaElipse(Me.components)
@@ -40,18 +40,18 @@ Partial Class FrmPacientes
         Me.GunaLabel7 = New Guna.UI.WinForms.GunaLabel()
         Me.GunaLabel8 = New Guna.UI.WinForms.GunaLabel()
         Me.GunaLabel9 = New Guna.UI.WinForms.GunaLabel()
-        Me.GunaTextBox1 = New Guna.UI.WinForms.GunaTextBox()
-        Me.GunaTextBox2 = New Guna.UI.WinForms.GunaTextBox()
-        Me.GunaTextBox3 = New Guna.UI.WinForms.GunaTextBox()
-        Me.GunaTextBox4 = New Guna.UI.WinForms.GunaTextBox()
-        Me.GunaTextBox5 = New Guna.UI.WinForms.GunaTextBox()
-        Me.GunaTextBox6 = New Guna.UI.WinForms.GunaTextBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.txtNombre = New Guna.UI.WinForms.GunaTextBox()
+        Me.txtDomicilio = New Guna.UI.WinForms.GunaTextBox()
+        Me.txtTelefono = New Guna.UI.WinForms.GunaTextBox()
+        Me.txtCelular = New Guna.UI.WinForms.GunaTextBox()
+        Me.txtEmail = New Guna.UI.WinForms.GunaTextBox()
+        Me.txtSangre = New Guna.UI.WinForms.GunaTextBox()
         Me.GunaSeparator1 = New Guna.UI.WinForms.GunaSeparator()
-        Me.GunaButton1 = New Guna.UI.WinForms.GunaButton()
-        Me.btnPacientes = New Guna.UI.WinForms.GunaButton()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GunaSeparator2 = New Guna.UI.WinForms.GunaSeparator()
+        Me.btnCancelar = New Guna.UI.WinForms.GunaButton()
+        Me.btnGuardar = New Guna.UI.WinForms.GunaButton()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.dtpFechaNacimiento = New System.Windows.Forms.MaskedTextBox()
         Me.GunaPanel1.SuspendLayout()
         CType(Me.GunaPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -235,108 +235,101 @@ Partial Class FrmPacientes
         Me.GunaLabel9.TabIndex = 10
         Me.GunaLabel9.Text = "Fecha de Nacimiento:"
         '
-        'GunaTextBox1
+        'txtNombre
         '
-        Me.GunaTextBox1.BaseColor = System.Drawing.Color.White
-        Me.GunaTextBox1.BorderColor = System.Drawing.Color.Silver
-        Me.GunaTextBox1.BorderSize = 1
-        Me.GunaTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.GunaTextBox1.FocusedBaseColor = System.Drawing.Color.White
-        Me.GunaTextBox1.FocusedBorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.GunaTextBox1.FocusedForeColor = System.Drawing.SystemColors.ControlText
-        Me.GunaTextBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.GunaTextBox1.Location = New System.Drawing.Point(158, 106)
-        Me.GunaTextBox1.Name = "GunaTextBox1"
-        Me.GunaTextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.GunaTextBox1.Size = New System.Drawing.Size(420, 30)
-        Me.GunaTextBox1.TabIndex = 11
+        Me.txtNombre.BaseColor = System.Drawing.Color.White
+        Me.txtNombre.BorderColor = System.Drawing.Color.Silver
+        Me.txtNombre.BorderSize = 1
+        Me.txtNombre.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtNombre.FocusedBaseColor = System.Drawing.Color.White
+        Me.txtNombre.FocusedBorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.txtNombre.FocusedForeColor = System.Drawing.SystemColors.ControlText
+        Me.txtNombre.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.txtNombre.Location = New System.Drawing.Point(158, 106)
+        Me.txtNombre.Name = "txtNombre"
+        Me.txtNombre.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtNombre.Size = New System.Drawing.Size(420, 30)
+        Me.txtNombre.TabIndex = 11
         '
-        'GunaTextBox2
+        'txtDomicilio
         '
-        Me.GunaTextBox2.BaseColor = System.Drawing.Color.White
-        Me.GunaTextBox2.BorderColor = System.Drawing.Color.Silver
-        Me.GunaTextBox2.BorderSize = 1
-        Me.GunaTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.GunaTextBox2.FocusedBaseColor = System.Drawing.Color.White
-        Me.GunaTextBox2.FocusedBorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.GunaTextBox2.FocusedForeColor = System.Drawing.SystemColors.ControlText
-        Me.GunaTextBox2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.GunaTextBox2.Location = New System.Drawing.Point(158, 144)
-        Me.GunaTextBox2.Name = "GunaTextBox2"
-        Me.GunaTextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.GunaTextBox2.Size = New System.Drawing.Size(420, 30)
-        Me.GunaTextBox2.TabIndex = 12
+        Me.txtDomicilio.BaseColor = System.Drawing.Color.White
+        Me.txtDomicilio.BorderColor = System.Drawing.Color.Silver
+        Me.txtDomicilio.BorderSize = 1
+        Me.txtDomicilio.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtDomicilio.FocusedBaseColor = System.Drawing.Color.White
+        Me.txtDomicilio.FocusedBorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.txtDomicilio.FocusedForeColor = System.Drawing.SystemColors.ControlText
+        Me.txtDomicilio.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.txtDomicilio.Location = New System.Drawing.Point(158, 144)
+        Me.txtDomicilio.Name = "txtDomicilio"
+        Me.txtDomicilio.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtDomicilio.Size = New System.Drawing.Size(420, 30)
+        Me.txtDomicilio.TabIndex = 12
         '
-        'GunaTextBox3
+        'txtTelefono
         '
-        Me.GunaTextBox3.BaseColor = System.Drawing.Color.White
-        Me.GunaTextBox3.BorderColor = System.Drawing.Color.Silver
-        Me.GunaTextBox3.BorderSize = 1
-        Me.GunaTextBox3.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.GunaTextBox3.FocusedBaseColor = System.Drawing.Color.White
-        Me.GunaTextBox3.FocusedBorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.GunaTextBox3.FocusedForeColor = System.Drawing.SystemColors.ControlText
-        Me.GunaTextBox3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.GunaTextBox3.Location = New System.Drawing.Point(158, 182)
-        Me.GunaTextBox3.Name = "GunaTextBox3"
-        Me.GunaTextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.GunaTextBox3.Size = New System.Drawing.Size(197, 30)
-        Me.GunaTextBox3.TabIndex = 13
+        Me.txtTelefono.BaseColor = System.Drawing.Color.White
+        Me.txtTelefono.BorderColor = System.Drawing.Color.Silver
+        Me.txtTelefono.BorderSize = 1
+        Me.txtTelefono.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtTelefono.FocusedBaseColor = System.Drawing.Color.White
+        Me.txtTelefono.FocusedBorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.txtTelefono.FocusedForeColor = System.Drawing.SystemColors.ControlText
+        Me.txtTelefono.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.txtTelefono.Location = New System.Drawing.Point(158, 182)
+        Me.txtTelefono.Name = "txtTelefono"
+        Me.txtTelefono.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtTelefono.Size = New System.Drawing.Size(197, 30)
+        Me.txtTelefono.TabIndex = 13
         '
-        'GunaTextBox4
+        'txtCelular
         '
-        Me.GunaTextBox4.BaseColor = System.Drawing.Color.White
-        Me.GunaTextBox4.BorderColor = System.Drawing.Color.Silver
-        Me.GunaTextBox4.BorderSize = 1
-        Me.GunaTextBox4.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.GunaTextBox4.FocusedBaseColor = System.Drawing.Color.White
-        Me.GunaTextBox4.FocusedBorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.GunaTextBox4.FocusedForeColor = System.Drawing.SystemColors.ControlText
-        Me.GunaTextBox4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.GunaTextBox4.Location = New System.Drawing.Point(418, 181)
-        Me.GunaTextBox4.Name = "GunaTextBox4"
-        Me.GunaTextBox4.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.GunaTextBox4.Size = New System.Drawing.Size(160, 30)
-        Me.GunaTextBox4.TabIndex = 14
+        Me.txtCelular.BaseColor = System.Drawing.Color.White
+        Me.txtCelular.BorderColor = System.Drawing.Color.Silver
+        Me.txtCelular.BorderSize = 1
+        Me.txtCelular.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtCelular.FocusedBaseColor = System.Drawing.Color.White
+        Me.txtCelular.FocusedBorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.txtCelular.FocusedForeColor = System.Drawing.SystemColors.ControlText
+        Me.txtCelular.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.txtCelular.Location = New System.Drawing.Point(418, 181)
+        Me.txtCelular.Name = "txtCelular"
+        Me.txtCelular.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtCelular.Size = New System.Drawing.Size(160, 30)
+        Me.txtCelular.TabIndex = 14
         '
-        'GunaTextBox5
+        'txtEmail
         '
-        Me.GunaTextBox5.BaseColor = System.Drawing.Color.White
-        Me.GunaTextBox5.BorderColor = System.Drawing.Color.Silver
-        Me.GunaTextBox5.BorderSize = 1
-        Me.GunaTextBox5.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.GunaTextBox5.FocusedBaseColor = System.Drawing.Color.White
-        Me.GunaTextBox5.FocusedBorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.GunaTextBox5.FocusedForeColor = System.Drawing.SystemColors.ControlText
-        Me.GunaTextBox5.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.GunaTextBox5.Location = New System.Drawing.Point(158, 218)
-        Me.GunaTextBox5.Name = "GunaTextBox5"
-        Me.GunaTextBox5.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.GunaTextBox5.Size = New System.Drawing.Size(197, 30)
-        Me.GunaTextBox5.TabIndex = 15
+        Me.txtEmail.BaseColor = System.Drawing.Color.White
+        Me.txtEmail.BorderColor = System.Drawing.Color.Silver
+        Me.txtEmail.BorderSize = 1
+        Me.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtEmail.FocusedBaseColor = System.Drawing.Color.White
+        Me.txtEmail.FocusedBorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.txtEmail.FocusedForeColor = System.Drawing.SystemColors.ControlText
+        Me.txtEmail.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.txtEmail.Location = New System.Drawing.Point(158, 218)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtEmail.Size = New System.Drawing.Size(197, 30)
+        Me.txtEmail.TabIndex = 15
         '
-        'GunaTextBox6
+        'txtSangre
         '
-        Me.GunaTextBox6.BaseColor = System.Drawing.Color.White
-        Me.GunaTextBox6.BorderColor = System.Drawing.Color.Silver
-        Me.GunaTextBox6.BorderSize = 1
-        Me.GunaTextBox6.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.GunaTextBox6.FocusedBaseColor = System.Drawing.Color.White
-        Me.GunaTextBox6.FocusedBorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.GunaTextBox6.FocusedForeColor = System.Drawing.SystemColors.ControlText
-        Me.GunaTextBox6.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.GunaTextBox6.Location = New System.Drawing.Point(158, 256)
-        Me.GunaTextBox6.Name = "GunaTextBox6"
-        Me.GunaTextBox6.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.GunaTextBox6.Size = New System.Drawing.Size(197, 30)
-        Me.GunaTextBox6.TabIndex = 16
-        '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(158, 292)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
-        Me.DateTimePicker1.TabIndex = 17
+        Me.txtSangre.BaseColor = System.Drawing.Color.White
+        Me.txtSangre.BorderColor = System.Drawing.Color.Silver
+        Me.txtSangre.BorderSize = 1
+        Me.txtSangre.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtSangre.FocusedBaseColor = System.Drawing.Color.White
+        Me.txtSangre.FocusedBorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.txtSangre.FocusedForeColor = System.Drawing.SystemColors.ControlText
+        Me.txtSangre.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.txtSangre.Location = New System.Drawing.Point(158, 256)
+        Me.txtSangre.Name = "txtSangre"
+        Me.txtSangre.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtSangre.Size = New System.Drawing.Size(197, 30)
+        Me.txtSangre.TabIndex = 16
         '
         'GunaSeparator1
         '
@@ -346,53 +339,61 @@ Partial Class FrmPacientes
         Me.GunaSeparator1.Size = New System.Drawing.Size(512, 34)
         Me.GunaSeparator1.TabIndex = 18
         '
-        'GunaButton1
+        'GunaSeparator2
         '
-        Me.GunaButton1.AnimationHoverSpeed = 0.07!
-        Me.GunaButton1.AnimationSpeed = 0.03!
-        Me.GunaButton1.BaseColor = System.Drawing.Color.Firebrick
-        Me.GunaButton1.BorderColor = System.Drawing.Color.Black
-        Me.GunaButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.GunaButton1.FocusedColor = System.Drawing.Color.Empty
-        Me.GunaButton1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.GunaButton1.ForeColor = System.Drawing.Color.White
-        Me.GunaButton1.Image = Global.Maulabs.My.Resources.Resources.icons8_cancel_28
-        Me.GunaButton1.ImageSize = New System.Drawing.Size(20, 20)
-        Me.GunaButton1.Location = New System.Drawing.Point(319, 346)
-        Me.GunaButton1.Name = "GunaButton1"
-        Me.GunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.GunaButton1.OnHoverBorderColor = System.Drawing.Color.Black
-        Me.GunaButton1.OnHoverForeColor = System.Drawing.Color.White
-        Me.GunaButton1.OnHoverImage = Nothing
-        Me.GunaButton1.OnPressedColor = System.Drawing.Color.Black
-        Me.GunaButton1.Radius = 3
-        Me.GunaButton1.Size = New System.Drawing.Size(111, 42)
-        Me.GunaButton1.TabIndex = 20
-        Me.GunaButton1.Text = "Cancelar"
+        Me.GunaSeparator2.LineColor = System.Drawing.Color.Silver
+        Me.GunaSeparator2.Location = New System.Drawing.Point(12, 317)
+        Me.GunaSeparator2.Name = "GunaSeparator2"
+        Me.GunaSeparator2.Size = New System.Drawing.Size(572, 32)
+        Me.GunaSeparator2.TabIndex = 21
         '
-        'btnPacientes
+        'btnCancelar
         '
-        Me.btnPacientes.AnimationHoverSpeed = 0.07!
-        Me.btnPacientes.AnimationSpeed = 0.03!
-        Me.btnPacientes.BaseColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
-        Me.btnPacientes.BorderColor = System.Drawing.Color.Black
-        Me.btnPacientes.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnPacientes.FocusedColor = System.Drawing.Color.Empty
-        Me.btnPacientes.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.btnPacientes.ForeColor = System.Drawing.Color.White
-        Me.btnPacientes.Image = Global.Maulabs.My.Resources.Resources.icons8_save_28
-        Me.btnPacientes.ImageSize = New System.Drawing.Size(20, 20)
-        Me.btnPacientes.Location = New System.Drawing.Point(175, 346)
-        Me.btnPacientes.Name = "btnPacientes"
-        Me.btnPacientes.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnPacientes.OnHoverBorderColor = System.Drawing.Color.Black
-        Me.btnPacientes.OnHoverForeColor = System.Drawing.Color.White
-        Me.btnPacientes.OnHoverImage = Nothing
-        Me.btnPacientes.OnPressedColor = System.Drawing.Color.Black
-        Me.btnPacientes.Radius = 3
-        Me.btnPacientes.Size = New System.Drawing.Size(111, 42)
-        Me.btnPacientes.TabIndex = 19
-        Me.btnPacientes.Text = "Guardar"
+        Me.btnCancelar.AnimationHoverSpeed = 0.07!
+        Me.btnCancelar.AnimationSpeed = 0.03!
+        Me.btnCancelar.BaseColor = System.Drawing.Color.Firebrick
+        Me.btnCancelar.BorderColor = System.Drawing.Color.Black
+        Me.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCancelar.FocusedColor = System.Drawing.Color.Empty
+        Me.btnCancelar.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.btnCancelar.ForeColor = System.Drawing.Color.White
+        Me.btnCancelar.Image = Global.Maulabs.My.Resources.Resources.icons8_cancel_28
+        Me.btnCancelar.ImageSize = New System.Drawing.Size(20, 20)
+        Me.btnCancelar.Location = New System.Drawing.Point(319, 346)
+        Me.btnCancelar.Name = "btnCancelar"
+        Me.btnCancelar.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.btnCancelar.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.btnCancelar.OnHoverForeColor = System.Drawing.Color.White
+        Me.btnCancelar.OnHoverImage = Nothing
+        Me.btnCancelar.OnPressedColor = System.Drawing.Color.Black
+        Me.btnCancelar.Radius = 3
+        Me.btnCancelar.Size = New System.Drawing.Size(111, 42)
+        Me.btnCancelar.TabIndex = 20
+        Me.btnCancelar.Text = "Cancelar"
+        '
+        'btnGuardar
+        '
+        Me.btnGuardar.AnimationHoverSpeed = 0.07!
+        Me.btnGuardar.AnimationSpeed = 0.03!
+        Me.btnGuardar.BaseColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.btnGuardar.BorderColor = System.Drawing.Color.Black
+        Me.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnGuardar.FocusedColor = System.Drawing.Color.Empty
+        Me.btnGuardar.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.btnGuardar.ForeColor = System.Drawing.Color.White
+        Me.btnGuardar.Image = Global.Maulabs.My.Resources.Resources.icons8_save_28
+        Me.btnGuardar.ImageSize = New System.Drawing.Size(20, 20)
+        Me.btnGuardar.Location = New System.Drawing.Point(175, 346)
+        Me.btnGuardar.Name = "btnGuardar"
+        Me.btnGuardar.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(129, Byte), Integer))
+        Me.btnGuardar.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.btnGuardar.OnHoverForeColor = System.Drawing.Color.White
+        Me.btnGuardar.OnHoverImage = Nothing
+        Me.btnGuardar.OnPressedColor = System.Drawing.Color.Black
+        Me.btnGuardar.Radius = 3
+        Me.btnGuardar.Size = New System.Drawing.Size(111, 42)
+        Me.btnGuardar.TabIndex = 19
+        Me.btnGuardar.Text = "Guardar"
         '
         'PictureBox1
         '
@@ -405,13 +406,14 @@ Partial Class FrmPacientes
         Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
         '
-        'GunaSeparator2
+        'dtpFechaNacimiento
         '
-        Me.GunaSeparator2.LineColor = System.Drawing.Color.Silver
-        Me.GunaSeparator2.Location = New System.Drawing.Point(12, 317)
-        Me.GunaSeparator2.Name = "GunaSeparator2"
-        Me.GunaSeparator2.Size = New System.Drawing.Size(572, 32)
-        Me.GunaSeparator2.TabIndex = 21
+        Me.dtpFechaNacimiento.Location = New System.Drawing.Point(158, 291)
+        Me.dtpFechaNacimiento.Mask = "00/00/0000"
+        Me.dtpFechaNacimiento.Name = "dtpFechaNacimiento"
+        Me.dtpFechaNacimiento.Size = New System.Drawing.Size(197, 20)
+        Me.dtpFechaNacimiento.TabIndex = 22
+        Me.dtpFechaNacimiento.ValidatingType = GetType(Date)
         '
         'FrmPacientes
         '
@@ -419,18 +421,18 @@ Partial Class FrmPacientes
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(607, 398)
-        Me.Controls.Add(Me.GunaButton1)
-        Me.Controls.Add(Me.btnPacientes)
+        Me.Controls.Add(Me.dtpFechaNacimiento)
+        Me.Controls.Add(Me.btnCancelar)
+        Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.GunaSeparator2)
         Me.Controls.Add(Me.GunaLabel2)
         Me.Controls.Add(Me.GunaSeparator1)
-        Me.Controls.Add(Me.DateTimePicker1)
-        Me.Controls.Add(Me.GunaTextBox6)
-        Me.Controls.Add(Me.GunaTextBox5)
-        Me.Controls.Add(Me.GunaTextBox4)
-        Me.Controls.Add(Me.GunaTextBox3)
-        Me.Controls.Add(Me.GunaTextBox2)
-        Me.Controls.Add(Me.GunaTextBox1)
+        Me.Controls.Add(Me.txtSangre)
+        Me.Controls.Add(Me.txtEmail)
+        Me.Controls.Add(Me.txtCelular)
+        Me.Controls.Add(Me.txtTelefono)
+        Me.Controls.Add(Me.txtDomicilio)
+        Me.Controls.Add(Me.txtNombre)
         Me.Controls.Add(Me.GunaLabel9)
         Me.Controls.Add(Me.GunaLabel8)
         Me.Controls.Add(Me.GunaLabel7)
@@ -465,13 +467,12 @@ Partial Class FrmPacientes
     Friend WithEvents GunaLabel2 As Guna.UI.WinForms.GunaLabel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents GunaSeparator1 As Guna.UI.WinForms.GunaSeparator
-    Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents GunaTextBox6 As Guna.UI.WinForms.GunaTextBox
-    Friend WithEvents GunaTextBox5 As Guna.UI.WinForms.GunaTextBox
-    Friend WithEvents GunaTextBox4 As Guna.UI.WinForms.GunaTextBox
-    Friend WithEvents GunaTextBox3 As Guna.UI.WinForms.GunaTextBox
-    Friend WithEvents GunaTextBox2 As Guna.UI.WinForms.GunaTextBox
-    Friend WithEvents GunaTextBox1 As Guna.UI.WinForms.GunaTextBox
+    Friend WithEvents txtSangre As Guna.UI.WinForms.GunaTextBox
+    Friend WithEvents txtEmail As Guna.UI.WinForms.GunaTextBox
+    Friend WithEvents txtCelular As Guna.UI.WinForms.GunaTextBox
+    Friend WithEvents txtTelefono As Guna.UI.WinForms.GunaTextBox
+    Friend WithEvents txtDomicilio As Guna.UI.WinForms.GunaTextBox
+    Friend WithEvents txtNombre As Guna.UI.WinForms.GunaTextBox
     Friend WithEvents GunaLabel9 As Guna.UI.WinForms.GunaLabel
     Friend WithEvents GunaLabel8 As Guna.UI.WinForms.GunaLabel
     Friend WithEvents GunaLabel7 As Guna.UI.WinForms.GunaLabel
@@ -479,7 +480,8 @@ Partial Class FrmPacientes
     Friend WithEvents GunaLabel5 As Guna.UI.WinForms.GunaLabel
     Friend WithEvents GunaLabel3 As Guna.UI.WinForms.GunaLabel
     Friend WithEvents GunaLabel4 As Guna.UI.WinForms.GunaLabel
-    Friend WithEvents btnPacientes As Guna.UI.WinForms.GunaButton
-    Friend WithEvents GunaButton1 As Guna.UI.WinForms.GunaButton
+    Friend WithEvents btnGuardar As Guna.UI.WinForms.GunaButton
+    Friend WithEvents btnCancelar As Guna.UI.WinForms.GunaButton
     Friend WithEvents GunaSeparator2 As Guna.UI.WinForms.GunaSeparator
+    Friend WithEvents dtpFechaNacimiento As MaskedTextBox
 End Class

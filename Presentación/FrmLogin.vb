@@ -7,46 +7,7 @@ Public Class FrmLogin
 
     End Sub
 
-    Private Sub GunaButton1_Click(sender As Object, e As EventArgs) Handles GunaButton1.Click
-        'Try
-        '    If Me.ValidateChildren = True And txtUser.Text <> "" And txtpass.Text <> "" Then
-        '        Using conexion1 As New SqlConnection(conexionLIMStransac)
-        '            conexion1.Open()
-        '            Dim transaction As SqlTransaction
-        '            transaction = conexion1.BeginTransaction("Sample")
-        '            Dim comando As SqlCommand = conexion1.CreateCommand()
-        '            Dim lector As SqlDataReader
-        '            comando.Connection = conexion1
-        '            comando.Transaction = transaction
-        '            Dim r As String = "select UserID, UserName, Password, Department from UserMaster where UserName= " & "'" & txtUser.Text & "'"
-        '            comando.CommandText = r
-        '            lector = comando.ExecuteReader()
-        '            lector.Read()
-        '            usuario = lector(0)
-        '            departamento = lector(3)
-        '            If txtUser.Text = lector(1) And txtpass.Text = lector(2) Then
-        '                Alert("Usuario Correcto, BIENVENIDO", frmAlert.alertTypeEnum.Success)
-        '                FrmHOME.lbInicio.Text = lector(1)
-        '                FrmHOME.Show()
-        '                lector.Close()
-        '                Me.Dispose()
-        '                conexion1.Close()
-        '            Else
-        '                Alert("Contraseña Incorrecta", frmAlert.alertTypeEnum.Error)
-        '                txtpass.Text = ""
-        '            End If
-        '        End Using
-        '    Else
-        '        MessageBox.Show("Faltan ingresar algunos datos", "Error al guardar", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        '    End If
-        'Catch ex As Exception
-        '    MsgBox(ex.Message, MsgBoxStyle.Critical, "Error del Sistema")
-        '    cadena = Err.Description
-        '    cadena = cadena.Replace("'", "")
-        '    Bitacora("Sesión", "Error al iniciar el formulario", Err.Number, cadena)
-        'End Try
 
-    End Sub
 
     Private Sub txtUser_LostFocus(sender As Object, e As EventArgs) Handles txtUser.LostFocus
         If (txtUser.Text = Nothing) Then
@@ -118,5 +79,47 @@ Public Class FrmLogin
         '    Bitacora("Sesión", "Error al iniciar el formulario", Err.Number, cadena)
         'End Try
 
+    End Sub
+
+    Private Sub btnInicio_Click(sender As Object, e As EventArgs) Handles btnInicio.Click
+        'Try
+        If Me.ValidateChildren = True And txtUser.Text <> "" And txtpass.Text <> "" Then
+                Using conexion1 As New SqlConnection(conexiontransaccion)
+                    conexion1.Open()
+                    Dim transaction As SqlTransaction
+                    transaction = conexion1.BeginTransaction("Sample")
+                    Dim comando As SqlCommand = conexion1.CreateCommand()
+                    Dim lector As SqlDataReader
+                    comando.Connection = conexion1
+                    comando.Transaction = transaction
+                    Dim r As String = "select idEmpleado, Usuario, Contrasena from Empleados where Usuario= '" & txtUser.Text & "'"
+                    comando.CommandText = r
+                    lector = comando.ExecuteReader()
+                    lector.Read()
+                    idusuario = lector(0)
+                    If txtUser.Text = lector(1) And txtpass.Text = lector(2) Then
+                        Alert("Usuario Correcto, BIENVENIDO", frmAlert.alertTypeEnum.Success)
+                    FrmHome.lbInicio.Text = lector(1)
+                    FrmHome.Show()
+                        lector.Close()
+
+
+                    conexion1.Close()
+
+                    Me.Close()
+                Else
+                        Alert("Contraseña Incorrecta", frmAlert.alertTypeEnum.Error)
+                        txtpass.Text = ""
+                    End If
+                End Using
+            Else
+                MessageBox.Show("Faltan ingresar algunos datos", "Error al guardar", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            End If
+        'Catch ex As Exception
+        '    MsgBox(ex.Message, MsgBoxStyle.Critical, "Error del Sistema")
+        '    cadena = Err.Description
+        '    cadena = cadena.Replace("'", "")
+        '    Bitacora("Sesión", "Error al iniciar el formulario", Err.Number, cadena)
+        'End Try
     End Sub
 End Class

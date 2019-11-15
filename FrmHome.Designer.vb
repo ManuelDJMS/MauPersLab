@@ -23,7 +23,7 @@ Partial Class FrmHome
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim Animation1 As Guna.UI.Animation.Animation = New Guna.UI.Animation.Animation()
+        Dim Animation5 As Guna.UI.Animation.Animation = New Guna.UI.Animation.Animation()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmHome))
         Me.GunaPanel1 = New Guna.UI.WinForms.GunaPanel()
         Me.GunaVSeparator2 = New Guna.UI.WinForms.GunaVSeparator()
@@ -119,6 +119,7 @@ Partial Class FrmHome
         Me.GunaTransition1 = New Guna.UI.WinForms.GunaTransition(Me.components)
         Me.GunaDragControl1 = New Guna.UI.WinForms.GunaDragControl(Me.components)
         Me.GunaDragControl2 = New Guna.UI.WinForms.GunaDragControl(Me.components)
+        Me.GunaAnimateWindow1 = New Guna.UI.WinForms.GunaAnimateWindow(Me.components)
         Me.GunaPanel1.SuspendLayout()
         CType(Me.GunaPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GunaPanel2.SuspendLayout()
@@ -226,6 +227,7 @@ Partial Class FrmHome
         'btnCerrar
         '
         Me.GunaTransition1.SetDecoration(Me.btnCerrar, Guna.UI.Animation.DecorationType.None)
+        Me.btnCerrar.DialogResult = System.Windows.Forms.DialogResult.None
         Me.btnCerrar.Image = Global.Maulabs.My.Resources.Resources.icons8_multiply_48
         Me.btnCerrar.ImageSize = New System.Drawing.Size(16, 16)
         Me.btnCerrar.Location = New System.Drawing.Point(756, 8)
@@ -238,6 +240,7 @@ Partial Class FrmHome
         'btnMinimizar
         '
         Me.GunaTransition1.SetDecoration(Me.btnMinimizar, Guna.UI.Animation.DecorationType.None)
+        Me.btnMinimizar.DialogResult = System.Windows.Forms.DialogResult.None
         Me.btnMinimizar.Image = Global.Maulabs.My.Resources.Resources.icons8_horizontal_line_48
         Me.btnMinimizar.ImageSize = New System.Drawing.Size(16, 16)
         Me.btnMinimizar.Location = New System.Drawing.Point(718, 8)
@@ -250,6 +253,7 @@ Partial Class FrmHome
         'GunaImageButton1
         '
         Me.GunaTransition1.SetDecoration(Me.GunaImageButton1, Guna.UI.Animation.DecorationType.None)
+        Me.GunaImageButton1.DialogResult = System.Windows.Forms.DialogResult.None
         Me.GunaImageButton1.Image = Global.Maulabs.My.Resources.Resources.icons8_menu_48
         Me.GunaImageButton1.ImageSize = New System.Drawing.Size(16, 16)
         Me.GunaImageButton1.Location = New System.Drawing.Point(8, 8)
@@ -296,6 +300,7 @@ Partial Class FrmHome
         Me.GunaAdvenceButton4.CheckedLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.GunaAdvenceButton4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.GunaTransition1.SetDecoration(Me.GunaAdvenceButton4, Guna.UI.Animation.DecorationType.None)
+        Me.GunaAdvenceButton4.DialogResult = System.Windows.Forms.DialogResult.None
         Me.GunaAdvenceButton4.FocusedColor = System.Drawing.Color.Empty
         Me.GunaAdvenceButton4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GunaAdvenceButton4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
@@ -330,6 +335,7 @@ Partial Class FrmHome
         Me.GunaAdvenceButton3.CheckedLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.GunaAdvenceButton3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.GunaTransition1.SetDecoration(Me.GunaAdvenceButton3, Guna.UI.Animation.DecorationType.None)
+        Me.GunaAdvenceButton3.DialogResult = System.Windows.Forms.DialogResult.None
         Me.GunaAdvenceButton3.FocusedColor = System.Drawing.Color.Empty
         Me.GunaAdvenceButton3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GunaAdvenceButton3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
@@ -364,6 +370,7 @@ Partial Class FrmHome
         Me.GunaAdvenceButton2.CheckedLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.GunaAdvenceButton2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.GunaTransition1.SetDecoration(Me.GunaAdvenceButton2, Guna.UI.Animation.DecorationType.None)
+        Me.GunaAdvenceButton2.DialogResult = System.Windows.Forms.DialogResult.None
         Me.GunaAdvenceButton2.FocusedColor = System.Drawing.Color.Empty
         Me.GunaAdvenceButton2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GunaAdvenceButton2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
@@ -398,6 +405,7 @@ Partial Class FrmHome
         Me.btnMenu.CheckedLineColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand
         Me.GunaTransition1.SetDecoration(Me.btnMenu, Guna.UI.Animation.DecorationType.None)
+        Me.btnMenu.DialogResult = System.Windows.Forms.DialogResult.None
         Me.btnMenu.FocusedColor = System.Drawing.Color.Empty
         Me.btnMenu.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.btnMenu.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
@@ -447,6 +455,7 @@ Partial Class FrmHome
         '
         'GunaElipsePanel1
         '
+        Me.GunaElipsePanel1.BackColor = System.Drawing.Color.Transparent
         Me.GunaElipsePanel1.BaseColor = System.Drawing.Color.WhiteSmoke
         Me.GunaElipsePanel1.Controls.Add(Me.btnPacientes)
         Me.GunaElipsePanel1.Controls.Add(Me.GunaLabel3)
@@ -463,10 +472,12 @@ Partial Class FrmHome
         '
         Me.btnPacientes.AnimationHoverSpeed = 0.07!
         Me.btnPacientes.AnimationSpeed = 0.03!
+        Me.btnPacientes.BackColor = System.Drawing.Color.Transparent
         Me.btnPacientes.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnPacientes.BorderColor = System.Drawing.Color.Black
         Me.btnPacientes.Cursor = System.Windows.Forms.Cursors.Hand
         Me.GunaTransition1.SetDecoration(Me.btnPacientes, Guna.UI.Animation.DecorationType.None)
+        Me.btnPacientes.DialogResult = System.Windows.Forms.DialogResult.None
         Me.btnPacientes.FocusedColor = System.Drawing.Color.Empty
         Me.btnPacientes.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.btnPacientes.ForeColor = System.Drawing.Color.White
@@ -534,6 +545,7 @@ Partial Class FrmHome
         '
         'GunaElipsePanel8
         '
+        Me.GunaElipsePanel8.BackColor = System.Drawing.Color.Transparent
         Me.GunaElipsePanel8.BaseColor = System.Drawing.Color.WhiteSmoke
         Me.GunaElipsePanel8.Controls.Add(Me.btnMedicos)
         Me.GunaElipsePanel8.Controls.Add(Me.GunaLabel16)
@@ -550,10 +562,12 @@ Partial Class FrmHome
         '
         Me.btnMedicos.AnimationHoverSpeed = 0.07!
         Me.btnMedicos.AnimationSpeed = 0.03!
+        Me.btnMedicos.BackColor = System.Drawing.Color.Transparent
         Me.btnMedicos.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnMedicos.BorderColor = System.Drawing.Color.Black
         Me.btnMedicos.Cursor = System.Windows.Forms.Cursors.Hand
         Me.GunaTransition1.SetDecoration(Me.btnMedicos, Guna.UI.Animation.DecorationType.None)
+        Me.btnMedicos.DialogResult = System.Windows.Forms.DialogResult.None
         Me.btnMedicos.FocusedColor = System.Drawing.Color.Empty
         Me.btnMedicos.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.btnMedicos.ForeColor = System.Drawing.Color.White
@@ -621,6 +635,7 @@ Partial Class FrmHome
         '
         'GunaElipsePanel2
         '
+        Me.GunaElipsePanel2.BackColor = System.Drawing.Color.Transparent
         Me.GunaElipsePanel2.BaseColor = System.Drawing.Color.WhiteSmoke
         Me.GunaElipsePanel2.Controls.Add(Me.btnSolicitudes)
         Me.GunaElipsePanel2.Controls.Add(Me.GunaLabel4)
@@ -637,10 +652,12 @@ Partial Class FrmHome
         '
         Me.btnSolicitudes.AnimationHoverSpeed = 0.07!
         Me.btnSolicitudes.AnimationSpeed = 0.03!
+        Me.btnSolicitudes.BackColor = System.Drawing.Color.Transparent
         Me.btnSolicitudes.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnSolicitudes.BorderColor = System.Drawing.Color.Black
         Me.btnSolicitudes.Cursor = System.Windows.Forms.Cursors.Hand
         Me.GunaTransition1.SetDecoration(Me.btnSolicitudes, Guna.UI.Animation.DecorationType.None)
+        Me.btnSolicitudes.DialogResult = System.Windows.Forms.DialogResult.None
         Me.btnSolicitudes.FocusedColor = System.Drawing.Color.Empty
         Me.btnSolicitudes.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.btnSolicitudes.ForeColor = System.Drawing.Color.White
@@ -708,6 +725,7 @@ Partial Class FrmHome
         '
         'GunaElipsePanel7
         '
+        Me.GunaElipsePanel7.BackColor = System.Drawing.Color.Transparent
         Me.GunaElipsePanel7.BaseColor = System.Drawing.Color.WhiteSmoke
         Me.GunaElipsePanel7.Controls.Add(Me.btnReportes)
         Me.GunaElipsePanel7.Controls.Add(Me.GunaLabel14)
@@ -724,10 +742,12 @@ Partial Class FrmHome
         '
         Me.btnReportes.AnimationHoverSpeed = 0.07!
         Me.btnReportes.AnimationSpeed = 0.03!
+        Me.btnReportes.BackColor = System.Drawing.Color.Transparent
         Me.btnReportes.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnReportes.BorderColor = System.Drawing.Color.Black
         Me.btnReportes.Cursor = System.Windows.Forms.Cursors.Hand
         Me.GunaTransition1.SetDecoration(Me.btnReportes, Guna.UI.Animation.DecorationType.None)
+        Me.btnReportes.DialogResult = System.Windows.Forms.DialogResult.None
         Me.btnReportes.FocusedColor = System.Drawing.Color.Empty
         Me.btnReportes.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.btnReportes.ForeColor = System.Drawing.Color.White
@@ -795,6 +815,7 @@ Partial Class FrmHome
         '
         'GunaElipsePanel3
         '
+        Me.GunaElipsePanel3.BackColor = System.Drawing.Color.Transparent
         Me.GunaElipsePanel3.BaseColor = System.Drawing.Color.WhiteSmoke
         Me.GunaElipsePanel3.Controls.Add(Me.btnEtiquetas)
         Me.GunaElipsePanel3.Controls.Add(Me.GunaLabel6)
@@ -811,10 +832,12 @@ Partial Class FrmHome
         '
         Me.btnEtiquetas.AnimationHoverSpeed = 0.07!
         Me.btnEtiquetas.AnimationSpeed = 0.03!
+        Me.btnEtiquetas.BackColor = System.Drawing.Color.Transparent
         Me.btnEtiquetas.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnEtiquetas.BorderColor = System.Drawing.Color.Black
         Me.btnEtiquetas.Cursor = System.Windows.Forms.Cursors.Hand
         Me.GunaTransition1.SetDecoration(Me.btnEtiquetas, Guna.UI.Animation.DecorationType.None)
+        Me.btnEtiquetas.DialogResult = System.Windows.Forms.DialogResult.None
         Me.btnEtiquetas.FocusedColor = System.Drawing.Color.Empty
         Me.btnEtiquetas.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.btnEtiquetas.ForeColor = System.Drawing.Color.White
@@ -882,6 +905,7 @@ Partial Class FrmHome
         '
         'GunaElipsePanel6
         '
+        Me.GunaElipsePanel6.BackColor = System.Drawing.Color.Transparent
         Me.GunaElipsePanel6.BaseColor = System.Drawing.Color.WhiteSmoke
         Me.GunaElipsePanel6.Controls.Add(Me.btnImpresion)
         Me.GunaElipsePanel6.Controls.Add(Me.GunaLabel12)
@@ -898,10 +922,12 @@ Partial Class FrmHome
         '
         Me.btnImpresion.AnimationHoverSpeed = 0.07!
         Me.btnImpresion.AnimationSpeed = 0.03!
+        Me.btnImpresion.BackColor = System.Drawing.Color.Transparent
         Me.btnImpresion.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnImpresion.BorderColor = System.Drawing.Color.Black
         Me.btnImpresion.Cursor = System.Windows.Forms.Cursors.Hand
         Me.GunaTransition1.SetDecoration(Me.btnImpresion, Guna.UI.Animation.DecorationType.None)
+        Me.btnImpresion.DialogResult = System.Windows.Forms.DialogResult.None
         Me.btnImpresion.FocusedColor = System.Drawing.Color.Empty
         Me.btnImpresion.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.btnImpresion.ForeColor = System.Drawing.Color.White
@@ -969,6 +995,7 @@ Partial Class FrmHome
         '
         'GunaElipsePanel4
         '
+        Me.GunaElipsePanel4.BackColor = System.Drawing.Color.Transparent
         Me.GunaElipsePanel4.BaseColor = System.Drawing.Color.WhiteSmoke
         Me.GunaElipsePanel4.Controls.Add(Me.btnResultados)
         Me.GunaElipsePanel4.Controls.Add(Me.GunaLabel8)
@@ -985,10 +1012,12 @@ Partial Class FrmHome
         '
         Me.btnResultados.AnimationHoverSpeed = 0.07!
         Me.btnResultados.AnimationSpeed = 0.03!
+        Me.btnResultados.BackColor = System.Drawing.Color.Transparent
         Me.btnResultados.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnResultados.BorderColor = System.Drawing.Color.Black
         Me.btnResultados.Cursor = System.Windows.Forms.Cursors.Hand
         Me.GunaTransition1.SetDecoration(Me.btnResultados, Guna.UI.Animation.DecorationType.None)
+        Me.btnResultados.DialogResult = System.Windows.Forms.DialogResult.None
         Me.btnResultados.FocusedColor = System.Drawing.Color.Empty
         Me.btnResultados.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.btnResultados.ForeColor = System.Drawing.Color.White
@@ -1056,6 +1085,7 @@ Partial Class FrmHome
         '
         'GunaElipsePanel5
         '
+        Me.GunaElipsePanel5.BackColor = System.Drawing.Color.Transparent
         Me.GunaElipsePanel5.BaseColor = System.Drawing.Color.WhiteSmoke
         Me.GunaElipsePanel5.Controls.Add(Me.btnPagos)
         Me.GunaElipsePanel5.Controls.Add(Me.GunaLabel10)
@@ -1072,10 +1102,12 @@ Partial Class FrmHome
         '
         Me.btnPagos.AnimationHoverSpeed = 0.07!
         Me.btnPagos.AnimationSpeed = 0.03!
+        Me.btnPagos.BackColor = System.Drawing.Color.Transparent
         Me.btnPagos.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnPagos.BorderColor = System.Drawing.Color.Black
         Me.btnPagos.Cursor = System.Windows.Forms.Cursors.Hand
         Me.GunaTransition1.SetDecoration(Me.btnPagos, Guna.UI.Animation.DecorationType.None)
+        Me.btnPagos.DialogResult = System.Windows.Forms.DialogResult.None
         Me.btnPagos.FocusedColor = System.Drawing.Color.Empty
         Me.btnPagos.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.btnPagos.ForeColor = System.Drawing.Color.White
@@ -1152,9 +1184,11 @@ Partial Class FrmHome
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(776, 479)
         Me.Panel2.TabIndex = 9
+        Me.Panel2.Visible = False
         '
         'GunaElipsePanel9
         '
+        Me.GunaElipsePanel9.BackColor = System.Drawing.Color.Transparent
         Me.GunaElipsePanel9.BaseColor = System.Drawing.Color.WhiteSmoke
         Me.GunaElipsePanel9.Controls.Add(Me.GunaButton1)
         Me.GunaElipsePanel9.Controls.Add(Me.GunaLabel18)
@@ -1171,10 +1205,12 @@ Partial Class FrmHome
         '
         Me.GunaButton1.AnimationHoverSpeed = 0.07!
         Me.GunaButton1.AnimationSpeed = 0.03!
+        Me.GunaButton1.BackColor = System.Drawing.Color.Transparent
         Me.GunaButton1.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GunaButton1.BorderColor = System.Drawing.Color.Black
         Me.GunaButton1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.GunaTransition1.SetDecoration(Me.GunaButton1, Guna.UI.Animation.DecorationType.None)
+        Me.GunaButton1.DialogResult = System.Windows.Forms.DialogResult.None
         Me.GunaButton1.FocusedColor = System.Drawing.Color.Empty
         Me.GunaButton1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GunaButton1.ForeColor = System.Drawing.Color.White
@@ -1242,6 +1278,7 @@ Partial Class FrmHome
         '
         'GunaElipsePanel11
         '
+        Me.GunaElipsePanel11.BackColor = System.Drawing.Color.Transparent
         Me.GunaElipsePanel11.BaseColor = System.Drawing.Color.WhiteSmoke
         Me.GunaElipsePanel11.Controls.Add(Me.GunaButton3)
         Me.GunaElipsePanel11.Controls.Add(Me.GunaLabel22)
@@ -1258,10 +1295,12 @@ Partial Class FrmHome
         '
         Me.GunaButton3.AnimationHoverSpeed = 0.07!
         Me.GunaButton3.AnimationSpeed = 0.03!
+        Me.GunaButton3.BackColor = System.Drawing.Color.Transparent
         Me.GunaButton3.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GunaButton3.BorderColor = System.Drawing.Color.Black
         Me.GunaButton3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.GunaTransition1.SetDecoration(Me.GunaButton3, Guna.UI.Animation.DecorationType.None)
+        Me.GunaButton3.DialogResult = System.Windows.Forms.DialogResult.None
         Me.GunaButton3.FocusedColor = System.Drawing.Color.Empty
         Me.GunaButton3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GunaButton3.ForeColor = System.Drawing.Color.White
@@ -1329,6 +1368,7 @@ Partial Class FrmHome
         '
         'GunaElipsePanel13
         '
+        Me.GunaElipsePanel13.BackColor = System.Drawing.Color.Transparent
         Me.GunaElipsePanel13.BaseColor = System.Drawing.Color.WhiteSmoke
         Me.GunaElipsePanel13.Controls.Add(Me.GunaButton5)
         Me.GunaElipsePanel13.Controls.Add(Me.GunaLabel26)
@@ -1345,10 +1385,12 @@ Partial Class FrmHome
         '
         Me.GunaButton5.AnimationHoverSpeed = 0.07!
         Me.GunaButton5.AnimationSpeed = 0.03!
+        Me.GunaButton5.BackColor = System.Drawing.Color.Transparent
         Me.GunaButton5.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GunaButton5.BorderColor = System.Drawing.Color.Black
         Me.GunaButton5.Cursor = System.Windows.Forms.Cursors.Hand
         Me.GunaTransition1.SetDecoration(Me.GunaButton5, Guna.UI.Animation.DecorationType.None)
+        Me.GunaButton5.DialogResult = System.Windows.Forms.DialogResult.None
         Me.GunaButton5.FocusedColor = System.Drawing.Color.Empty
         Me.GunaButton5.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GunaButton5.ForeColor = System.Drawing.Color.White
@@ -1416,6 +1458,7 @@ Partial Class FrmHome
         '
         'GunaElipsePanel15
         '
+        Me.GunaElipsePanel15.BackColor = System.Drawing.Color.Transparent
         Me.GunaElipsePanel15.BaseColor = System.Drawing.Color.WhiteSmoke
         Me.GunaElipsePanel15.Controls.Add(Me.GunaButton7)
         Me.GunaElipsePanel15.Controls.Add(Me.GunaLabel30)
@@ -1432,10 +1475,12 @@ Partial Class FrmHome
         '
         Me.GunaButton7.AnimationHoverSpeed = 0.07!
         Me.GunaButton7.AnimationSpeed = 0.03!
+        Me.GunaButton7.BackColor = System.Drawing.Color.Transparent
         Me.GunaButton7.BaseColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GunaButton7.BorderColor = System.Drawing.Color.Black
         Me.GunaButton7.Cursor = System.Windows.Forms.Cursors.Hand
         Me.GunaTransition1.SetDecoration(Me.GunaButton7, Guna.UI.Animation.DecorationType.None)
+        Me.GunaButton7.DialogResult = System.Windows.Forms.DialogResult.None
         Me.GunaButton7.FocusedColor = System.Drawing.Color.Empty
         Me.GunaButton7.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.GunaButton7.ForeColor = System.Drawing.Color.White
@@ -1509,22 +1554,22 @@ Partial Class FrmHome
         '
         Me.GunaTransition1.AnimationType = Guna.UI.Animation.AnimationType.HorizSlide
         Me.GunaTransition1.Cursor = Nothing
-        Animation1.AnimateOnlyDifferences = True
-        Animation1.BlindCoeff = CType(resources.GetObject("Animation1.BlindCoeff"), System.Drawing.PointF)
-        Animation1.LeafCoeff = 0!
-        Animation1.MaxTime = 1.0!
-        Animation1.MinTime = 0!
-        Animation1.MosaicCoeff = CType(resources.GetObject("Animation1.MosaicCoeff"), System.Drawing.PointF)
-        Animation1.MosaicShift = CType(resources.GetObject("Animation1.MosaicShift"), System.Drawing.PointF)
-        Animation1.MosaicSize = 0
-        Animation1.Padding = New System.Windows.Forms.Padding(0)
-        Animation1.RotateCoeff = 0!
-        Animation1.RotateLimit = 0!
-        Animation1.ScaleCoeff = CType(resources.GetObject("Animation1.ScaleCoeff"), System.Drawing.PointF)
-        Animation1.SlideCoeff = CType(resources.GetObject("Animation1.SlideCoeff"), System.Drawing.PointF)
-        Animation1.TimeCoeff = 0!
-        Animation1.TransparencyCoeff = 0!
-        Me.GunaTransition1.DefaultAnimation = Animation1
+        Animation5.AnimateOnlyDifferences = True
+        Animation5.BlindCoeff = CType(resources.GetObject("Animation5.BlindCoeff"), System.Drawing.PointF)
+        Animation5.LeafCoeff = 0!
+        Animation5.MaxTime = 1.0!
+        Animation5.MinTime = 0!
+        Animation5.MosaicCoeff = CType(resources.GetObject("Animation5.MosaicCoeff"), System.Drawing.PointF)
+        Animation5.MosaicShift = CType(resources.GetObject("Animation5.MosaicShift"), System.Drawing.PointF)
+        Animation5.MosaicSize = 0
+        Animation5.Padding = New System.Windows.Forms.Padding(0)
+        Animation5.RotateCoeff = 0!
+        Animation5.RotateLimit = 0!
+        Animation5.ScaleCoeff = CType(resources.GetObject("Animation5.ScaleCoeff"), System.Drawing.PointF)
+        Animation5.SlideCoeff = CType(resources.GetObject("Animation5.SlideCoeff"), System.Drawing.PointF)
+        Animation5.TimeCoeff = 0!
+        Animation5.TransparencyCoeff = 0!
+        Me.GunaTransition1.DefaultAnimation = Animation5
         '
         'GunaDragControl1
         '
@@ -1533,6 +1578,12 @@ Partial Class FrmHome
         'GunaDragControl2
         '
         Me.GunaDragControl2.TargetControl = Me.Panel2
+        '
+        'GunaAnimateWindow1
+        '
+        Me.GunaAnimateWindow1.AnimationType = Guna.UI.WinForms.GunaAnimateWindow.AnimateWindowType.AW_BLEND
+        Me.GunaAnimateWindow1.Interval = 800
+        Me.GunaAnimateWindow1.TargetControl = Me
         '
         'FrmHome
         '
@@ -1702,4 +1753,5 @@ Partial Class FrmHome
     Friend WithEvents GunaTransition1 As Guna.UI.WinForms.GunaTransition
     Friend WithEvents GunaDragControl1 As Guna.UI.WinForms.GunaDragControl
     Friend WithEvents GunaDragControl2 As Guna.UI.WinForms.GunaDragControl
+    Friend WithEvents GunaAnimateWindow1 As Guna.UI.WinForms.GunaAnimateWindow
 End Class

@@ -30,7 +30,7 @@ Partial Class FrmLogin
         Me.GunaPanel1 = New Guna.UI.WinForms.GunaPanel()
         Me.txtpass = New System.Windows.Forms.TextBox()
         Me.txtUser = New System.Windows.Forms.TextBox()
-        Me.GunaButton1 = New Guna.UI.WinForms.GunaButton()
+        Me.btnInicio = New Guna.UI.WinForms.GunaButton()
         Me.f = New Guna.UI.WinForms.GunaTextBox()
         Me.h = New Guna.UI.WinForms.GunaTextBox()
         Me.GunaPictureBox1 = New Guna.UI.WinForms.GunaPictureBox()
@@ -79,7 +79,7 @@ Partial Class FrmLogin
         Me.GunaPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GunaPanel1.Controls.Add(Me.txtpass)
         Me.GunaPanel1.Controls.Add(Me.txtUser)
-        Me.GunaPanel1.Controls.Add(Me.GunaButton1)
+        Me.GunaPanel1.Controls.Add(Me.btnInicio)
         Me.GunaPanel1.Controls.Add(Me.f)
         Me.GunaPanel1.Controls.Add(Me.h)
         Me.GunaPanel1.Controls.Add(Me.GunaPictureBox1)
@@ -117,33 +117,33 @@ Partial Class FrmLogin
         Me.txtUser.Text = "Nombre de Usuario"
         Me.txtUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'GunaButton1
+        'btnInicio
         '
-        Me.GunaButton1.AnimationHoverSpeed = 0.07!
-        Me.GunaButton1.AnimationSpeed = 0.03!
-        Me.GunaButton1.BackColor = System.Drawing.Color.Transparent
-        Me.GunaButton1.BaseColor = System.Drawing.Color.Transparent
-        Me.GunaButton1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(247, Byte), Integer))
-        Me.GunaButton1.BorderSize = 1
-        Me.GunaButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.GunaButton1.FocusedColor = System.Drawing.Color.Empty
-        Me.GunaButton1.Font = New System.Drawing.Font("Segoe UI", 14.0!)
-        Me.GunaButton1.ForeColor = System.Drawing.Color.White
-        Me.GunaButton1.Image = Nothing
-        Me.GunaButton1.ImageSize = New System.Drawing.Size(20, 20)
-        Me.GunaButton1.Location = New System.Drawing.Point(148, 227)
-        Me.GunaButton1.Name = "GunaButton1"
-        Me.GunaButton1.OnHoverBaseColor = System.Drawing.Color.White
-        Me.GunaButton1.OnHoverBorderColor = System.Drawing.Color.White
-        Me.GunaButton1.OnHoverForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.GunaButton1.OnHoverImage = Nothing
-        Me.GunaButton1.OnPressedColor = System.Drawing.Color.Black
-        Me.GunaButton1.OnPressedDepth = 0
-        Me.GunaButton1.Radius = 6
-        Me.GunaButton1.Size = New System.Drawing.Size(103, 36)
-        Me.GunaButton1.TabIndex = 5
-        Me.GunaButton1.Text = "Ingresar"
-        Me.GunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.btnInicio.AnimationHoverSpeed = 0.07!
+        Me.btnInicio.AnimationSpeed = 0.03!
+        Me.btnInicio.BackColor = System.Drawing.Color.Transparent
+        Me.btnInicio.BaseColor = System.Drawing.Color.Transparent
+        Me.btnInicio.BorderColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(247, Byte), Integer))
+        Me.btnInicio.BorderSize = 1
+        Me.btnInicio.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnInicio.FocusedColor = System.Drawing.Color.Empty
+        Me.btnInicio.Font = New System.Drawing.Font("Segoe UI", 14.0!)
+        Me.btnInicio.ForeColor = System.Drawing.Color.White
+        Me.btnInicio.Image = Nothing
+        Me.btnInicio.ImageSize = New System.Drawing.Size(20, 20)
+        Me.btnInicio.Location = New System.Drawing.Point(148, 227)
+        Me.btnInicio.Name = "btnInicio"
+        Me.btnInicio.OnHoverBaseColor = System.Drawing.Color.White
+        Me.btnInicio.OnHoverBorderColor = System.Drawing.Color.White
+        Me.btnInicio.OnHoverForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.btnInicio.OnHoverImage = Nothing
+        Me.btnInicio.OnPressedColor = System.Drawing.Color.Black
+        Me.btnInicio.OnPressedDepth = 0
+        Me.btnInicio.Radius = 6
+        Me.btnInicio.Size = New System.Drawing.Size(103, 36)
+        Me.btnInicio.TabIndex = 5
+        Me.btnInicio.Text = "Ingresar"
+        Me.btnInicio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'f
         '
@@ -272,7 +272,7 @@ Partial Class FrmLogin
     Friend WithEvents GunaElipse1 As Guna.UI.WinForms.GunaElipse
     Friend WithEvents GunaPictureBox1 As Guna.UI.WinForms.GunaPictureBox
     Friend WithEvents GunaLabel1 As Guna.UI.WinForms.GunaLabel
-    Friend WithEvents GunaButton1 As Guna.UI.WinForms.GunaButton
+    Friend WithEvents btnInicio As Guna.UI.WinForms.GunaButton
     Friend WithEvents f As Guna.UI.WinForms.GunaTextBox
     Friend WithEvents h As Guna.UI.WinForms.GunaTextBox
     Friend WithEvents GunaLinkLabel2 As Guna.UI.WinForms.GunaLinkLabel

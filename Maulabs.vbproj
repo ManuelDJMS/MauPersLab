@@ -11,9 +11,10 @@
     <AssemblyName>Maulabs</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -48,8 +49,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Guna.UI">
-      <HintPath>..\..\..\Documents\GitHub\Metas_Cotizador\Metas_Cotizador\bin\Debug\Guna.UI.dll</HintPath>
+    <Reference Include="Guna.UI, Version=1.3.0.0, Culture=neutral, PublicKeyToken=537479e8cf7071a7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Downloads\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib\.net 4.0\Guna.UI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -77,6 +79,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Conexiones.vb" />
+    <Compile Include="Clases\Funciones.vb" />
     <Compile Include="Clases\Module1.vb" />
     <Compile Include="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
@@ -84,11 +87,11 @@
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMenu.vb">
+    <Compile Include="FrmHome.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMenu.Designer.vb">
-      <DependentUpon>FrmMenu.vb</DependentUpon>
+    <Compile Include="FrmHome.Designer.vb">
+      <DependentUpon>FrmHome.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -110,6 +113,12 @@
       <DependentUpon>frmAlert.vb</DependentUpon>
     </Compile>
     <Compile Include="Presentación\frmAlert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentación\FrmLogin.Designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentación\FrmLogin.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentación\FrmMedicos.Designer.vb">
@@ -147,8 +156,8 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMenu.resx">
-      <DependentUpon>FrmMenu.vb</DependentUpon>
+    <EmbeddedResource Include="FrmHome.resx">
+      <DependentUpon>FrmHome.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -158,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentación\frmAlert.resx">
       <DependentUpon>frmAlert.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentación\FrmLogin.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentación\FrmMedicos.resx">
       <DependentUpon>FrmMedicos.vb</DependentUpon>

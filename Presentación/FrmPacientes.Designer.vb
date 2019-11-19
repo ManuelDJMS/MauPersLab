@@ -116,6 +116,7 @@ Partial Class FrmPacientes
         '
         'btnCerrar
         '
+        Me.btnCerrar.DialogResult = System.Windows.Forms.DialogResult.None
         Me.btnCerrar.Image = Global.Maulabs.My.Resources.Resources.icons8_multiply_48
         Me.btnCerrar.ImageSize = New System.Drawing.Size(16, 16)
         Me.btnCerrar.Location = New System.Drawing.Point(567, 8)
@@ -127,6 +128,7 @@ Partial Class FrmPacientes
         '
         'btnMinimizar
         '
+        Me.btnMinimizar.DialogResult = System.Windows.Forms.DialogResult.None
         Me.btnMinimizar.Image = Global.Maulabs.My.Resources.Resources.icons8_horizontal_line_48
         Me.btnMinimizar.ImageSize = New System.Drawing.Size(16, 16)
         Me.btnMinimizar.Location = New System.Drawing.Point(529, 8)
@@ -138,6 +140,7 @@ Partial Class FrmPacientes
         '
         'GunaImageButton1
         '
+        Me.GunaImageButton1.DialogResult = System.Windows.Forms.DialogResult.None
         Me.GunaImageButton1.Image = Global.Maulabs.My.Resources.Resources.icons8_menu_48
         Me.GunaImageButton1.ImageSize = New System.Drawing.Size(16, 16)
         Me.GunaImageButton1.Location = New System.Drawing.Point(8, 8)
@@ -351,9 +354,11 @@ Partial Class FrmPacientes
         '
         Me.btnCancelar.AnimationHoverSpeed = 0.07!
         Me.btnCancelar.AnimationSpeed = 0.03!
+        Me.btnCancelar.BackColor = System.Drawing.Color.Transparent
         Me.btnCancelar.BaseColor = System.Drawing.Color.Firebrick
         Me.btnCancelar.BorderColor = System.Drawing.Color.Black
         Me.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.None
         Me.btnCancelar.FocusedColor = System.Drawing.Color.Empty
         Me.btnCancelar.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.btnCancelar.ForeColor = System.Drawing.Color.White
@@ -375,9 +380,11 @@ Partial Class FrmPacientes
         '
         Me.btnGuardar.AnimationHoverSpeed = 0.07!
         Me.btnGuardar.AnimationSpeed = 0.03!
+        Me.btnGuardar.BackColor = System.Drawing.Color.Transparent
         Me.btnGuardar.BaseColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.btnGuardar.BorderColor = System.Drawing.Color.Black
         Me.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnGuardar.DialogResult = System.Windows.Forms.DialogResult.None
         Me.btnGuardar.FocusedColor = System.Drawing.Color.Empty
         Me.btnGuardar.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.btnGuardar.ForeColor = System.Drawing.Color.White

@@ -23,7 +23,7 @@ Partial Class FrmHome
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim Animation5 As Guna.UI.Animation.Animation = New Guna.UI.Animation.Animation()
+        Dim Animation6 As Guna.UI.Animation.Animation = New Guna.UI.Animation.Animation()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmHome))
         Me.GunaPanel1 = New Guna.UI.WinForms.GunaPanel()
         Me.GunaVSeparator2 = New Guna.UI.WinForms.GunaVSeparator()
@@ -115,7 +115,6 @@ Partial Class FrmHome
         Me.PictureBox15 = New System.Windows.Forms.PictureBox()
         Me.GunaCirclePictureBox15 = New Guna.UI.WinForms.GunaCirclePictureBox()
         Me.GunaElipse1 = New Guna.UI.WinForms.GunaElipse(Me.components)
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.GunaTransition1 = New Guna.UI.WinForms.GunaTransition(Me.components)
         Me.GunaDragControl1 = New Guna.UI.WinForms.GunaDragControl(Me.components)
         Me.GunaDragControl2 = New Guna.UI.WinForms.GunaDragControl(Me.components)
@@ -1554,22 +1553,22 @@ Partial Class FrmHome
         '
         Me.GunaTransition1.AnimationType = Guna.UI.Animation.AnimationType.HorizSlide
         Me.GunaTransition1.Cursor = Nothing
-        Animation5.AnimateOnlyDifferences = True
-        Animation5.BlindCoeff = CType(resources.GetObject("Animation5.BlindCoeff"), System.Drawing.PointF)
-        Animation5.LeafCoeff = 0!
-        Animation5.MaxTime = 1.0!
-        Animation5.MinTime = 0!
-        Animation5.MosaicCoeff = CType(resources.GetObject("Animation5.MosaicCoeff"), System.Drawing.PointF)
-        Animation5.MosaicShift = CType(resources.GetObject("Animation5.MosaicShift"), System.Drawing.PointF)
-        Animation5.MosaicSize = 0
-        Animation5.Padding = New System.Windows.Forms.Padding(0)
-        Animation5.RotateCoeff = 0!
-        Animation5.RotateLimit = 0!
-        Animation5.ScaleCoeff = CType(resources.GetObject("Animation5.ScaleCoeff"), System.Drawing.PointF)
-        Animation5.SlideCoeff = CType(resources.GetObject("Animation5.SlideCoeff"), System.Drawing.PointF)
-        Animation5.TimeCoeff = 0!
-        Animation5.TransparencyCoeff = 0!
-        Me.GunaTransition1.DefaultAnimation = Animation5
+        Animation6.AnimateOnlyDifferences = True
+        Animation6.BlindCoeff = CType(resources.GetObject("Animation6.BlindCoeff"), System.Drawing.PointF)
+        Animation6.LeafCoeff = 0!
+        Animation6.MaxTime = 1.0!
+        Animation6.MinTime = 0!
+        Animation6.MosaicCoeff = CType(resources.GetObject("Animation6.MosaicCoeff"), System.Drawing.PointF)
+        Animation6.MosaicShift = CType(resources.GetObject("Animation6.MosaicShift"), System.Drawing.PointF)
+        Animation6.MosaicSize = 0
+        Animation6.Padding = New System.Windows.Forms.Padding(0)
+        Animation6.RotateCoeff = 0!
+        Animation6.RotateLimit = 0!
+        Animation6.ScaleCoeff = CType(resources.GetObject("Animation6.ScaleCoeff"), System.Drawing.PointF)
+        Animation6.SlideCoeff = CType(resources.GetObject("Animation6.SlideCoeff"), System.Drawing.PointF)
+        Animation6.TimeCoeff = 0!
+        Animation6.TransparencyCoeff = 0!
+        Me.GunaTransition1.DefaultAnimation = Animation6
         '
         'GunaDragControl1
         '
@@ -1749,7 +1748,6 @@ Partial Class FrmHome
     Friend WithEvents GunaLabel31 As Guna.UI.WinForms.GunaLabel
     Friend WithEvents PictureBox15 As PictureBox
     Friend WithEvents GunaCirclePictureBox15 As Guna.UI.WinForms.GunaCirclePictureBox
-    Friend WithEvents Timer1 As Timer
     Friend WithEvents GunaTransition1 As Guna.UI.WinForms.GunaTransition
     Friend WithEvents GunaDragControl1 As Guna.UI.WinForms.GunaDragControl
     Friend WithEvents GunaDragControl2 As Guna.UI.WinForms.GunaDragControl

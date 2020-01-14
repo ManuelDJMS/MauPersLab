@@ -23,11 +23,11 @@ Partial Class FrmSolicitudes
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.GunaElipse1 = New Guna.UI.WinForms.GunaElipse(Me.components)
-        Me.GunaPanel1 = New Guna.UI.WinForms.GunaPanel()
+        Me.PanelMover = New Guna.UI.WinForms.GunaPanel()
         Me.GunaVSeparator2 = New Guna.UI.WinForms.GunaVSeparator()
         Me.lbInicio = New Guna.UI.WinForms.GunaLabel()
         Me.GunaPictureBox1 = New Guna.UI.WinForms.GunaPictureBox()
@@ -39,11 +39,8 @@ Partial Class FrmSolicitudes
         Me.GunaLabel2 = New Guna.UI.WinForms.GunaLabel()
         Me.GunaSeparator1 = New Guna.UI.WinForms.GunaSeparator()
         Me.GunaLabel5 = New Guna.UI.WinForms.GunaLabel()
-        Me.txtNombre = New Guna.UI.WinForms.GunaTextBox()
-        Me.txtMedico = New Guna.UI.WinForms.GunaTextBox()
         Me.GunaSeparator2 = New Guna.UI.WinForms.GunaSeparator()
         Me.GunaLabel3 = New Guna.UI.WinForms.GunaLabel()
-        Me.GunaLabel6 = New Guna.UI.WinForms.GunaLabel()
         Me.GunaElipsePanel1 = New Guna.UI.WinForms.GunaElipsePanel()
         Me.PanelSeccion2 = New System.Windows.Forms.Panel()
         Me.GunaButton6 = New Guna.UI.WinForms.GunaButton()
@@ -61,18 +58,22 @@ Partial Class FrmSolicitudes
         Me.GunaCheckBox4 = New Guna.UI.WinForms.GunaCheckBox()
         Me.GunaCheckBox3 = New Guna.UI.WinForms.GunaCheckBox()
         Me.GunaCheckBox2 = New Guna.UI.WinForms.GunaCheckBox()
-        Me.GunaCheckBox1 = New Guna.UI.WinForms.GunaCheckBox()
+        Me.ckBilirrubina = New Guna.UI.WinForms.GunaCheckBox()
         Me.GunaButton1 = New Guna.UI.WinForms.GunaButton()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.GunaTextBox1 = New Guna.UI.WinForms.GunaTextBox()
+        Me.txtSubtotal = New Guna.UI.WinForms.GunaTextBox()
         Me.GunaLabel1 = New Guna.UI.WinForms.GunaLabel()
         Me.dgEstudios = New Guna.UI.WinForms.GunaDataGridView()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GunaButton10 = New Guna.UI.WinForms.GunaButton()
-        Me.GunaButton3 = New Guna.UI.WinForms.GunaButton()
-        Me.btnPacientes = New Guna.UI.WinForms.GunaButton()
+        Me.precioUnitario = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dtpFecha = New Guna.UI.WinForms.GunaDateTimePicker()
+        Me.CboPaciente = New System.Windows.Forms.ComboBox()
+        Me.GunaImageButton2 = New Guna.UI.WinForms.GunaImageButton()
+        Me.btnCobrar = New Guna.UI.WinForms.GunaButton()
+        Me.btnCancelar = New Guna.UI.WinForms.GunaButton()
+        Me.btnGuardar = New Guna.UI.WinForms.GunaButton()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.GunaPanel1.SuspendLayout()
+        Me.PanelMover.SuspendLayout()
         CType(Me.GunaPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GunaElipsePanel1.SuspendLayout()
         Me.PanelSeccion2.SuspendLayout()
@@ -87,20 +88,20 @@ Partial Class FrmSolicitudes
         '
         Me.GunaElipse1.TargetControl = Me
         '
-        'GunaPanel1
+        'PanelMover
         '
-        Me.GunaPanel1.BackColor = System.Drawing.Color.White
-        Me.GunaPanel1.Controls.Add(Me.GunaVSeparator2)
-        Me.GunaPanel1.Controls.Add(Me.lbInicio)
-        Me.GunaPanel1.Controls.Add(Me.GunaPictureBox1)
-        Me.GunaPanel1.Controls.Add(Me.GunaVSeparator1)
-        Me.GunaPanel1.Controls.Add(Me.btnCerrar)
-        Me.GunaPanel1.Controls.Add(Me.btnMinimizar)
-        Me.GunaPanel1.Controls.Add(Me.GunaImageButton1)
-        Me.GunaPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.GunaPanel1.Name = "GunaPanel1"
-        Me.GunaPanel1.Size = New System.Drawing.Size(666, 50)
-        Me.GunaPanel1.TabIndex = 1
+        Me.PanelMover.BackColor = System.Drawing.Color.White
+        Me.PanelMover.Controls.Add(Me.GunaVSeparator2)
+        Me.PanelMover.Controls.Add(Me.lbInicio)
+        Me.PanelMover.Controls.Add(Me.GunaPictureBox1)
+        Me.PanelMover.Controls.Add(Me.GunaVSeparator1)
+        Me.PanelMover.Controls.Add(Me.btnCerrar)
+        Me.PanelMover.Controls.Add(Me.btnMinimizar)
+        Me.PanelMover.Controls.Add(Me.GunaImageButton1)
+        Me.PanelMover.Location = New System.Drawing.Point(0, 0)
+        Me.PanelMover.Name = "PanelMover"
+        Me.PanelMover.Size = New System.Drawing.Size(666, 50)
+        Me.PanelMover.TabIndex = 1
         '
         'GunaVSeparator2
         '
@@ -143,6 +144,7 @@ Partial Class FrmSolicitudes
         '
         'btnCerrar
         '
+        Me.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnCerrar.DialogResult = System.Windows.Forms.DialogResult.None
         Me.btnCerrar.Image = Global.Maulabs.My.Resources.Resources.icons8_multiply_48
         Me.btnCerrar.ImageSize = New System.Drawing.Size(16, 16)
@@ -155,6 +157,7 @@ Partial Class FrmSolicitudes
         '
         'btnMinimizar
         '
+        Me.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnMinimizar.DialogResult = System.Windows.Forms.DialogResult.None
         Me.btnMinimizar.Image = Global.Maulabs.My.Resources.Resources.icons8_horizontal_line_48
         Me.btnMinimizar.ImageSize = New System.Drawing.Size(16, 16)
@@ -218,38 +221,6 @@ Partial Class FrmSolicitudes
         Me.GunaLabel5.TabIndex = 54
         Me.GunaLabel5.Text = "Médico:"
         '
-        'txtNombre
-        '
-        Me.txtNombre.BaseColor = System.Drawing.Color.White
-        Me.txtNombre.BorderColor = System.Drawing.Color.Silver
-        Me.txtNombre.BorderSize = 1
-        Me.txtNombre.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtNombre.FocusedBaseColor = System.Drawing.Color.White
-        Me.txtNombre.FocusedBorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.txtNombre.FocusedForeColor = System.Drawing.SystemColors.ControlText
-        Me.txtNombre.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.txtNombre.Location = New System.Drawing.Point(112, 122)
-        Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtNombre.Size = New System.Drawing.Size(420, 26)
-        Me.txtNombre.TabIndex = 55
-        '
-        'txtMedico
-        '
-        Me.txtMedico.BaseColor = System.Drawing.Color.White
-        Me.txtMedico.BorderColor = System.Drawing.Color.Silver
-        Me.txtMedico.BorderSize = 1
-        Me.txtMedico.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtMedico.FocusedBaseColor = System.Drawing.Color.White
-        Me.txtMedico.FocusedBorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.txtMedico.FocusedForeColor = System.Drawing.SystemColors.ControlText
-        Me.txtMedico.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.txtMedico.Location = New System.Drawing.Point(112, 154)
-        Me.txtMedico.Name = "txtMedico"
-        Me.txtMedico.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtMedico.Size = New System.Drawing.Size(420, 26)
-        Me.txtMedico.TabIndex = 56
-        '
         'GunaSeparator2
         '
         Me.GunaSeparator2.LineColor = System.Drawing.Color.Silver
@@ -263,22 +234,11 @@ Partial Class FrmSolicitudes
         Me.GunaLabel3.AutoSize = True
         Me.GunaLabel3.BackColor = System.Drawing.Color.Transparent
         Me.GunaLabel3.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GunaLabel3.Location = New System.Drawing.Point(549, 126)
+        Me.GunaLabel3.Location = New System.Drawing.Point(366, 60)
         Me.GunaLabel3.Name = "GunaLabel3"
         Me.GunaLabel3.Size = New System.Drawing.Size(44, 17)
         Me.GunaLabel3.TabIndex = 59
         Me.GunaLabel3.Text = "Fecha:"
-        '
-        'GunaLabel6
-        '
-        Me.GunaLabel6.AutoSize = True
-        Me.GunaLabel6.BackColor = System.Drawing.Color.Transparent
-        Me.GunaLabel6.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GunaLabel6.Location = New System.Drawing.Point(598, 125)
-        Me.GunaLabel6.Name = "GunaLabel6"
-        Me.GunaLabel6.Size = New System.Drawing.Size(44, 17)
-        Me.GunaLabel6.TabIndex = 60
-        Me.GunaLabel6.Text = "Fecha:"
         '
         'GunaElipsePanel1
         '
@@ -380,7 +340,7 @@ Partial Class FrmSolicitudes
         Me.PanelQuimicaClinica.Controls.Add(Me.GunaCheckBox10)
         Me.PanelQuimicaClinica.Controls.Add(Me.GunaButton2)
         Me.PanelQuimicaClinica.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelQuimicaClinica.Location = New System.Drawing.Point(0, 153)
+        Me.PanelQuimicaClinica.Location = New System.Drawing.Point(0, 50)
         Me.PanelQuimicaClinica.MaximumSize = New System.Drawing.Size(210, 269)
         Me.PanelQuimicaClinica.MinimumSize = New System.Drawing.Size(210, 50)
         Me.PanelQuimicaClinica.Name = "PanelQuimicaClinica"
@@ -488,21 +448,21 @@ Partial Class FrmSolicitudes
         Me.PanelQuimicaSan.Controls.Add(Me.GunaCheckBox4)
         Me.PanelQuimicaSan.Controls.Add(Me.GunaCheckBox3)
         Me.PanelQuimicaSan.Controls.Add(Me.GunaCheckBox2)
-        Me.PanelQuimicaSan.Controls.Add(Me.GunaCheckBox1)
+        Me.PanelQuimicaSan.Controls.Add(Me.ckBilirrubina)
         Me.PanelQuimicaSan.Controls.Add(Me.GunaButton1)
         Me.PanelQuimicaSan.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelQuimicaSan.Location = New System.Drawing.Point(0, 0)
-        Me.PanelQuimicaSan.MaximumSize = New System.Drawing.Size(210, 269)
+        Me.PanelQuimicaSan.MaximumSize = New System.Drawing.Size(210, 153)
         Me.PanelQuimicaSan.MinimumSize = New System.Drawing.Size(210, 50)
         Me.PanelQuimicaSan.Name = "PanelQuimicaSan"
-        Me.PanelQuimicaSan.Size = New System.Drawing.Size(210, 153)
+        Me.PanelQuimicaSan.Size = New System.Drawing.Size(210, 50)
         Me.PanelQuimicaSan.TabIndex = 14
         '
         'GunaCheckBox5
         '
         Me.GunaCheckBox5.BaseColor = System.Drawing.Color.White
         Me.GunaCheckBox5.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox5.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.GunaCheckBox5.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.GunaCheckBox5.Dock = System.Windows.Forms.DockStyle.Top
         Me.GunaCheckBox5.FillColor = System.Drawing.Color.White
         Me.GunaCheckBox5.Location = New System.Drawing.Point(0, 130)
@@ -515,7 +475,7 @@ Partial Class FrmSolicitudes
         '
         Me.GunaCheckBox4.BaseColor = System.Drawing.Color.White
         Me.GunaCheckBox4.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox4.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.GunaCheckBox4.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.GunaCheckBox4.Dock = System.Windows.Forms.DockStyle.Top
         Me.GunaCheckBox4.FillColor = System.Drawing.Color.White
         Me.GunaCheckBox4.Location = New System.Drawing.Point(0, 110)
@@ -528,7 +488,7 @@ Partial Class FrmSolicitudes
         '
         Me.GunaCheckBox3.BaseColor = System.Drawing.Color.White
         Me.GunaCheckBox3.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox3.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.GunaCheckBox3.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.GunaCheckBox3.Dock = System.Windows.Forms.DockStyle.Top
         Me.GunaCheckBox3.FillColor = System.Drawing.Color.White
         Me.GunaCheckBox3.Location = New System.Drawing.Point(0, 90)
@@ -541,7 +501,7 @@ Partial Class FrmSolicitudes
         '
         Me.GunaCheckBox2.BaseColor = System.Drawing.Color.White
         Me.GunaCheckBox2.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox2.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.GunaCheckBox2.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.GunaCheckBox2.Dock = System.Windows.Forms.DockStyle.Top
         Me.GunaCheckBox2.FillColor = System.Drawing.Color.White
         Me.GunaCheckBox2.Location = New System.Drawing.Point(0, 70)
@@ -550,19 +510,20 @@ Partial Class FrmSolicitudes
         Me.GunaCheckBox2.TabIndex = 15
         Me.GunaCheckBox2.Text = "Glucosa"
         '
-        'GunaCheckBox1
+        'ckBilirrubina
         '
-        Me.GunaCheckBox1.BaseColor = System.Drawing.Color.White
-        Me.GunaCheckBox1.CheckedOffColor = System.Drawing.Color.Gray
-        Me.GunaCheckBox1.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GunaCheckBox1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.GunaCheckBox1.FillColor = System.Drawing.Color.White
-        Me.GunaCheckBox1.Location = New System.Drawing.Point(0, 50)
-        Me.GunaCheckBox1.Name = "GunaCheckBox1"
-        Me.GunaCheckBox1.Radius = 3
-        Me.GunaCheckBox1.Size = New System.Drawing.Size(80, 20)
-        Me.GunaCheckBox1.TabIndex = 14
-        Me.GunaCheckBox1.Text = "Bilirrubina"
+        Me.ckBilirrubina.BaseColor = System.Drawing.Color.White
+        Me.ckBilirrubina.CheckedOffColor = System.Drawing.Color.Gray
+        Me.ckBilirrubina.CheckedOnColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.ckBilirrubina.Dock = System.Windows.Forms.DockStyle.Top
+        Me.ckBilirrubina.FillColor = System.Drawing.Color.White
+        Me.ckBilirrubina.Location = New System.Drawing.Point(0, 50)
+        Me.ckBilirrubina.Name = "ckBilirrubina"
+        Me.ckBilirrubina.Radius = 3
+        Me.ckBilirrubina.Size = New System.Drawing.Size(80, 20)
+        Me.ckBilirrubina.TabIndex = 14
+        Me.ckBilirrubina.Tag = "Bilirrubina"
+        Me.ckBilirrubina.Text = "Bilirrubina"
         '
         'GunaButton1
         '
@@ -597,21 +558,21 @@ Partial Class FrmSolicitudes
         '
         Me.Timer1.Interval = 10
         '
-        'GunaTextBox1
+        'txtSubtotal
         '
-        Me.GunaTextBox1.BaseColor = System.Drawing.Color.White
-        Me.GunaTextBox1.BorderColor = System.Drawing.Color.Silver
-        Me.GunaTextBox1.BorderSize = 1
-        Me.GunaTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.GunaTextBox1.FocusedBaseColor = System.Drawing.Color.White
-        Me.GunaTextBox1.FocusedBorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.GunaTextBox1.FocusedForeColor = System.Drawing.SystemColors.ControlText
-        Me.GunaTextBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.GunaTextBox1.Location = New System.Drawing.Point(561, 451)
-        Me.GunaTextBox1.Name = "GunaTextBox1"
-        Me.GunaTextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.GunaTextBox1.Size = New System.Drawing.Size(93, 26)
-        Me.GunaTextBox1.TabIndex = 278
+        Me.txtSubtotal.BaseColor = System.Drawing.Color.White
+        Me.txtSubtotal.BorderColor = System.Drawing.Color.Silver
+        Me.txtSubtotal.BorderSize = 1
+        Me.txtSubtotal.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtSubtotal.FocusedBaseColor = System.Drawing.Color.White
+        Me.txtSubtotal.FocusedBorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.txtSubtotal.FocusedForeColor = System.Drawing.SystemColors.ControlText
+        Me.txtSubtotal.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.txtSubtotal.Location = New System.Drawing.Point(561, 451)
+        Me.txtSubtotal.Name = "txtSubtotal"
+        Me.txtSubtotal.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtSubtotal.Size = New System.Drawing.Size(93, 26)
+        Me.txtSubtotal.TabIndex = 278
         '
         'GunaLabel1
         '
@@ -626,34 +587,34 @@ Partial Class FrmSolicitudes
         '
         'dgEstudios
         '
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.dgEstudios.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle13.BackColor = System.Drawing.Color.White
+        Me.dgEstudios.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle13
         Me.dgEstudios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgEstudios.BackgroundColor = System.Drawing.Color.White
         Me.dgEstudios.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgEstudios.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.dgEstudios.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgEstudios.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        DataGridViewCellStyle14.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle14.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgEstudios.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle14
         Me.dgEstudios.ColumnHeadersHeight = 21
-        Me.dgEstudios.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1})
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgEstudios.DefaultCellStyle = DataGridViewCellStyle3
+        Me.dgEstudios.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.precioUnitario})
+        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle15.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle15.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgEstudios.DefaultCellStyle = DataGridViewCellStyle15
         Me.dgEstudios.EnableHeadersVisualStyles = False
         Me.dgEstudios.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.dgEstudios.Location = New System.Drawing.Point(440, 221)
+        Me.dgEstudios.Location = New System.Drawing.Point(444, 221)
         Me.dgEstudios.Name = "dgEstudios"
         Me.dgEstudios.RowHeadersVisible = False
         Me.dgEstudios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
@@ -667,7 +628,7 @@ Partial Class FrmSolicitudes
         Me.dgEstudios.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
         Me.dgEstudios.ThemeStyle.BackColor = System.Drawing.Color.White
         Me.dgEstudios.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.dgEstudios.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.dgEstudios.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
         Me.dgEstudios.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         Me.dgEstudios.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
         Me.dgEstudios.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
@@ -684,86 +645,139 @@ Partial Class FrmSolicitudes
         '
         'Column1
         '
-        Me.Column1.HeaderText = "Estudios Seleccionados"
+        Me.Column1.HeaderText = "Estudios"
         Me.Column1.Name = "Column1"
         '
-        'GunaButton10
+        'precioUnitario
         '
-        Me.GunaButton10.AnimationHoverSpeed = 0.07!
-        Me.GunaButton10.AnimationSpeed = 0.03!
-        Me.GunaButton10.BackColor = System.Drawing.Color.Transparent
-        Me.GunaButton10.BaseColor = System.Drawing.Color.Navy
-        Me.GunaButton10.BorderColor = System.Drawing.Color.Black
-        Me.GunaButton10.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.GunaButton10.DialogResult = System.Windows.Forms.DialogResult.None
-        Me.GunaButton10.FocusedColor = System.Drawing.Color.Empty
-        Me.GunaButton10.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.GunaButton10.ForeColor = System.Drawing.Color.White
-        Me.GunaButton10.Image = Global.Maulabs.My.Resources.Resources.icons8_cash_24
-        Me.GunaButton10.ImageSize = New System.Drawing.Size(20, 20)
-        Me.GunaButton10.Location = New System.Drawing.Point(283, 457)
-        Me.GunaButton10.Name = "GunaButton10"
-        Me.GunaButton10.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.GunaButton10.OnHoverBorderColor = System.Drawing.Color.Black
-        Me.GunaButton10.OnHoverForeColor = System.Drawing.Color.White
-        Me.GunaButton10.OnHoverImage = Nothing
-        Me.GunaButton10.OnPressedColor = System.Drawing.Color.Black
-        Me.GunaButton10.Radius = 3
-        Me.GunaButton10.Size = New System.Drawing.Size(111, 42)
-        Me.GunaButton10.TabIndex = 72
-        Me.GunaButton10.Text = "Cobrar"
+        Me.precioUnitario.HeaderText = "Precio"
+        Me.precioUnitario.Name = "precioUnitario"
         '
-        'GunaButton3
+        'dtpFecha
         '
-        Me.GunaButton3.AnimationHoverSpeed = 0.07!
-        Me.GunaButton3.AnimationSpeed = 0.03!
-        Me.GunaButton3.BackColor = System.Drawing.Color.Transparent
-        Me.GunaButton3.BaseColor = System.Drawing.Color.Firebrick
-        Me.GunaButton3.BorderColor = System.Drawing.Color.Black
-        Me.GunaButton3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.GunaButton3.DialogResult = System.Windows.Forms.DialogResult.None
-        Me.GunaButton3.FocusedColor = System.Drawing.Color.Empty
-        Me.GunaButton3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.GunaButton3.ForeColor = System.Drawing.Color.White
-        Me.GunaButton3.Image = Global.Maulabs.My.Resources.Resources.icons8_cancel_28
-        Me.GunaButton3.ImageSize = New System.Drawing.Size(20, 20)
-        Me.GunaButton3.Location = New System.Drawing.Point(49, 457)
-        Me.GunaButton3.Name = "GunaButton3"
-        Me.GunaButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.GunaButton3.OnHoverBorderColor = System.Drawing.Color.Black
-        Me.GunaButton3.OnHoverForeColor = System.Drawing.Color.White
-        Me.GunaButton3.OnHoverImage = Nothing
-        Me.GunaButton3.OnPressedColor = System.Drawing.Color.Black
-        Me.GunaButton3.Radius = 3
-        Me.GunaButton3.Size = New System.Drawing.Size(111, 42)
-        Me.GunaButton3.TabIndex = 71
-        Me.GunaButton3.Text = "Cancelar"
+        Me.dtpFecha.BaseColor = System.Drawing.Color.White
+        Me.dtpFecha.BorderColor = System.Drawing.Color.Silver
+        Me.dtpFecha.CustomFormat = Nothing
+        Me.dtpFecha.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right
+        Me.dtpFecha.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.dtpFecha.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.dtpFecha.ForeColor = System.Drawing.Color.Black
+        Me.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtpFecha.Location = New System.Drawing.Point(419, 56)
+        Me.dtpFecha.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
+        Me.dtpFecha.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
+        Me.dtpFecha.Name = "dtpFecha"
+        Me.dtpFecha.OnHoverBaseColor = System.Drawing.Color.White
+        Me.dtpFecha.OnHoverBorderColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.dtpFecha.OnHoverForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.dtpFecha.OnPressedColor = System.Drawing.Color.Black
+        Me.dtpFecha.Size = New System.Drawing.Size(223, 30)
+        Me.dtpFecha.TabIndex = 281
+        Me.dtpFecha.Text = "2019-12-18"
+        Me.dtpFecha.Value = New Date(2019, 12, 18, 15, 16, 0, 651)
         '
-        'btnPacientes
+        'CboPaciente
         '
-        Me.btnPacientes.AnimationHoverSpeed = 0.07!
-        Me.btnPacientes.AnimationSpeed = 0.03!
-        Me.btnPacientes.BackColor = System.Drawing.Color.Transparent
-        Me.btnPacientes.BaseColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
-        Me.btnPacientes.BorderColor = System.Drawing.Color.Black
-        Me.btnPacientes.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnPacientes.DialogResult = System.Windows.Forms.DialogResult.None
-        Me.btnPacientes.FocusedColor = System.Drawing.Color.Empty
-        Me.btnPacientes.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.btnPacientes.ForeColor = System.Drawing.Color.White
-        Me.btnPacientes.Image = Global.Maulabs.My.Resources.Resources.icons8_save_28
-        Me.btnPacientes.ImageSize = New System.Drawing.Size(20, 20)
-        Me.btnPacientes.Location = New System.Drawing.Point(166, 457)
-        Me.btnPacientes.Name = "btnPacientes"
-        Me.btnPacientes.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnPacientes.OnHoverBorderColor = System.Drawing.Color.Black
-        Me.btnPacientes.OnHoverForeColor = System.Drawing.Color.White
-        Me.btnPacientes.OnHoverImage = Nothing
-        Me.btnPacientes.OnPressedColor = System.Drawing.Color.Black
-        Me.btnPacientes.Radius = 3
-        Me.btnPacientes.Size = New System.Drawing.Size(111, 42)
-        Me.btnPacientes.TabIndex = 70
-        Me.btnPacientes.Text = "Guardar"
+        Me.CboPaciente.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
+        Me.CboPaciente.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.CboPaciente.Font = New System.Drawing.Font("Segoe UI Emoji", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CboPaciente.FormattingEnabled = True
+        Me.CboPaciente.Location = New System.Drawing.Point(112, 122)
+        Me.CboPaciente.Name = "CboPaciente"
+        Me.CboPaciente.Size = New System.Drawing.Size(301, 25)
+        Me.CboPaciente.TabIndex = 282
+        '
+        'GunaImageButton2
+        '
+        Me.GunaImageButton2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GunaImageButton2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaImageButton2.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.GunaImageButton2.Image = Global.Maulabs.My.Resources.Resources.icons8_add_48
+        Me.GunaImageButton2.ImageSize = New System.Drawing.Size(20, 20)
+        Me.GunaImageButton2.Location = New System.Drawing.Point(419, 122)
+        Me.GunaImageButton2.Name = "GunaImageButton2"
+        Me.GunaImageButton2.OnHoverImage = Nothing
+        Me.GunaImageButton2.OnHoverImageOffset = New System.Drawing.Point(0, -1)
+        Me.GunaImageButton2.Size = New System.Drawing.Size(25, 25)
+        Me.GunaImageButton2.TabIndex = 283
+        '
+        'btnCobrar
+        '
+        Me.btnCobrar.AnimationHoverSpeed = 0.07!
+        Me.btnCobrar.AnimationSpeed = 0.03!
+        Me.btnCobrar.BackColor = System.Drawing.Color.Transparent
+        Me.btnCobrar.BaseColor = System.Drawing.Color.Navy
+        Me.btnCobrar.BorderColor = System.Drawing.Color.Black
+        Me.btnCobrar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCobrar.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.btnCobrar.FocusedColor = System.Drawing.Color.Empty
+        Me.btnCobrar.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.btnCobrar.ForeColor = System.Drawing.Color.White
+        Me.btnCobrar.Image = Global.Maulabs.My.Resources.Resources.icons8_cash_24
+        Me.btnCobrar.ImageSize = New System.Drawing.Size(20, 20)
+        Me.btnCobrar.Location = New System.Drawing.Point(283, 457)
+        Me.btnCobrar.Name = "btnCobrar"
+        Me.btnCobrar.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnCobrar.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.btnCobrar.OnHoverForeColor = System.Drawing.Color.White
+        Me.btnCobrar.OnHoverImage = Nothing
+        Me.btnCobrar.OnPressedColor = System.Drawing.Color.Black
+        Me.btnCobrar.Radius = 3
+        Me.btnCobrar.Size = New System.Drawing.Size(111, 42)
+        Me.btnCobrar.TabIndex = 72
+        Me.btnCobrar.Text = "Cobrar"
+        '
+        'btnCancelar
+        '
+        Me.btnCancelar.AnimationHoverSpeed = 0.07!
+        Me.btnCancelar.AnimationSpeed = 0.03!
+        Me.btnCancelar.BackColor = System.Drawing.Color.Transparent
+        Me.btnCancelar.BaseColor = System.Drawing.Color.Firebrick
+        Me.btnCancelar.BorderColor = System.Drawing.Color.Black
+        Me.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.btnCancelar.FocusedColor = System.Drawing.Color.Empty
+        Me.btnCancelar.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.btnCancelar.ForeColor = System.Drawing.Color.White
+        Me.btnCancelar.Image = Global.Maulabs.My.Resources.Resources.icons8_cancel_28
+        Me.btnCancelar.ImageSize = New System.Drawing.Size(20, 20)
+        Me.btnCancelar.Location = New System.Drawing.Point(49, 457)
+        Me.btnCancelar.Name = "btnCancelar"
+        Me.btnCancelar.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnCancelar.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.btnCancelar.OnHoverForeColor = System.Drawing.Color.White
+        Me.btnCancelar.OnHoverImage = Nothing
+        Me.btnCancelar.OnPressedColor = System.Drawing.Color.Black
+        Me.btnCancelar.Radius = 3
+        Me.btnCancelar.Size = New System.Drawing.Size(111, 42)
+        Me.btnCancelar.TabIndex = 71
+        Me.btnCancelar.Text = "Cancelar"
+        '
+        'btnGuardar
+        '
+        Me.btnGuardar.AnimationHoverSpeed = 0.07!
+        Me.btnGuardar.AnimationSpeed = 0.03!
+        Me.btnGuardar.BackColor = System.Drawing.Color.Transparent
+        Me.btnGuardar.BaseColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.btnGuardar.BorderColor = System.Drawing.Color.Black
+        Me.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnGuardar.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.btnGuardar.FocusedColor = System.Drawing.Color.Empty
+        Me.btnGuardar.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.btnGuardar.ForeColor = System.Drawing.Color.White
+        Me.btnGuardar.Image = Global.Maulabs.My.Resources.Resources.icons8_save_28
+        Me.btnGuardar.ImageSize = New System.Drawing.Size(20, 20)
+        Me.btnGuardar.Location = New System.Drawing.Point(166, 457)
+        Me.btnGuardar.Name = "btnGuardar"
+        Me.btnGuardar.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnGuardar.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.btnGuardar.OnHoverForeColor = System.Drawing.Color.White
+        Me.btnGuardar.OnHoverImage = Nothing
+        Me.btnGuardar.OnPressedColor = System.Drawing.Color.Black
+        Me.btnGuardar.Radius = 3
+        Me.btnGuardar.Size = New System.Drawing.Size(111, 42)
+        Me.btnGuardar.TabIndex = 70
+        Me.btnGuardar.Text = "Guardar"
         '
         'PictureBox8
         '
@@ -782,29 +796,29 @@ Partial Class FrmSolicitudes
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(670, 512)
+        Me.Controls.Add(Me.GunaImageButton2)
+        Me.Controls.Add(Me.CboPaciente)
+        Me.Controls.Add(Me.dtpFecha)
         Me.Controls.Add(Me.dgEstudios)
         Me.Controls.Add(Me.GunaLabel1)
-        Me.Controls.Add(Me.GunaTextBox1)
-        Me.Controls.Add(Me.GunaButton10)
-        Me.Controls.Add(Me.GunaButton3)
-        Me.Controls.Add(Me.btnPacientes)
+        Me.Controls.Add(Me.txtSubtotal)
+        Me.Controls.Add(Me.btnCobrar)
+        Me.Controls.Add(Me.btnCancelar)
+        Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.GunaElipsePanel1)
-        Me.Controls.Add(Me.GunaLabel6)
         Me.Controls.Add(Me.GunaLabel3)
         Me.Controls.Add(Me.GunaSeparator2)
-        Me.Controls.Add(Me.txtMedico)
-        Me.Controls.Add(Me.txtNombre)
         Me.Controls.Add(Me.GunaLabel5)
         Me.Controls.Add(Me.PictureBox8)
         Me.Controls.Add(Me.GunaLabel2)
         Me.Controls.Add(Me.GunaSeparator1)
         Me.Controls.Add(Me.GunaLabel4)
-        Me.Controls.Add(Me.GunaPanel1)
+        Me.Controls.Add(Me.PanelMover)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FrmSolicitudes"
         Me.Text = "FrmSolicitudes"
-        Me.GunaPanel1.ResumeLayout(False)
-        Me.GunaPanel1.PerformLayout()
+        Me.PanelMover.ResumeLayout(False)
+        Me.PanelMover.PerformLayout()
         CType(Me.GunaPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GunaElipsePanel1.ResumeLayout(False)
         Me.PanelSeccion2.ResumeLayout(False)
@@ -821,7 +835,7 @@ Partial Class FrmSolicitudes
     End Sub
 
     Friend WithEvents GunaElipse1 As Guna.UI.WinForms.GunaElipse
-    Friend WithEvents GunaPanel1 As Guna.UI.WinForms.GunaPanel
+    Friend WithEvents PanelMover As Guna.UI.WinForms.GunaPanel
     Friend WithEvents GunaVSeparator2 As Guna.UI.WinForms.GunaVSeparator
     Friend WithEvents lbInicio As Guna.UI.WinForms.GunaLabel
     Friend WithEvents GunaPictureBox1 As Guna.UI.WinForms.GunaPictureBox
@@ -834,11 +848,8 @@ Partial Class FrmSolicitudes
     Friend WithEvents PictureBox8 As PictureBox
     Friend WithEvents GunaLabel2 As Guna.UI.WinForms.GunaLabel
     Friend WithEvents GunaSeparator1 As Guna.UI.WinForms.GunaSeparator
-    Friend WithEvents GunaLabel6 As Guna.UI.WinForms.GunaLabel
     Friend WithEvents GunaLabel3 As Guna.UI.WinForms.GunaLabel
     Friend WithEvents GunaSeparator2 As Guna.UI.WinForms.GunaSeparator
-    Friend WithEvents txtMedico As Guna.UI.WinForms.GunaTextBox
-    Friend WithEvents txtNombre As Guna.UI.WinForms.GunaTextBox
     Friend WithEvents GunaElipsePanel1 As Guna.UI.WinForms.GunaElipsePanel
     Friend WithEvents Timer1 As Timer
     Friend WithEvents PanelSeccion1 As Panel
@@ -850,7 +861,7 @@ Partial Class FrmSolicitudes
     Friend WithEvents GunaCheckBox4 As Guna.UI.WinForms.GunaCheckBox
     Friend WithEvents GunaCheckBox3 As Guna.UI.WinForms.GunaCheckBox
     Friend WithEvents GunaCheckBox2 As Guna.UI.WinForms.GunaCheckBox
-    Friend WithEvents GunaCheckBox1 As Guna.UI.WinForms.GunaCheckBox
+    Friend WithEvents ckBilirrubina As Guna.UI.WinForms.GunaCheckBox
     Friend WithEvents GunaButton1 As Guna.UI.WinForms.GunaButton
     Friend WithEvents PanelQuimicaClinica As Panel
     Friend WithEvents GunaCheckBox6 As Guna.UI.WinForms.GunaCheckBox
@@ -859,11 +870,17 @@ Partial Class FrmSolicitudes
     Friend WithEvents GunaCheckBox9 As Guna.UI.WinForms.GunaCheckBox
     Friend WithEvents GunaCheckBox10 As Guna.UI.WinForms.GunaCheckBox
     Friend WithEvents GunaButton2 As Guna.UI.WinForms.GunaButton
-    Friend WithEvents GunaButton3 As Guna.UI.WinForms.GunaButton
-    Friend WithEvents btnPacientes As Guna.UI.WinForms.GunaButton
-    Friend WithEvents GunaButton10 As Guna.UI.WinForms.GunaButton
+    Friend WithEvents btnCancelar As Guna.UI.WinForms.GunaButton
+    Friend WithEvents btnGuardar As Guna.UI.WinForms.GunaButton
+    Friend WithEvents btnCobrar As Guna.UI.WinForms.GunaButton
     Friend WithEvents GunaLabel1 As Guna.UI.WinForms.GunaLabel
-    Friend WithEvents GunaTextBox1 As Guna.UI.WinForms.GunaTextBox
+    Friend WithEvents txtSubtotal As Guna.UI.WinForms.GunaTextBox
     Friend WithEvents dgEstudios As Guna.UI.WinForms.GunaDataGridView
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents precioUnitario As DataGridViewTextBoxColumn
+    Friend WithEvents dtpFecha As Guna.UI.WinForms.GunaDateTimePicker
+    Friend WithEvents dgnombres As DataGridView
+    Friend WithEvents TextNombre As TextBox
+    Friend WithEvents CboPaciente As ComboBox
+    Friend WithEvents GunaImageButton2 As Guna.UI.WinForms.GunaImageButton
 End Class

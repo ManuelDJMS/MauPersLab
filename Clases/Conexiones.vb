@@ -7,6 +7,8 @@ Module Conexiones
     Public adapter As SqlDataAdapter
     Public datatable As DataTable
     '================================================VARIABLE PARA UTILIZAR LA TRANSACCION DEL LIMS=========================================================================
+    'Public conexiontransac As String = ("Data Source=PC92-L\SISTEMAS;Initial Catalog=MAULABS; Integrated Security=True")
+
     Public conexiontransaccion As String = ("Data Source=PC92-L\SISTEMAS;Initial Catalog=MAULABS; Integrated Security=True")
     'Public conexionLIMStransac As String = ("Data Source=DATABASESERVER\COMPAC;Initial Catalog=MetAs_Live-pruebas; User Id=sa; Password=Contpaq1;Integrated Security=False")
     'Public conexiontransaccion As String = ("Data Source=DESKTOP-0BBE1FU\SQLEXPRESS;Initial Catalog=MAULABS; Integrated Security=true")

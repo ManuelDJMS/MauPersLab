@@ -123,8 +123,8 @@ Public Class FrmSolicitudes
                     Dim lector As SqlDataReader
                     comando.Connection = conexion
                     comando.Transaction = transaction
-                    R = "insert into Solicitudes (idPaciente, idEmpleado, Fecha, Total)
-                    values (" & Val(CboPaciente.Tag) & "," & Val(CboMedicos.Tag) & ",'" & fechaActual & "'," & CDbl(txtSubtotal.Text) & ")"
+                    R = "insert into Solicitudes (idPaciente, idEmpleado, idMedico, Fecha, Total)
+                    values (" & Val(CboPaciente.Tag) & "," & idusuario & "," & Val(CboMedicos.Tag) & ",'" & fechaActual & "'," & CDbl(txtSubtotal.Text) & ")"
                     comando.CommandText = R
                     comando.ExecuteNonQuery()
                     '============================================================================================================================================================================================

@@ -23,9 +23,9 @@ Partial Class FrmSolicitudes
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.GunaElipse1 = New Guna.UI.WinForms.GunaElipse(Me.components)
         Me.PanelMover = New Guna.UI.WinForms.GunaPanel()
         Me.GunaVSeparator2 = New Guna.UI.WinForms.GunaVSeparator()
@@ -64,8 +64,6 @@ Partial Class FrmSolicitudes
         Me.txtSubtotal = New Guna.UI.WinForms.GunaTextBox()
         Me.GunaLabel1 = New Guna.UI.WinForms.GunaLabel()
         Me.dgEstudios = New Guna.UI.WinForms.GunaDataGridView()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.precioUnitario = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.dtpFecha = New Guna.UI.WinForms.GunaDateTimePicker()
         Me.CboPaciente = New System.Windows.Forms.ComboBox()
         Me.GunaImageButton2 = New Guna.UI.WinForms.GunaImageButton()
@@ -73,6 +71,11 @@ Partial Class FrmSolicitudes
         Me.btnCancelar = New Guna.UI.WinForms.GunaButton()
         Me.btnGuardar = New Guna.UI.WinForms.GunaButton()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.CboMedicos = New System.Windows.Forms.ComboBox()
+        Me.GunaImageButton3 = New Guna.UI.WinForms.GunaImageButton()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.precioUnitario = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PanelMover.SuspendLayout()
         CType(Me.GunaPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GunaElipsePanel1.SuspendLayout()
@@ -587,31 +590,31 @@ Partial Class FrmSolicitudes
         '
         'dgEstudios
         '
-        DataGridViewCellStyle13.BackColor = System.Drawing.Color.White
-        Me.dgEstudios.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle13
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        Me.dgEstudios.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.dgEstudios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgEstudios.BackgroundColor = System.Drawing.Color.White
         Me.dgEstudios.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgEstudios.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.dgEstudios.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
-        DataGridViewCellStyle14.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle14.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgEstudios.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle14
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgEstudios.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.dgEstudios.ColumnHeadersHeight = 21
-        Me.dgEstudios.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.precioUnitario})
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle15.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle15.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgEstudios.DefaultCellStyle = DataGridViewCellStyle15
+        Me.dgEstudios.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column2, Me.Column1, Me.precioUnitario})
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgEstudios.DefaultCellStyle = DataGridViewCellStyle3
         Me.dgEstudios.EnableHeadersVisualStyles = False
         Me.dgEstudios.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.dgEstudios.Location = New System.Drawing.Point(444, 221)
@@ -642,16 +645,6 @@ Partial Class FrmSolicitudes
         Me.dgEstudios.ThemeStyle.RowsStyle.Height = 22
         Me.dgEstudios.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.dgEstudios.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "Estudios"
-        Me.Column1.Name = "Column1"
-        '
-        'precioUnitario
-        '
-        Me.precioUnitario.HeaderText = "Precio"
-        Me.precioUnitario.Name = "precioUnitario"
         '
         'dtpFecha
         '
@@ -790,12 +783,55 @@ Partial Class FrmSolicitudes
         Me.PictureBox8.TabIndex = 52
         Me.PictureBox8.TabStop = False
         '
+        'CboMedicos
+        '
+        Me.CboMedicos.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
+        Me.CboMedicos.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.CboMedicos.Font = New System.Drawing.Font("Segoe UI Emoji", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CboMedicos.FormattingEnabled = True
+        Me.CboMedicos.Location = New System.Drawing.Point(112, 158)
+        Me.CboMedicos.Name = "CboMedicos"
+        Me.CboMedicos.Size = New System.Drawing.Size(301, 25)
+        Me.CboMedicos.TabIndex = 284
+        '
+        'GunaImageButton3
+        '
+        Me.GunaImageButton3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GunaImageButton3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GunaImageButton3.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.GunaImageButton3.Image = Global.Maulabs.My.Resources.Resources.icons8_add_48
+        Me.GunaImageButton3.ImageSize = New System.Drawing.Size(20, 20)
+        Me.GunaImageButton3.Location = New System.Drawing.Point(419, 158)
+        Me.GunaImageButton3.Name = "GunaImageButton3"
+        Me.GunaImageButton3.OnHoverImage = Nothing
+        Me.GunaImageButton3.OnHoverImageOffset = New System.Drawing.Point(0, -1)
+        Me.GunaImageButton3.Size = New System.Drawing.Size(25, 25)
+        Me.GunaImageButton3.TabIndex = 285
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "idCategoria"
+        Me.Column2.Name = "Column2"
+        Me.Column2.Visible = False
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "Estudios"
+        Me.Column1.Name = "Column1"
+        '
+        'precioUnitario
+        '
+        Me.precioUnitario.HeaderText = "Precio"
+        Me.precioUnitario.Name = "precioUnitario"
+        '
         'FrmSolicitudes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(670, 512)
+        Me.Controls.Add(Me.GunaImageButton3)
+        Me.Controls.Add(Me.CboMedicos)
         Me.Controls.Add(Me.GunaImageButton2)
         Me.Controls.Add(Me.CboPaciente)
         Me.Controls.Add(Me.dtpFecha)
@@ -876,11 +912,13 @@ Partial Class FrmSolicitudes
     Friend WithEvents GunaLabel1 As Guna.UI.WinForms.GunaLabel
     Friend WithEvents txtSubtotal As Guna.UI.WinForms.GunaTextBox
     Friend WithEvents dgEstudios As Guna.UI.WinForms.GunaDataGridView
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents precioUnitario As DataGridViewTextBoxColumn
     Friend WithEvents dtpFecha As Guna.UI.WinForms.GunaDateTimePicker
-    Friend WithEvents dgnombres As DataGridView
     Friend WithEvents TextNombre As TextBox
     Friend WithEvents CboPaciente As ComboBox
     Friend WithEvents GunaImageButton2 As Guna.UI.WinForms.GunaImageButton
+    Friend WithEvents GunaImageButton3 As Guna.UI.WinForms.GunaImageButton
+    Friend WithEvents CboMedicos As ComboBox
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents precioUnitario As DataGridViewTextBoxColumn
 End Class

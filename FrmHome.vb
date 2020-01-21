@@ -19,4 +19,8 @@
         Panel1.BringToFront()
         GunaTransition1.Show(Panel1)
     End Sub
+
+    Private Sub btnSolicitudes_Click(sender As Object, e As EventArgs) Handles btnSolicitudes.Click
+        FrmSolicitudes.Show()
+    End Sub
 End Class

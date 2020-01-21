@@ -51,7 +51,7 @@ Public Class FrmSolicitudes
         Dim ban As Boolean
         Dim posicionborrar As Integer
         For i = 0 To dgEstudios.Rows.Count - 1
-            If check.Text = dgEstudios.Rows(i).Cells(0).Value Then
+            If check.Text = dgEstudios.Rows(i).Cells(1).Value Then
                 posicionborrar = dgEstudios.Rows(i).Index
                 ban = True
                 Exit For
@@ -66,12 +66,12 @@ Public Class FrmSolicitudes
                 Exit For
             Else
                 Metodo()
-                R = "select Descripcion, Precio from DetalleCategorias where Descripcion='" & check.Text & "'"
+                R = "select idDetalleCategoria, Descripcion, Precio from DetalleCategorias where Descripcion='" & check.Text & "'"
                 comando = conexion.CreateCommand
                 comando.CommandText = R
                 lector = comando.ExecuteReader
                 lector.Read()
-                dgEstudios.Rows.Add(lector(0), lector(1))
+                dgEstudios.Rows.Add(lector(0), lector(1), lector(2))
                 lector.Close()
                 conexion.Close()
                 SumarDatagrid(dgEstudios, txtSubtotal)
@@ -108,113 +108,70 @@ Public Class FrmSolicitudes
     End Sub
 
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
-        'Dim fechaActual As DateTime
-        'If dgEstudios.Rows.Count = 0 Then
-        '    MsgBox("Falta agregar el usuario que realizo la cotización¡", MsgBoxStyle.Critical)
-        'Else
-        '    Try
-        '        fechaActual = Convert.ToDateTime(dtpFecha.Text).ToShortDateString
-        '        Using conexion As New SqlConnection(conexiontransaccion)
-        '            conexion.Open()
-        '            Dim transaction As SqlTransaction
-        '            transaction = conexion.BeginTransaction("Sample")
-        '            Dim comando As SqlCommand = conexion.CreateCommand()
-        '            Dim lector As SqlDataReader
-        '            comando.Connection = conexion
-        '            comando.Transaction = transaction
-        '            '**************************************************** COTIZACION NORMAL *************************************************************************************
-        '            'Else
-
-        '            R = "insert into Solicitudes (idPaciente, idEmpleado, Fecha, Total)
-        '            values (" & Val(txtCveContacto.Text) & ",'" & origen & "'," & Val(cboServicio.Tag) & "," & Val(Cbcuando.Tag) & "," & Val(CbModalidad.Tag) & "," & Val(CboTiempo.Tag) & "," &
-        '                        Val(CCondPago.Tag) & "," & Val(CboLeyenda.Tag) & "," & Val(CboValidez.Tag) & "," & Val(CboMoneda.Tag) & "," & Val(ComboDocCond.Tag) & "," & Val(CboContabilizar.Tag) & ",'" &
-        '                        txtReferencia.Text & "','" & fechaActual & "','" & fecharecepcion & "','" & txtObservaciones.Text & "','" & usuario & "'," & subtotal & "," & iva & "," & Total & ",0)"
-        '            comando.CommandText = R
-        '            comando.ExecuteNonQuery()
-        '            'End If
-        '            '============================================================================================================================================================================================
-        '            '========================================================== SACAR EL ULTIMO REGISTRO DE SOLICITUDES PARA EL DETALLE DE COTIZACION =============================================================
-        '            R = "select MAX(Numcot) from [Cotizaciones]"
-        '            comando.CommandText = R
-        '            lector = comando.ExecuteReader
-        '            lector.Read()
-        '            If ((lector(0) Is DBNull.Value) OrElse (lector(0) Is Nothing)) Then
-        '                maximo = 1
-        '            Else
-        '                maximo = lector(0)
-        '            End If
-        '            lector.Close()
-        '            '============================================================================================================================================================================================
-        '            '===================================================================== INSERTAR EN DETALLE DE COTIZACIONES===================================================================================
-        '            For i = 0 To DGCopia.Rows.Count - 2
-        '                If DGCopia.Item(3, i).Value.ToString = "GENERICO" Or DGCopia.Item(3, i).Value.ToString = "Generico" Or DGCopia.Item(3, i).Value.ToString = "Genérico" Then
-        '                    marcaGen = InputBox("¿Deseas agregar la marca del articulo: """ & DGCopia.Item(2, i).Value.ToString & """?", "Marca")
-        '                    modGen = InputBox("¿Deseas agregar el modelo del articulo: """ & DGCopia.Item(2, i).Value.ToString & """?", "Modelo")
-        '                    If marcaGen = "" Or marcaGen = "-" Then
-        '                        marcaGen = ""
-        '                    Else
-        '                        marcaGen = " Marca: " & marcaGen
-        '                    End If
-        '                    If modGen = "" Or modGen = "-" Then
-        '                        modGen = ""
-        '                    Else
-        '                        modGen = " Modelo: " & modGen
-        '                    End If
-        '                    observacion = observacion + marcaGen + modGen
-        '                End If
-        '                R = "insert into DetalleCotizaciones (NumCot,EquipId, PartidaNo,Cantidad, CantidadReal, identificadorInventarioCliente, Serie, Observaciones, ObservacionesServicios) values (" &
-        '                         maximo & "," & DGCopia.Item(0, i).Value & "," & Val(DGCopia.Item(1, i).Value) & ",
-        '                 " & Val(DGCopia.Item(5, i).Value) & "," & Val(DGCopia.Item(5, i).Value) & ",'" & (DGCopia.Item(9, i).Value) & "','" & (DGCopia.Item(10, i).Value) & "','" & (DGCopia.Item(7, i).Value) + observacion & "','" & (DGCopia.Item(11, i).Value) & "')"
-        '                comando.CommandText = R
-        '                comando.ExecuteNonQuery()
-        '                marcaGen = ""
-        '                modGen = ""
-        '                observacion = ""
-        '            Next i      '============================================================================================================================================================================================
-        '            Try
-        '                If MessageBox.Show("¿Desea Guardar la información?", "Guardar", MessageBoxButtons.YesNo, MessageBoxIcon.Information) = Windows.Forms.DialogResult.Yes Then
-        '                    transaction.Commit()
-        '                    MsgBox("La Cotización se guardó correctamente", MsgBoxStyle.Information, "Guardado Exitoso")
-        '                    FrmCotizacion.DgAgregar.Rows.Clear()
-        '                    Me.Dispose()
-        '                Else
-        '                    transaction.Rollback()
-        '                    Me.Dispose()
-        '                End If
-        '            Catch ex As Exception
-        '                MsgBox("Commit Exception type: {0} no se pudo insertar por error", MsgBoxStyle.Critical, "Error externo al Sistema")
-        '                Try
-        '                    transaction.Rollback()
-        '                Catch ex1 As Exception
-        '                    MsgBox("Error RollBack", MsgBoxStyle.Critical, "Error interno del Sistema")
-        '                End Try
-        '                End Try66
-        '            conexion.Close()
-        '        End Using
-        '    Catch ex As Exception
-        '        MsgBox(ex.Message, MsgBoxStyle.Critical, "Error del Sistema")
-        '    End Try
-        'End If
+        Dim fechaActual As DateTime
+        Dim maximo As Integer
+        If dgEstudios.Rows.Count = 0 Then
+            MsgBox("¡No hay estudios a realizar!", MsgBoxStyle.Critical)
+        Else
+            Try
+                fechaActual = Convert.ToDateTime(dtpFecha.Text).ToShortDateString
+                Using conexion As New SqlConnection(conexiontransaccion)
+                    conexion.Open()
+                    Dim transaction As SqlTransaction
+                    transaction = conexion.BeginTransaction("Sample")
+                    Dim comando As SqlCommand = conexion.CreateCommand()
+                    Dim lector As SqlDataReader
+                    comando.Connection = conexion
+                    comando.Transaction = transaction
+                    R = "insert into Solicitudes (idPaciente, idEmpleado, Fecha, Total)
+                    values (" & Val(CboPaciente.Tag) & "," & Val(CboMedicos.Tag) & ",'" & fechaActual & "'," & CDbl(txtSubtotal.Text) & ")"
+                    comando.CommandText = R
+                    comando.ExecuteNonQuery()
+                    '============================================================================================================================================================================================
+                    '========================================================== SACAR EL ULTIMO REGISTRO DE SOLICITUDES PARA EL DETALLE DE LA SOLICITUD =============================================================
+                    R = "select MAX(idSolicitud) from [Solicitudes]"
+                    comando.CommandText = R
+                    lector = comando.ExecuteReader
+                    lector.Read()
+                    If ((lector(0) Is DBNull.Value) OrElse (lector(0) Is Nothing)) Then
+                        maximo = 1
+                    Else
+                        maximo = lector(0)
+                    End If
+                    lector.Close()
+                    '============================================================================================================================================================================================
+                    '===================================================================== INSERTAR EN DETALLE DE SOLICITUDES ===================================================================================
+                    For i = 0 To dgEstudios.Rows.Count - 2
+                        R = "insert into DetalleSolicitudes (idSolicitud,idDetalleCategoria) values (" & maximo & "," & dgEstudios.Item(0, i).Value & ")"
+                        comando.CommandText = R
+                        comando.ExecuteNonQuery()
+                    Next i
+                    '============================================================================================================================================================================================
+                    Try
+                        If MessageBox.Show("¿Desea Guardar la información?", "Guardar", MessageBoxButtons.YesNo, MessageBoxIcon.Information) = Windows.Forms.DialogResult.Yes Then
+                            transaction.Commit()
+                            MsgBox("La solicitud se guardó correctamente", MsgBoxStyle.Information, "Guardado Exitoso")
+                            'FrmCotizacion.DgAgregar.Rows.Clear()
+                            Me.Dispose()
+                        Else
+                            transaction.Rollback()
+                            Me.Dispose()
+                        End If
+                    Catch ex As Exception
+                        MsgBox("Commit Exception type: {0} no se pudo insertar por error", MsgBoxStyle.Critical, "Error externo al Sistema")
+                        Try
+                            transaction.Rollback()
+                        Catch ex1 As Exception
+                            MsgBox("Error RollBack", MsgBoxStyle.Critical, "Error interno del Sistema")
+                        End Try
+                    End Try
+                    conexion.Close()
+                End Using
+            Catch ex As Exception
+                MsgBox(ex.Message, MsgBoxStyle.Critical, "Error del Sistema")
+            End Try
+        End If
     End Sub
-
-
-
-    Private Sub TextNombre_TextChanged(sender As Object, e As EventArgs)
-        Metodo()
-        'conex.Open()
-        'Dim R As String
-        R = "select top 10 Nombre from [Pacientes] where Nombre like '" & TextNombre.Text & "%'"
-        Dim comando As New SqlCommand(R, conexion)
-        comando.CommandType = CommandType.Text
-        Dim da As New SqlDataAdapter(comando)
-        Dim dt As New DataTable
-        da.Fill(dt)
-        dgnombres.DataSource = dt
-        da.Dispose()
-        conexion.Close()
-        TextNombre.AutoCompleteCustomSource.Add(dgnombres.SelectedCells.Item(0).Value)
-    End Sub
-
     Private Sub CboPaciente_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CboPaciente.SelectedIndexChanged
         seleccionarcombo("select idPaciente from Pacientes where Nombre='" & CboPaciente.Text & "'", CboPaciente)
     End Sub
@@ -232,7 +189,7 @@ Public Class FrmSolicitudes
         lector = comando.ExecuteReader
         lector.Read()
         combo.Tag = lector(0)
-        MsgBox(combo.Tag)
+        'MsgBox(combo.Tag)
         lector.Close()
         'Catch ex As Exception
         '    MsgBox("Ocurrio un error en la lectura de datos de LIMS.", MsgBoxStyle.Exclamation)
@@ -253,5 +210,13 @@ Public Class FrmSolicitudes
         'lector.Read()
         'combo.Tag = lector(0)
         'lector.Close()
+    End Sub
+
+    Private Sub CboMedicos_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CboMedicos.SelectedIndexChanged
+        seleccionarcombo("select idMedico from Medicos where Nombre='" & CboMedicos.Text & "'", CboMedicos)
+    End Sub
+
+    Private Sub CboMedicos_TextChanged(sender As Object, e As EventArgs) Handles CboMedicos.TextChanged
+        llenarcombo("select top 10 idMedico, Nombre from Medicos where Nombre like '" & CboMedicos.Text & "%'", CboMedicos)
     End Sub
 End Class

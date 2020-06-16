@@ -170,6 +170,18 @@
     <Compile Include="Reportes\FrmReportes.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Resultados\Frm1Embarazo.Designer.vb">
+      <DependentUpon>Frm1Embarazo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resultados\Frm1Embarazo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resultados\Frm2QSBILIRRUBINA.Designer.vb">
+      <DependentUpon>Frm2QSBILIRRUBINA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resultados\Frm2QSBILIRRUBINA.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
@@ -247,6 +259,12 @@
       <DependentUpon>FrmReportes.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\2QSBILIRRUBINA.rdlc" />
+    <EmbeddedResource Include="Resultados\Frm1Embarazo.resx">
+      <DependentUpon>Frm1Embarazo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resultados\Frm2QSBILIRRUBINA.resx">
+      <DependentUpon>Frm2QSBILIRRUBINA.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\Application.myapp">

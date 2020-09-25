@@ -170,16 +170,112 @@
     <Compile Include="Reportes\FrmReportes.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Resultados\Frm10BIOMETRIAHEMATICA.Designer.vb">
+      <DependentUpon>Frm10BIOMETRIAHEMATICA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resultados\Frm10BIOMETRIAHEMATICA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resultados\Frm14INMUNOLOGIA.Designer.vb">
+      <DependentUpon>Frm14INMUNOLOGIA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resultados\Frm14INMUNOLOGIA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resultados\Frm17CULTIVODEEXPECTORACION.Designer.vb">
+      <DependentUpon>Frm17CULTIVODEEXPECTORACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resultados\Frm17CULTIVODEEXPECTORACION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resultados\Frm18ANTIDOPING.Designer.vb">
+      <DependentUpon>Frm18ANTIDOPING.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resultados\Frm18ANTIDOPING.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resultados\Frm19GRUPOSANGUINEO.Designer.vb">
+      <DependentUpon>Frm19GRUPOSANGUINEO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resultados\Frm19GRUPOSANGUINEO.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Resultados\Frm1Embarazo.Designer.vb">
       <DependentUpon>Frm1Embarazo.vb</DependentUpon>
     </Compile>
     <Compile Include="Resultados\Frm1Embarazo.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Resultados\Frm20PERFILDETORCH.Designer.vb">
+      <DependentUpon>Frm20PERFILDETORCH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resultados\Frm20PERFILDETORCH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resultados\Frm21PERFILTIROIDEO.Designer.vb">
+      <DependentUpon>Frm21PERFILTIROIDEO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resultados\Frm21PERFILTIROIDEO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resultados\Frm22COPROLOGICO.Designer.vb">
+      <DependentUpon>Frm22COPROLOGICO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resultados\Frm22COPROLOGICO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resultados\Frm24AMIBAS.Designer.vb">
+      <DependentUpon>Frm24AMIBAS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resultados\Frm24AMIBAS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resultados\Frm25INMUNOLOGIA.Designer.vb">
+      <DependentUpon>Frm25INMUNOLOGIA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resultados\Frm25INMUNOLOGIA.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Resultados\Frm2QSBILIRRUBINA.Designer.vb">
       <DependentUpon>Frm2QSBILIRRUBINA.vb</DependentUpon>
     </Compile>
     <Compile Include="Resultados\Frm2QSBILIRRUBINA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resultados\Frm3ElectrolitosSericos.Designer.vb">
+      <DependentUpon>Frm3ElectrolitosSericos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resultados\Frm3ElectrolitosSericos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resultados\Frm5PROTROMBINA.Designer.vb">
+      <DependentUpon>Frm5PROTROMBINA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resultados\Frm5PROTROMBINA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resultados\Frm6EXAMEN GENERAL DE ORINA.Designer.vb">
+      <DependentUpon>Frm6EXAMEN GENERAL DE ORINA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resultados\Frm6EXAMEN GENERAL DE ORINA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resultados\Frm7QSGLUCOSA.Designer.vb">
+      <DependentUpon>Frm7QSGLUCOSA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resultados\Frm7QSGLUCOSA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resultados\Frm8QCGLUCOSA.Designer.vb">
+      <DependentUpon>Frm8QCGLUCOSA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resultados\Frm8QCGLUCOSA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resultados\Frm9QSGLUCOSA.Designer.vb">
+      <DependentUpon>Frm9QSGLUCOSA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resultados\Frm9QSGLUCOSA.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -259,11 +355,59 @@
       <DependentUpon>FrmReportes.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\2QSBILIRRUBINA.rdlc" />
+    <EmbeddedResource Include="Resultados\Frm10BIOMETRIAHEMATICA.resx">
+      <DependentUpon>Frm10BIOMETRIAHEMATICA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resultados\Frm14INMUNOLOGIA.resx">
+      <DependentUpon>Frm14INMUNOLOGIA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resultados\Frm17CULTIVODEEXPECTORACION.resx">
+      <DependentUpon>Frm17CULTIVODEEXPECTORACION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resultados\Frm18ANTIDOPING.resx">
+      <DependentUpon>Frm18ANTIDOPING.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resultados\Frm19GRUPOSANGUINEO.resx">
+      <DependentUpon>Frm19GRUPOSANGUINEO.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resultados\Frm1Embarazo.resx">
       <DependentUpon>Frm1Embarazo.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resultados\Frm20PERFILDETORCH.resx">
+      <DependentUpon>Frm20PERFILDETORCH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resultados\Frm21PERFILTIROIDEO.resx">
+      <DependentUpon>Frm21PERFILTIROIDEO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resultados\Frm22COPROLOGICO.resx">
+      <DependentUpon>Frm22COPROLOGICO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resultados\Frm24AMIBAS.resx">
+      <DependentUpon>Frm24AMIBAS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resultados\Frm25INMUNOLOGIA.resx">
+      <DependentUpon>Frm25INMUNOLOGIA.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resultados\Frm2QSBILIRRUBINA.resx">
       <DependentUpon>Frm2QSBILIRRUBINA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resultados\Frm3ElectrolitosSericos.resx">
+      <DependentUpon>Frm3ElectrolitosSericos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resultados\Frm5PROTROMBINA.resx">
+      <DependentUpon>Frm5PROTROMBINA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resultados\Frm6EXAMEN GENERAL DE ORINA.resx">
+      <DependentUpon>Frm6EXAMEN GENERAL DE ORINA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resultados\Frm7QSGLUCOSA.resx">
+      <DependentUpon>Frm7QSGLUCOSA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resultados\Frm8QCGLUCOSA.resx">
+      <DependentUpon>Frm8QCGLUCOSA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resultados\Frm9QSGLUCOSA.resx">
+      <DependentUpon>Frm9QSGLUCOSA.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

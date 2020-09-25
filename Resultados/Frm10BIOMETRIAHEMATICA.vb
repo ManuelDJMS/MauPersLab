@@ -1,0 +1,3 @@
+﻿Public Class Frm10BIOMETRIAHEMATICA
+
+End Class
